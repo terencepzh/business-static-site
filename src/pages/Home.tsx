@@ -32,7 +32,7 @@ const AboutContent = [
   {
     title: "What we do",
     background:
-      "bg-[url(https://strategylab.ca/wp-content/uploads/2016/01/Stock-Photos-are-the-worst.jpg)] bg-cover",
+      "bg-[url(https://t4.ftcdn.net/jpg/02/61/31/83/360_F_261318391_vCfeZxtPmq1tCXFbPuuX0GkzutiVJKM5.jpg)] bg-cover",
   },
   {
     title: "Our locations",
