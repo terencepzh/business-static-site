@@ -13,7 +13,7 @@ function Navbar() {
         >
           <img
             className="ml-auto"
-            src="src/assets/close.svg"
+            src="close.svg"
             onClick={() => setClick(!click)}
           />
           <ul className="flex flex-col absolute top-24 gap-4">
@@ -27,12 +27,13 @@ function Navbar() {
         <nav className="flex justify-between p-4 max-w-4xl mx-auto">
           <div>
             <img
-              src="src/assets/logo.svg"
+              src="logo.svg"
               alt="Logo"
+              className="w-6 h-6 sm:w-12 sm:h-12"
             />
           </div>
           <img
-            src="src/assets/menu.svg"
+            src="menu.svg"
             onClick={() => setClick(!click)}
             className="sm:hidden"
           />

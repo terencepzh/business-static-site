@@ -44,14 +44,17 @@ const AboutContent = [
 function App() {
   return (
     <div className="grid grid-rows-1 grid-cols-1">
-      <div className="bg-[url(https://images.ctfassets.net/hrltx12pl8hq/3Mz6t2p2yHYqZcIM0ic9E2/3b7037fe8871187415500fb9202608f7/Man-Stock-Photos.jpg)] bg-top bg-no-repeat">
+      <div className="bg-[url(https://st4.depositphotos.com/13194036/20998/i/450/depositphotos_209984430-stock-photo-multicultural-business-people-having-business.jpg)] bg-center bg-no-repeat">
         <div className="flex flex-col items-center justify-between bg-black/60 h-80 p-2">
-          <h1 className="flex flex-col items-center text-3xl font-bold text-orange-400">
+          <h1 className="hidden sm:flex flex-col items-center text-3xl font-bold text-orange-400">
             <p>Lorem ipsum</p>
             <p className="text-5xl">sit amet consectetur</p>
             <p>dolor adipiscing elit</p>
           </h1>
-          <div className="flex flex-col justify-center items-center text-center text-white grow">
+          <h1 className="sm:hidden text-4xl text-center font-bold text-white mt-2">
+            Lorem ipsum sit amet consectetur
+          </h1>
+          <div className="hidden sm:flex flex-col justify-center items-center text-center text-white grow">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               sagittis mauris massa, id venenatis dolor congue ac.
@@ -61,6 +64,7 @@ function App() {
               maximus mauris mauris, id cursus turpis dignissim eu.
             </p>
           </div>
+          <div className="grow sm:hidden"></div>
           <Button className="bg-white text-orange-500 border-2 border-gray-500 rounded-full w-[50%] max-w-sm">
             Enquire Now
           </Button>
