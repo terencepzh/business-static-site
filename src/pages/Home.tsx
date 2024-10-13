@@ -6,9 +6,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Faq from "@/components/Faq";
 import About from "@/components/About";
+import { Link } from "react-router-dom";
 
 const FAQ = [
   {
@@ -43,40 +51,77 @@ const AboutContent = [
 
 function App() {
   return (
-    <div className="grid grid-rows-1 grid-cols-1">
-      <div className="bg-[url(https://st4.depositphotos.com/13194036/20998/i/450/depositphotos_209984430-stock-photo-multicultural-business-people-having-business.jpg)] bg-center bg-no-repeat">
-        <div className="flex flex-col items-center justify-between bg-black/60 h-80 p-2">
-          <h1 className="hidden sm:flex flex-col items-center text-3xl font-bold text-orange-400">
-            <p>Lorem ipsum</p>
-            <p className="text-5xl">sit amet consectetur</p>
-            <p>dolor adipiscing elit</p>
-          </h1>
-          <h1 className="sm:hidden text-4xl text-center font-bold text-white mt-2">
-            Lorem ipsum sit amet consectetur
-          </h1>
-          <div className="hidden sm:flex flex-col justify-center items-center text-center text-white grow">
-            <p>
+    <>
+      <div className="bg-[url(https://media.istockphoto.com/id/1182637714/photo/father-embracing-his-daughter-while-they-walking-into-the-symbolic-ferris-wheel-at-marina.jpg?s=612x612&w=0&k=20&c=u_wTC0aWI8pp1JdrhJWdyUs6vZre73tMykODYih_1EA=)] bg-center bg-no-repeat">
+        <div className="flex flex-col items-center justify-between bg-black/20 h-80 p-2"></div>
+        <div className="grow sm:hidden"></div>
+      </div>
+      <div className="flex flex-col justify-center items-center gap-4 text-orange-500 text-center px-12 py-8">
+        <h1 className="text-4xl text-center font-bold">
+          Singapore PR & Citizenship Consulting
+        </h1>
+        <p>
+          Your leading consultancy for Singapore immigration advice. Over 20
+          years of providing unmatched service and excellence.
+        </p>
+        <Button className="bg-orange-500 text-white text-md border rounded-full w-full max-w-sm h-12">
+          <Link to="/contact-us">Book a consultation now</Link>
+        </Button>
+      </div>
+      <div className="flex flex-col gap-4 bg-orange-500 text-white text-center px-8 py-8">
+        <h1 className="text-4xl text-center font-bold">Why SG Immigrations?</h1>
+        <p className="text-sm">
+          There are countless of immigration consulting firms in Singapore.
+          <br />
+          Here's why you should choose us.
+        </p>
+        <Card className="text-orange-500">
+          <CardHeader>
+            <CardTitle className="text-lg">
+              <h1 className="text-4xl ">20+</h1>
+              <h3>Years of Immigration Advisory Expertise</h3>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               sagittis mauris massa, id venenatis dolor congue ac.
             </p>
-            <p>
-              Sed sit amet sapien sollicitudin magna lobortis condimentum. Proin
-              maximus mauris mauris, id cursus turpis dignissim eu.
+          </CardContent>
+        </Card>
+        <Card className="text-orange-500">
+          <CardHeader>
+            <CardTitle className="text-lg">
+              <h1 className="text-4xl ">90%</h1>
+              <h3>More Likely of Attaining Application Success</h3>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              sagittis mauris massa, id venenatis dolor congue ac.
             </p>
-          </div>
-          <div className="grow sm:hidden"></div>
-          <Button className="bg-white text-orange-500 border-2 border-gray-500 rounded-full w-[50%] max-w-sm">
-            Enquire Now
-          </Button>
-        </div>
+          </CardContent>
+        </Card>
+        <Card className="text-orange-500">
+          <CardHeader>
+            <CardTitle className="text-lg">
+              <h1 className="text-4xl ">24/7</h1>
+              <h3>Dedicated Customer Service Support</h3>
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              sagittis mauris massa, id venenatis dolor congue ac.
+            </p>
+          </CardContent>
+        </Card>
       </div>
       <div className="flex flex-col gap-12 items-center mx-4">
         <div className="flex flex-col flex-wrap justify-center items-center gap-4 w-full">
           <h1 className="text-2xl md:text-4xl font-bold pt-12">About Us</h1>
           <About content={AboutContent} />
-          <Button className="bg-orange-500 text-white border-2 border-gray-500 rounded-full w-[95%] max-w-xl py-6 my-8">
-            <h1 className="text-lg">Book your Free Consultation!</h1>
-          </Button>
         </div>
         <div className="flex flex-col justify-center items-center gap-4 w-full">
           <h1 className="text-2xl md:text-4xl font-bold">Testimonials</h1>
@@ -128,7 +173,7 @@ function App() {
           <Faq content={FAQ} />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
