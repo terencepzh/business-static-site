@@ -12,8 +12,6 @@ import {
   FormItem,
   FormLabel,
   FormControl,
-  FormDescription,
-  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
@@ -59,7 +57,10 @@ function ConsultForm() {
               <FormItem>
                 <FormLabel>Full Name</FormLabel>
                 <FormControl>
-                  <Input placeholder="eg. John Lim Kim Wee" {...field} />
+                  <Input
+                    placeholder="eg. John Lim Kim Wee"
+                    {...field}
+                  />
                 </FormControl>
               </FormItem>
             )}
@@ -103,7 +104,10 @@ function ConsultForm() {
               <FormItem>
                 <FormLabel>Mobile Number</FormLabel>
                 <FormControl>
-                  <Input placeholder="91234567" {...field} />
+                  <Input
+                    placeholder="91234567"
+                    {...field}
+                  />
                 </FormControl>
               </FormItem>
             )}
@@ -136,18 +140,25 @@ function ConsultForm() {
               <FormItem>
                 <FormLabel>Message</FormLabel>
                 <FormControl>
-                  <Textarea placeholder="Message" {...field} />
+                  <Textarea
+                    placeholder="Message"
+                    {...field}
+                    className="h-20"
+                  />
                 </FormControl>
               </FormItem>
             )}
           />
-          <Button className="bg-orange-500" type="submit">
+          <Button
+            className="bg-orange-500"
+            type="submit"
+          >
             Book Your Consultation
           </Button>
         </form>
       </Form>
       <h3 className="text-center text-sm font-light">
-        By submitting the form, you agree to our site's <u>privacy policy</u>.
+        By submitting this form, you agree to our site's <u>privacy policy</u>.
       </h3>
     </>
   );
