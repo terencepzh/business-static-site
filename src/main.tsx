@@ -3,8 +3,6 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Home from "./pages/Home.tsx";
-import Footer from "./components/Footer.tsx";
-import Navbar from "./components/Navbar.tsx";
 import Contact from "./pages/Contact.tsx";
 import Layout from "./layouts/Layout.tsx";
 
