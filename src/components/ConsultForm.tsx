@@ -12,6 +12,7 @@ import {
   FormItem,
   FormLabel,
   FormControl,
+  FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
@@ -20,10 +21,10 @@ import { z } from "zod";
 import { Textarea } from "./ui/textarea";
 
 const formSchema = z.object({
-  fullname: z.string().min(2).max(50),
-  pass: z.string(),
-  mobile: z.string().min(8).max(10),
-  interest: z.string(),
+  fullName: z.string().min(1, { message: "Name is required" }).max(50),
+  pass: z.string().min(1, { message: "Please select an option" }),
+  mobile: z.string().min(1, { message: "Mobile Number is required" }),
+  interest: z.string().min(1, { message: "Please select an option" }),
   message: z.string(),
 });
 
@@ -32,7 +33,11 @@ function ConsultForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      fullname: "",
+      fullName: "",
+      pass: "",
+      mobile: "",
+      interest: "",
+      message: "",
     },
   });
 
@@ -48,11 +53,11 @@ function ConsultForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="flex flex-col space-y-4 w-full"
+          className="flex flex-col space-y-4 w-full max-w-screen-md"
         >
           <FormField
             control={form.control}
-            name="fullname"
+            name="fullName"
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Full Name</FormLabel>
@@ -62,6 +67,7 @@ function ConsultForm() {
                     {...field}
                   />
                 </FormControl>
+                <FormMessage />
               </FormItem>
             )}
           />
@@ -71,29 +77,30 @@ function ConsultForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Current Pass / Residential Status</FormLabel>
-                <FormControl>
-                  <Select {...field}>
+                <Select
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                >
+                  <FormControl>
                     <SelectTrigger className="w-full">
                       <SelectValue placeholder="Choose an option" />
                     </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="Employment Pass">
-                        Employment Pass
-                      </SelectItem>
-                      <SelectItem value="S Pass">S Pass</SelectItem>
-                      <SelectItem value="DP/LTVP/LTVP+">
-                        DP/LTVP/LTVP+
-                      </SelectItem>
-                      <SelectItem value="Student Pass">Student Pass</SelectItem>
-                      <SelectItem value="PE/Entre Pass">
-                        PE/Entre Pass
-                      </SelectItem>
-                      <SelectItem value="Work Pass/Work Permit">
-                        Work Pass/Work Permit
-                      </SelectItem>
-                    </SelectContent>
-                  </Select>
-                </FormControl>
+                  </FormControl>
+                  <SelectContent>
+                    <SelectItem value="Employment Pass">
+                      Employment Pass
+                    </SelectItem>
+                    <SelectItem value="S Pass">S Pass</SelectItem>
+                    <SelectItem value="DP/LTVP/LTVP+">DP/LTVP/LTVP+</SelectItem>
+                    <SelectItem value="Student Pass">Student Pass</SelectItem>
+                    <SelectItem value="PE/Entre Pass">PE/Entre Pass</SelectItem>
+                    <SelectItem value="Work Pass/Work Permit">
+                      Work Pass/Work Permit
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+
+                <FormMessage />
               </FormItem>
             )}
           />
@@ -109,6 +116,7 @@ function ConsultForm() {
                     {...field}
                   />
                 </FormControl>
+                <FormMessage />
               </FormItem>
             )}
           />
@@ -118,18 +126,22 @@ function ConsultForm() {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>Interested In</FormLabel>
-                <FormControl>
-                  <Select {...field}>
+                <Select
+                  onValueChange={field.onChange}
+                  defaultValue={field.value}
+                >
+                  <FormControl>
                     <SelectTrigger className="w-full">
                       <SelectValue placeholder="Choose an option" />
                     </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="Singapore PR">Singapore PR</SelectItem>
-                      <SelectItem value="Citizenship">Citizenship</SelectItem>
-                      <SelectItem value="Others">Others</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </FormControl>
+                  </FormControl>
+                  <SelectContent>
+                    <SelectItem value="Singapore PR">Singapore PR</SelectItem>
+                    <SelectItem value="Citizenship">Citizenship</SelectItem>
+                    <SelectItem value="Others">Others</SelectItem>
+                  </SelectContent>
+                </Select>
+                <FormMessage />
               </FormItem>
             )}
           />
@@ -146,6 +158,7 @@ function ConsultForm() {
                     className="h-20"
                   />
                 </FormControl>
+                <FormMessage />
               </FormItem>
             )}
           />

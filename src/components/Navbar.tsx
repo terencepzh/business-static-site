@@ -5,29 +5,53 @@ function Navbar() {
   const [click, setClick] = useState(false);
   return (
     <>
-      <header className="bg-orange-500 text-white">
+      <header className="sticky top-0 bg-orange-500 text-white">
         <div
-          className={`bg-gray-500/90 fixed right-0 transition duration-300 ease-in-out ${
+          className={`flex flex-col gap-4 fixed right-0 bg-white/95 text-orange-500 transition duration-300 ease-in-out ${
             click ? "translate-x-0" : "translate-x-full"
           }
-            z-90 w-[70%] h-lvh p-4`}
+            z-90 w-full h-lvh p-4`}
         >
           <img
             className="ml-auto"
             src="close.svg"
             onClick={() => setClick(!click)}
           />
-          <ul className="flex flex-col absolute top-24 gap-4">
+          <ul className="flex flex-col justify-center items-center gap-4">
+            <li>
+              <Link
+                to="/"
+                reloadDocument
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/#why-us"
+                reloadDocument
+              >
+                Why Us
+              </Link>
+            </li>
             <li>Singapore PR</li>
-            <li>Citizenship</li>
-            <li>Services</li>
-            <li>Why Choose Us</li>
-            <li>More</li>
+            <li>Our Services</li>
+            <li>
+              <Link
+                to="/contact-us"
+                reloadDocument
+              >
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
         <nav className="flex justify-between p-4 max-w-4xl mx-auto">
           <div>
-            <Link to="/">
+            <Link
+              to="/"
+              reloadDocument
+            >
               <img
                 src="logo.svg"
                 alt="Logo"
@@ -41,11 +65,17 @@ function Navbar() {
             className="sm:hidden"
           />
           <ul className="hidden sm:flex items-center gap-8 font-bold">
+            <li>Why Us</li>
             <li>Singapore PR</li>
-            <li>Citizenship</li>
-            <li>Services</li>
-            <li>Why Choose Us</li>
-            <li>More</li>
+            <li>Our Services</li>
+            <li>
+              <Link
+                to="/contact-us"
+                reloadDocument
+              >
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
