@@ -5,7 +5,7 @@ function Navbar() {
   const [click, setClick] = useState(false);
   return (
     <>
-      <header className="sticky top-0 bg-red-600 text-white">
+      <header className="sticky top-0 bg-white text-red-600">
         <div
           className={`flex flex-col gap-4 fixed right-0 bg-white/95 text-red-600 transition duration-300 ease-in-out ${
             click ? "translate-x-0" : "translate-x-full"
@@ -53,9 +53,9 @@ function Navbar() {
               reloadDocument
             >
               <img
-                src="logo.svg"
+                src="Logo.png"
                 alt="Logo"
-                className="w-6 h-6 sm:w-12 sm:h-12"
+                className="w-16"
               />
             </Link>
           </div>
