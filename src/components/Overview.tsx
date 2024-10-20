@@ -10,7 +10,7 @@ function Overview() {
       <div className="flex flex-col lg:flex-row gap-4 text-black p-4">
         <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
           <img
-            src="Overview1.png"
+            src="/Overview1.png"
             alt=""
           />
           <h1 className="text-3xl font-bold">1.</h1>
@@ -23,7 +23,7 @@ function Overview() {
         </div>
         <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
           <img
-            src="Overview2.png"
+            src="/Overview2.png"
             alt=""
           />
           <h1 className="text-3xl font-bold">2.</h1>
@@ -32,7 +32,7 @@ function Overview() {
         </div>
         <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
           <img
-            src="Overview3.png"
+            src="/Overview3.png"
             alt=""
           />
           <h1 className="text-3xl font-bold">3.</h1>
@@ -43,7 +43,7 @@ function Overview() {
         </div>
         <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
           <img
-            src="Overview4.png"
+            src="/Overview4.png"
             alt=""
           />
           <h1 className="text-3xl font-bold">4.</h1>
@@ -55,7 +55,7 @@ function Overview() {
         </div>
         <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
           <img
-            src="Overview5.png"
+            src="/Overview5.png"
             alt=""
           />
           <h1 className="text-3xl font-bold">5.</h1>

@@ -7,20 +7,20 @@ function Footer() {
       <div className="flex flex-col justify-center items-center gap-4 p-8">
         <div className="flex justify-evenly w-[80%] max-w-sm">
           <img
-            src="instagram.svg"
+            src="/instagram.svg"
             alt="Instagram"
           />
           <img
-            src="twitter.svg"
+            src="/twitter.svg"
             alt="X"
           />
           <img
-            src="facebook.svg"
+            src="/facebook.svg"
             alt="Facebook"
           />
 
           <img
-            src="linkedin.svg"
+            src="/linkedin.svg"
             alt="LinkedIn"
           />
         </div>

@@ -14,7 +14,7 @@ function Navbar() {
         >
           <img
             className="ml-auto"
-            src="close.svg"
+            src="/close.svg"
             onClick={() => setClick(!click)}
           />
           <ul className="flex flex-col justify-center items-center gap-4">
@@ -53,14 +53,14 @@ function Navbar() {
               reloadDocument
             >
               <img
-                src="Logo.png"
+                src="/Logo.png"
                 alt="Logo"
                 className="w-16"
               />
             </Link>
           </div>
           <img
-            src="menu.svg"
+            src="/menu.svg"
             onClick={() => setClick(!click)}
             className="sm:hidden"
           />

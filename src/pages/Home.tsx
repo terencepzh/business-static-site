@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="md:flex justify-evenly items-center">
-        <div className="bg-[url('home.jpeg')]  bg-no-repeat bg-cover w-full h-[320px] md:h-[640px] lg:[960px]"></div>
+        <div className="bg-[url('/home.jpeg')]  bg-no-repeat bg-cover w-full h-[320px] md:h-[640px] lg:[960px]"></div>
         <div className="flex flex-col justify-between items-center gap-4 text-red-600 text-center md:text-left xl:items-start w-full xl:h-80 px-6 py-8 md:py-6">
           <h1 className="text-4xl xl:text-5xl font-bold">
             Singapore PR & Citizenship Consulting
@@ -119,7 +119,7 @@ function App() {
             <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center md:text-left w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
               <div className="flex flex-col items-center md:items-start gap-4 h-full md:pt-12">
                 <img
-                  src="Service1.png"
+                  src="/Service1.png"
                   alt=""
                   className="w-16"
                 />
@@ -131,7 +131,7 @@ function App() {
             <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center md:text-left w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
               <div className="flex flex-col items-center md:items-start gap-4 h-full md:pt-12">
                 <img
-                  src="Service2.png"
+                  src="/Service2.png"
                   alt=""
                   className="w-16"
                 />
@@ -141,7 +141,7 @@ function App() {
             <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center md:text-left w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
               <div className="flex flex-col items-center md:items-start gap-4 h-full md:pt-12">
                 <img
-                  src="Service3.png"
+                  src="/Service3.png"
                   alt=""
                   className="w-16"
                 />
@@ -154,7 +154,7 @@ function App() {
             <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center md:text-left w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
               <div className="flex flex-col items-center md:items-start gap-4 h-full md:pt-12">
                 <img
-                  src="Service4.png"
+                  src="/Service4.png"
                   alt=""
                   className="w-16"
                 />
@@ -166,7 +166,7 @@ function App() {
             <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center md:text-left w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
               <div className="flex flex-col items-center md:items-start gap-4 h-full md:pt-12">
                 <img
-                  src="Service5.png"
+                  src="/Service5.png"
                   alt=""
                   className="w-16"
                 />
@@ -178,7 +178,7 @@ function App() {
             <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center md:text-left w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
               <div className="flex flex-col items-center md:items-start gap-4 h-full md:pt-12">
                 <img
-                  src="Service6.png"
+                  src="/Service6.png"
                   alt=""
                   className="w-16"
                 />
@@ -223,7 +223,7 @@ function App() {
       <div className="bg-[url(https://img.freepik.com/free-photo/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept_1423-126.jpg?size=626&ext=jpg&ga=GA1.1.1369675164.1728864000&semt=ais_hybrid-rr-similar)] bg-center bg-cover bg-no-repeat mt-8">
         <div className="flex flex-col justify-between items-center gap-4 bg-black/65 text-white text-center h-60 p-8">
           <img
-            src="phone.svg"
+            src="/phone.svg"
             alt=""
             className="h-10 w-10"
           />

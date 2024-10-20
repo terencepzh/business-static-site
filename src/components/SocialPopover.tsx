@@ -13,7 +13,7 @@ function SocialPopover() {
           className="bg-black/40 border rounded-full w-fit p-3"
         >
           <img
-            src="socials.svg"
+            src="/socials.svg"
             alt="Socials"
           />
         </PopoverTrigger>
@@ -21,31 +21,31 @@ function SocialPopover() {
           <div className="flex flex-col gap-4 items-end">
             <div className="bg-black/40 border rounded-full w-fit p-3">
               <img
-                src="instagram.svg"
+                src="/instagram.svg"
                 alt="Instagram"
               />
             </div>
             <div className="bg-black/40 border rounded-full w-fit p-3">
               <img
-                src="twitter.svg"
+                src="/twitter.svg"
                 alt="X"
               />
             </div>
             <div className="bg-black/40 border rounded-full w-fit p-3">
               <img
-                src="facebook.svg"
+                src="/facebook.svg"
                 alt="Facebook"
               />
             </div>
             <div className="bg-black/40 border rounded-full w-fit p-3">
               <img
-                src="linkedin.svg"
+                src="/linkedin.svg"
                 alt="LinkedIn"
               />
             </div>
             <div className="bg-black/40 border rounded-full w-fit p-3">
               <img
-                src="whatsapp.svg"
+                src="/whatsapp.svg"
                 alt="WhatsApp"
               />
             </div>
