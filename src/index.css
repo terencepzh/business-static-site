@@ -59,7 +59,7 @@
 @layer base {
   * {
     @apply border-border;
-    font-family: "Roboto", sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
   }
   body {
     @apply bg-background text-foreground;

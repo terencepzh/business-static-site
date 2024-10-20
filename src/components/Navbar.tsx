@@ -5,9 +5,9 @@ function Navbar() {
   const [click, setClick] = useState(false);
   return (
     <>
-      <header className="sticky top-0 bg-orange-500 text-white">
+      <header className="sticky top-0 bg-red-600 text-white">
         <div
-          className={`flex flex-col gap-4 fixed right-0 bg-white/95 text-orange-500 transition duration-300 ease-in-out ${
+          className={`flex flex-col gap-4 fixed right-0 bg-white/95 text-red-600 transition duration-300 ease-in-out ${
             click ? "translate-x-0" : "translate-x-full"
           }
             z-90 w-full h-lvh p-4`}
