@@ -5,6 +5,9 @@ import "./index.css";
 import Home from "./pages/Home.tsx";
 import Contact from "./pages/Contact.tsx";
 import Layout from "./layouts/Layout.tsx";
+import OurServices from "./pages/OurServices.tsx";
+import SingaporePr from "./pages/SingaporePR.tsx";
+import Faq from "./pages/Faq.tsx";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +15,30 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Home />
+      </Layout>
+    ),
+  },
+  {
+    path: "/singapore-pr",
+    element: (
+      <Layout>
+        <SingaporePr />
+      </Layout>
+    ),
+  },
+  {
+    path: "/our-services",
+    element: (
+      <Layout>
+        <OurServices />
+      </Layout>
+    ),
+  },
+  {
+    path: "/faq",
+    element: (
+      <Layout>
+        <Faq />
       </Layout>
     ),
   },

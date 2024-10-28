@@ -5,7 +5,7 @@ function Navbar() {
   const [click, setClick] = useState(false);
   return (
     <>
-      <header className="sticky top-0 bg-white text-red-600">
+      <header className="sticky top-0 bg-white text-red-600 z-90">
         <div
           className={`flex flex-col gap-4 fixed right-0 bg-white/95 text-red-600 transition duration-300 ease-in-out ${
             click ? "translate-x-0" : "translate-x-full"
@@ -34,8 +34,30 @@ function Navbar() {
                 Why Us
               </Link>
             </li>
-            <li>Singapore PR</li>
-            <li>Our Services</li>
+            <li>
+              <Link
+                to="/singapore-pr"
+                reloadDocument
+              >
+                Singapore PR
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/our-services"
+                reloadDocument
+              >
+                Our Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/faq"
+                reloadDocument
+              >
+                FAQ
+              </Link>
+            </li>
             <li>
               <Link
                 to="/contact-us"
@@ -55,7 +77,7 @@ function Navbar() {
               <img
                 src="/Logo.png"
                 alt="Logo"
-                className="w-16"
+                className="w-16 sm:w-36"
               />
             </Link>
           </div>
@@ -64,10 +86,32 @@ function Navbar() {
             onClick={() => setClick(!click)}
             className="sm:hidden"
           />
-          <ul className="hidden sm:flex items-center gap-8 font-bold">
+          <ul className="hidden sm:flex items-center gap-8 text-lg font-bold">
             <li>Why Us</li>
-            <li>Singapore PR</li>
-            <li>Our Services</li>
+            <li>
+              <Link
+                to="/singapore-pr"
+                reloadDocument
+              >
+                Singapore PR
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/our-services"
+                reloadDocument
+              >
+                Our Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/faq"
+                reloadDocument
+              >
+                FAQ
+              </Link>
+            </li>
             <li>
               <Link
                 to="/contact-us"

@@ -7,7 +7,7 @@ function Overview() {
         </h1>
         <p>Here's an overview of your journey with TIP</p>
       </div>
-      <div className="flex flex-col lg:flex-row gap-4 text-black p-4">
+      <div className="flex flex-col lg:flex-row gap-4 text-red-600 p-4">
         <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
           <img
             src="/Overview1.png"

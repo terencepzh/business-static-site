@@ -43,12 +43,14 @@ function SocialPopover() {
                 alt="LinkedIn"
               />
             </div>
-            <div className="bg-black/40 border rounded-full w-fit p-3">
-              <img
-                src="/whatsapp.svg"
-                alt="WhatsApp"
-              />
-            </div>
+            <a href="http://wa.me/6589628052">
+              <div className="bg-black/40 border rounded-full w-fit p-3">
+                <img
+                  src="/whatsapp.svg"
+                  alt="WhatsApp"
+                />
+              </div>
+            </a>
           </div>
         </PopoverContent>
       </Popover>
