@@ -6,7 +6,7 @@ import Home from "./pages/Home.tsx";
 import Contact from "./pages/Contact.tsx";
 import Layout from "./layouts/Layout.tsx";
 import OurServices from "./pages/OurServices.tsx";
-import SingaporePr from "./pages/SingaporePR.tsx";
+import SingaporePr from "./pages/SingaporePr.tsx";
 import Faq from "./pages/Faq.tsx";
 
 const router = createBrowserRouter([
