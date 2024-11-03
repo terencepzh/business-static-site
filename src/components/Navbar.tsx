@@ -13,11 +13,11 @@ function Navbar() {
             z-90 w-full h-lvh p-4`}
         >
           <img
-            className="ml-auto"
+            className="ml-auto md:w-10"
             src="/close.svg"
             onClick={() => setClick(!click)}
           />
-          <ul className="flex flex-col justify-center items-center gap-4">
+          <ul className="flex flex-col justify-center items-center md:text-xl gap-4">
             <li>
               <Link
                 to="/"
@@ -60,6 +60,14 @@ function Navbar() {
             </li>
             <li>
               <Link
+                to="/resources"
+                reloadDocument
+              >
+                Resources
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/contact-us"
                 reloadDocument
               >
@@ -68,7 +76,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <nav className="flex justify-between p-4 max-w-4xl mx-auto">
+        <nav className="flex justify-between max-w-4xl mx-auto p-4">
           <div>
             <Link
               to="/"
@@ -84,9 +92,9 @@ function Navbar() {
           <img
             src="/menu.svg"
             onClick={() => setClick(!click)}
-            className="sm:hidden"
+            className="lg:hidden md:w-[40px]"
           />
-          <ul className="hidden sm:flex items-center gap-8 text-lg font-bold">
+          <ul className="hidden lg:flex items-center gap-8 text-lg font-bold">
             <li>Why Us</li>
             <li>
               <Link
@@ -110,6 +118,14 @@ function Navbar() {
                 reloadDocument
               >
                 FAQ
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/resources"
+                reloadDocument
+              >
+                Resources
               </Link>
             </li>
             <li>

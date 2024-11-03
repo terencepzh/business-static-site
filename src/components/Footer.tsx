@@ -57,7 +57,7 @@ function Footer() {
         </div>
         <hr className="border-1 border-white w-full" />
         <div className="text-left md:text-base w-full">
-          <p>Email</p>
+          <a href="mailto: info@sgimmigrations.com">info@sgimmigrations.com</a>
           <p>Mobile</p>
           <p>Address</p>
         </div>

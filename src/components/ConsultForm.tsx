@@ -53,7 +53,7 @@ function ConsultForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="flex flex-col space-y-4 w-full max-w-screen-md"
+          className="flex flex-col space-y-4 w-full max-w-screen-lg"
         >
           <FormField
             control={form.control}
@@ -163,7 +163,7 @@ function ConsultForm() {
             )}
           />
           <Button
-            className="bg-orange-500"
+            className="bg-red-600"
             type="submit"
           >
             Book Your Consultation

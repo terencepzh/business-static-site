@@ -13,11 +13,12 @@ function Faq() {
   const [work, setWork] = useState(false);
 
   return (
-    <div className="flex flex-col gap-4 bg-white text-red-600 text-left px-6 py-8">
-      <h1 className="text-4xl xl:text-5xl text-center font-bold">
+    <div className="flex flex-col gap-4 bg-white text-left px-6 py-8">
+      <h1 className="text-red-600 text-4xl xl:text-5xl text-center font-bold">
         Frequently Asked Questions
       </h1>
-      <div>
+      {/* Toggle Groups */}
+      <div className="">
         <ToggleGroup
           type="single"
           className="flex justify-start items-center mt-4"
@@ -25,6 +26,7 @@ function Faq() {
           <ToggleGroupItem
             value="bold"
             aria-label="Toggle bold"
+            className="[&[data-state=on]]:text-red-600 [&[data-state=on]]:bg-red-600/20"
             onClick={() => {
               setPr(false);
               setWork(false);
@@ -36,6 +38,7 @@ function Faq() {
           <ToggleGroupItem
             value="italic"
             aria-label="Toggle italic"
+            className="[&[data-state=on]]:text-red-600 [&[data-state=on]]:bg-red-600/20"
             onClick={() => {
               setCitizenship(false);
               setWork(false);
@@ -47,6 +50,7 @@ function Faq() {
           <ToggleGroupItem
             value="strikethrough"
             aria-label="Toggle strikethrough"
+            className="[&[data-state=on]]:text-red-600 [&[data-state=on]]:bg-red-600/20"
             onClick={() => {
               setCitizenship(false);
               setPr(false);
@@ -61,12 +65,13 @@ function Faq() {
       <Accordion
         type="single"
         collapsible
+        className="*:*:[&[data-state=open]]:text-red-600"
       >
         <AccordionItem
           value="item-1"
-          className={`${citizenship ? "block" : "hidden"} w-full`}
+          className={`${citizenship ? "block" : "hidden"}  w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             What are the eligibility criteria to apply for Singapore citizenship
             as a foreigner?
           </AccordionTrigger>
@@ -102,7 +107,7 @@ function Faq() {
           value="item-2"
           className={`${citizenship ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             How long does the Singapore citizenship application process take?
           </AccordionTrigger>
           <AccordionContent>
@@ -116,13 +121,13 @@ function Faq() {
           value="item-3"
           className={`${citizenship ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Do I need to renounce my current citizenship to become a Singapore
             citizen?
           </AccordionTrigger>
           <AccordionContent>
             Yes, Singapore does not allow <b>dual citizenship</b>. If your
-            Singapore citizenship application is successful, you will need to
+            Singapore citizenship application is successful, you will need to{" "}
             <b>renounce your current citizenship</b> and submit proof of
             renunciation to the ICA. This is typically done before your
             citizenship registration is complete.
@@ -132,7 +137,7 @@ function Faq() {
           value="item-4"
           className={`${citizenship ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Will I need to serve National Service (NS) if I become a Singapore
             citizen?
           </AccordionTrigger>
@@ -148,7 +153,7 @@ function Faq() {
           value="item-5"
           className={`${citizenship ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             How will I know if my citizenship application is approved?
           </AccordionTrigger>
           <AccordionContent>
@@ -163,7 +168,7 @@ function Faq() {
           value="item-6"
           className={`${citizenship ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             If my citizenship application is rejected, how soon can I reapply?
           </AccordionTrigger>
           <AccordionContent>
@@ -178,7 +183,7 @@ function Faq() {
           value="item-7"
           className={`${citizenship ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Can I apply for Singapore citizenship if I’m living overseas?
           </AccordionTrigger>
           <AccordionContent>
@@ -193,7 +198,7 @@ function Faq() {
           value="item-8"
           className={`${citizenship ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Can I include my family in my PR application?
           </AccordionTrigger>
           <AccordionContent>
@@ -209,7 +214,7 @@ function Faq() {
           value="item-9"
           className={`${citizenship ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Do I need to renounce my current citizenship to apply for Singapore
             PR?
           </AccordionTrigger>
@@ -226,7 +231,7 @@ function Faq() {
           value="item-10"
           className={`${pr ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             What are the eligibility criteria for applying for Singapore
             Permanent Residency (PR)?
           </AccordionTrigger>
@@ -262,7 +267,7 @@ function Faq() {
           value="item-11"
           className={`${pr ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             How long does it take to process a Singapore PR application?
           </AccordionTrigger>
           <AccordionContent>
@@ -276,7 +281,7 @@ function Faq() {
           value="item-12"
           className={`${pr ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             How can I improve my chances of getting PR approval?
           </AccordionTrigger>
           <AccordionContent>
@@ -308,7 +313,7 @@ function Faq() {
           value="item-13"
           className={`${pr ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             What are the benefits of becoming a Singapore PR?
           </AccordionTrigger>
           <AccordionContent>
@@ -340,7 +345,7 @@ function Faq() {
           value="item-14"
           className={`${pr ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Will I need to serve National Service (NS) if I become a Singapore
             PR?
           </AccordionTrigger>
@@ -357,7 +362,7 @@ function Faq() {
           value="item-15"
           className={`${pr ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Can I apply for PR while living outside of Singapore?
           </AccordionTrigger>
           <AccordionContent>
@@ -371,7 +376,7 @@ function Faq() {
           value="item-16"
           className={`${pr ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Can I apply for PR if I am self-employed or a business owner?
           </AccordionTrigger>
           <AccordionContent>
@@ -388,7 +393,7 @@ function Faq() {
           value="item-17"
           className={`${pr ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             How will I know if my PR application is successful?
           </AccordionTrigger>
           <AccordionContent>
@@ -403,7 +408,7 @@ function Faq() {
           value="item-18"
           className={`${pr ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             What happens if my PR application is rejected?
           </AccordionTrigger>
           <AccordionContent>
@@ -419,7 +424,7 @@ function Faq() {
           value="item-19"
           className={`${work ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             What is a work pass in Singapore, and who needs one?
           </AccordionTrigger>
           <AccordionContent>
@@ -434,7 +439,7 @@ function Faq() {
           value="item-20"
           className={`${work ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             What are the main types of work passes available for foreigners?
           </AccordionTrigger>
           <AccordionContent>
@@ -476,7 +481,7 @@ function Faq() {
           value="item-21"
           className={`${work ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             What is the difference between an Employment Pass (EP) and an S
             Pass?
           </AccordionTrigger>
@@ -506,7 +511,7 @@ function Faq() {
           value="item-22"
           className={`${work ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             What is the Personalised Employment Pass (PEP) and how is it
             different from the regular Employment Pass?
           </AccordionTrigger>
@@ -538,7 +543,7 @@ function Faq() {
           value="item-23"
           className={`${work ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             What is the EntrePass, and who is eligible?
           </AccordionTrigger>
           <AccordionContent>
@@ -568,7 +573,7 @@ function Faq() {
           value="item-24"
           className={`${work ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Can an S Pass holder apply for PR in Singapore?
           </AccordionTrigger>
           <AccordionContent>
@@ -584,7 +589,7 @@ function Faq() {
           value="item-25"
           className={`${work ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             Can I apply for Singapore PR while holding a work pass?
           </AccordionTrigger>
           <AccordionContent>
@@ -600,7 +605,7 @@ function Faq() {
           value="item-26"
           className={`${work ? "block" : "hidden"} w-full`}
         >
-          <AccordionTrigger className="text-left">
+          <AccordionTrigger className="[&[data-state=open]]:text-red-600 text-left">
             How long does it take to process a work pass application?
           </AccordionTrigger>
           <AccordionContent>

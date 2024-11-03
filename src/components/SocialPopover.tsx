@@ -6,8 +6,8 @@ import {
 
 function SocialPopover() {
   return (
-    <div className="fixed right-5 bottom-5 z-90">
-      <Popover>
+    <div className="fixed right-6 bottom-6 z-90">
+      {/* <Popover>
         <PopoverTrigger
           asChild
           className="bg-black/40 border rounded-full w-fit p-3"
@@ -53,7 +53,15 @@ function SocialPopover() {
             </a>
           </div>
         </PopoverContent>
-      </Popover>
+      </Popover> */}
+      <a href="http://wa.me/6589628052">
+        <div className="bg-black/40 border rounded-full w-fit p-4">
+          <img
+            src="/whatsapp.svg"
+            alt="WhatsApp"
+          />
+        </div>
+      </a>
     </div>
   );
 }

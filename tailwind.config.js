@@ -11,6 +11,11 @@ export default {
         90: "90",
         100: "100",
       },
+      textShadow: {
+        sm: "1px 1px 2px var(--tw-shadow-color)",
+        DEFAULT: "1px 2px 4px var(--tw-shadow-color)",
+        lg: "1px 8px 16px var(--tw-shadow-color)",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

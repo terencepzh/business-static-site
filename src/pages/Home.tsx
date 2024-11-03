@@ -9,17 +9,42 @@ function App() {
   return (
     <>
       <div className="md:flex justify-evenly items-center">
-        <div className="bg-[url('/home.jpg')] bg-no-repeat bg-cover bg-[65%] w-full h-[320px] md:h-[640px] lg:h-[960px]"></div>
-        <div className="flex flex-col justify-between items-center gap-4 text-red-600 text-center md:text-left md:items-start w-full xl:h-80 px-6 py-8 md:py-6">
+        <div className="bg-[url('/home.jpg')] bg-no-repeat bg-cover bg-[65%] w-full h-[320px] md:h-[700px]">
+          <div className="hidden md:flex flex-col justify-center items-center gap-4 bg-black/45 text-red-600 text-center w-full h-full px-6 py-8">
+            <div className="flex flex-col justify-between items-center gap-4 max-w-screen-md h-4/5">
+              <h1 className="flex flex-col gap-4 text-5xl lg:text-6xl xl:text-5xl font-bold">
+                <p>Singapore's Leading</p>
+                <p>Immigration Consultancy</p>
+              </h1>
+              <h3 className="text-white text-xl drop-shadow-lg">
+                Your leading consultancy for Singapore immigration advice. Over
+                20 years of providing unmatched service and excellence.
+              </h3>
+              <p className="text-4xl md:text-5xl text-white text-center font-bold drop-shadow-lg">
+                Unlimited Warranty Till Approval!
+              </p>
+              <Button className="bg-red-600 text-white text-xl border rounded-full w-full max-w-sm h-16">
+                <Link to="/contact-us">
+                  Book your <span className="text-2xl font-bold">FREE</span>{" "}
+                  consultation now
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className="flex md:hidden flex-col justify-between items-center gap-4 text-red-600 text-center w-full px-6 py-8">
           <h1 className="text-4xl xl:text-5xl font-bold">
-            Singapore PR & Citizenship Consulting
+            Singapore's Leading Immigration Consultancy
           </h1>
-          <h3 className="xl:text-lg">
+          <h3 className="xl:text-lg tracking-wide">
             Your leading consultancy for Singapore immigration advice. Over 20
             years of providing unmatched service and excellence.
           </h3>
           <Button className="bg-red-600 text-white border rounded-full w-full max-w-sm h-12">
-            <Link to="/contact-us">Book a consultation now</Link>
+            <Link to="/contact-us">
+              Book your <span className="text-base font-bold">FREE</span>{" "}
+              consultation now
+            </Link>
           </Button>
         </div>
       </div>
@@ -80,21 +105,31 @@ function App() {
             </Card>
           </div>
         </div>
+        <div className="flex flex-col items-center gap-4 mt-6">
+          <h1 className="text-4xl xl:text-5xl text-center font-bold">
+            Check your success rate now
+          </h1>
+          <p className="text-sm xl:text-base">
+            Want to know the current state of your application details? Click on
+            our free PR & Citizenship quiz below!
+          </p>
+          <Button className="bg-white text-red-600 text-xl border rounded-full w-full max-w-sm h-12">
+            <Link to="/quiz">Free PR & Citizenship Quiz</Link>
+          </Button>
+        </div>
       </div>
+      {/* Nationalities */}
       <div className="flex flex-col justify-center items-center gap-4 text-red-600 text-center px-6 py-8">
-        <h1 className="text-4xl text-center font-bold">
-          We Serve Clients From
-        </h1>
-        <div>Companies TBD</div>
-        <h1 className="text-2xl text-center font-bold">
+        <h1 className="text-4xl lg:text-5xl text-center font-bold">
           We have helped multiple nationalities
         </h1>
-        <h3 className="text-sm">
+        <h3 className="text-sm lg:text-base">
           Regardless of your country of origin, we will ensure that your chances
           to obtain PR & Citizenship is optimized.
         </h3>
         <div>Countries TBD</div>
       </div>
+      {/* Testimonials */}
       <div className="flex flex-col gap-4 bg-red-600 text-white text-center px-6 py-8">
         <h1 className="text-4xl text-center font-bold">Our Testimonials</h1>
         <h3 className="text-sm">
@@ -104,7 +139,6 @@ function App() {
       </div>
       <Overview />
       <Services />
-      <Quiz />
     </>
   );
 }

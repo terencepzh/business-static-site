@@ -1,10 +1,9 @@
-import PackageCarousel from "@/components/PackageCarousel";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 function SingaporePr() {
   return (
-    <div className="">
+    <>
       <div className="bg-[url(https://img.freepik.com/free-photo/business-man-financial-inspector-secretary-making-report-calculating-checking-balance-internal-revenue-service-inspector-checking-document-audit-concept_1423-126.jpg?size=626&ext=jpg&ga=GA1.1.1369675164.1728864000&semt=ais_hybrid-rr-similar)] bg-center bg-cover bg-no-repeat">
         <div className="flex flex-col justify-center items-center gap-4 bg-black/65 text-white text-center h-[360px] p-8">
           <div className="flex flex-col gap-2">
@@ -30,7 +29,7 @@ function SingaporePr() {
       <div className="flex flex-col lg:flex-row justify-center items-center gap-4 px-6 py-8 lg:p-0 lg:mb-4">
         <div className="bg-[url(https://images.unsplash.com/photo-1507537362848-9c7e70b7b5c1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHR3byUyMHBlb3BsZSUyMHRhbGtpbmd8ZW58MHx8MHx8fDA%3D)] bg-center lg:bg-[65%] bg-cover bg-no-repeat w-full h-[370px] lg:h-[840px]"></div>
         <div className="flex flex-col gap-4 md:gap-6 items-center text-red-600 w-full *:lg:pr-8">
-          <h1 className="text-4xl lg:text-3xl font-bold">
+          <h1 className="text-4xl lg:text-5xl text-center lg:text-left font-bold w-full">
             Becoming a Singapore Permanent Resident
           </h1>
           <p className="text-base">
@@ -76,7 +75,9 @@ function SingaporePr() {
                   alt=""
                   className="w-16"
                 />
-                <h1 className="text-lg lg:text-2xl">PR Rejection & Appeals</h1>
+                <h1 className="text-lg lg:text-2xl font-bold">
+                  PR Rejection & Appeals
+                </h1>
                 <p>For individuals</p>
               </div>
             </div>
@@ -87,7 +88,9 @@ function SingaporePr() {
                   alt=""
                   className="w-16"
                 />
-                <h1 className="text-lg lg:text-2xl">Spouse PR Application</h1>
+                <h1 className="text-lg lg:text-2xl font-bold">
+                  Spouse PR Application
+                </h1>
                 <p>For individuals & partners</p>
               </div>
             </div>
@@ -98,7 +101,9 @@ function SingaporePr() {
                   alt=""
                   className="w-16"
                 />
-                <h1 className="text-lg lg:text-2xl">Parent PR Application</h1>
+                <h1 className="text-lg lg:text-2xl font-bold">
+                  Parent PR Application
+                </h1>
                 <p>For individuals & families</p>
               </div>
             </div>
@@ -109,7 +114,7 @@ function SingaporePr() {
                   alt=""
                   className="w-16"
                 />
-                <h1 className="text-lg lg:text-2xl">
+                <h1 className="text-lg lg:text-2xl font-bold">
                   PR Application for EP Holders
                 </h1>
                 <p>For working individuals</p>
@@ -122,7 +127,7 @@ function SingaporePr() {
                   alt=""
                   className="w-16"
                 />
-                <h1 className="text-lg lg:text-2xl">
+                <h1 className="text-lg lg:text-2xl font-bold">
                   PR Application for SP Holders
                 </h1>
                 <p>For working individuals</p>
@@ -135,10 +140,10 @@ function SingaporePr() {
                   alt=""
                   className="w-16"
                 />
-                <h1 className="text-lg lg:text-2xl">
+                <h1 className="text-lg lg:text-2xl font-bold">
                   PR Application for Students
                 </h1>
-                <p>For businesses</p>
+                <p>For studying individuals</p>
               </div>
             </div>
           </div>
@@ -211,12 +216,12 @@ function SingaporePr() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-4 w-full px-6 py-8">
+      <div className="flex flex-col justify-center items-center gap-6 w-full px-6 py-8">
         <h1 className="text-4xl xl:text-5xl text-red-600 text-center font-bold">
-          Our Services
+          What Assurance Immigration provides
         </h1>
         <h3 className="text-base lg:text-lg">
-          Select the best package for{" "}
+          Flexible options, tailored just for{" "}
           <i className="text-red-600 font-bold">you</i>!
         </h3>
         <Button className="bg-red-600 text-base border rounded-full md:w-full max-w-sm h-12">
@@ -227,9 +232,63 @@ function SingaporePr() {
             Talk to an expert!
           </Link>
         </Button>
-        <PackageCarousel />
+        <div className="flex flex-col gap-6">
+          <p>
+            At Assurance Immigration, we ​pride ourselves on providing
+            dedicated, expert-led support with flexible payment options and
+            comprehensive guidance, ensuring a smooth journey through every step
+            of your application process.
+          </p>
+          <ul className="list-disc list-outside ml-4">
+            <li>
+              A <b>dedicated Immigration Expert</b> to manage your entire
+              application journey
+            </li>
+            <li>
+              <b>Unlimited reapplication</b> Till Approval
+            </li>
+            <li>
+              <b>Expert Knowledge of Singapore Immigration Laws and Policies</b>
+            </li>
+            <li>
+              <b>Flexible Plans</b> for payment, option to pay $500 application
+              fee + remaining payment upon approval
+            </li>
+            <li>
+              <b>Detailed Application Guide</b>
+            </li>
+            <li>
+              A <b>Director</b> Overseeing Application Before Submission
+            </li>
+            <li>
+              <b>Personalized Cover Letter and testimonials</b> from a senior
+              immigration copywriter (up to 2 changes after the first review)
+            </li>
+            <li>
+              Extended <b>one-on-one Session with a senior associate</b> to
+              discuss your cover letter
+            </li>
+            <li>
+              <b>Unlimited Consultations</b>
+            </li>
+            <li>
+              <b>Complimentary Financial Health Assessment</b>
+            </li>
+            <li>
+              <b>Editable soft copy</b> of submitted document package for ICA
+            </li>
+            <li>
+              <b>Post-Submission Advisory and Support</b>
+            </li>
+            <li>
+              Email and Call Response Within One Business Day (9 AM – 6 PM,
+              excluding weekends and public holidays)
+            </li>
+            <li>$200 per Additional Family Member</li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
