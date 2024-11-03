@@ -17,7 +17,6 @@ import {
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { useState } from "react";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
@@ -58,8 +57,6 @@ function Quiz() {
     // ✅ This will be type-safe and validated.
     console.log(values);
   }
-
-  const [page, setPage] = useState(1);
 
   return (
     <div className="flex flex-col gap-4 items-center px-6 py-8">

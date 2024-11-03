@@ -1,9 +1,3 @@
-import {
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-} from "@/components/ui/popover";
-
 function SocialPopover() {
   return (
     <div className="fixed right-6 bottom-6 z-90">

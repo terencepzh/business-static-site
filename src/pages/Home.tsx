@@ -1,5 +1,4 @@
 import Overview from "@/components/Overview";
-import Quiz from "@/components/Quiz";
 import Services from "@/components/Services";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
