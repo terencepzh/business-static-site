@@ -56,10 +56,15 @@ function Footer() {
           </Button>
         </div>
         <hr className="border-1 border-white w-full" />
-        <div className="text-left md:text-base w-full">
-          <a href="mailto: info@sgimmigrations.com">info@sgimmigrations.com</a>
-          <p>Mobile</p>
-          <p>Address</p>
+        <div className="flex flex-col text-left md:text-base w-full">
+          <a href="mailto: info@sgimmigrations.com">
+            <u>info@sgimmigrations.com</u>
+          </a>
+          <a href="http://wa.me/6589628052">
+            <u>+65 89628052</u>
+          </a>
+          <p>60 Paya Lebar Road (Paya Lebar Square) #07-54,</p>
+          <p>Singapore 409051</p>
         </div>
         <p className="text-center">© 2024 Lennon - All Rights Reserved.</p>
       </div>
