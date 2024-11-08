@@ -68,7 +68,11 @@ function SingaporePr() {
             </h1>
           </div>
           <div className="flex flex-wrap *:text-center *:h-[240px] md:*:h-[320px] lg:*:h-[400px]">
-            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+            <Link
+              to="/pr-application-rejection"
+              reloadDocument
+              className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4"
+            >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-8">
                 <img
                   src="/Service1.png"
@@ -80,8 +84,12 @@ function SingaporePr() {
                 </h1>
                 <p>For individuals</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+            </Link>
+            <Link
+              to="/spouse-pr-application"
+              reloadDocument
+              className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4"
+            >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
                   src="/Service2.png"
@@ -93,8 +101,12 @@ function SingaporePr() {
                 </h1>
                 <p>For individuals & partners</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+            </Link>
+            <Link
+              to="/parent-pr-application"
+              reloadDocument
+              className="flex flex-col gap-4 border-t md:border-t-0 md:border-r-0 xl:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4"
+            >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
                   src="/Service3.png"
@@ -106,8 +118,12 @@ function SingaporePr() {
                 </h1>
                 <p>For individuals & families</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+            </Link>
+            <Link
+              to="/ep-holder-pr-application"
+              reloadDocument
+              className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4"
+            >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
                   src="/Service4.png"
@@ -119,8 +135,12 @@ function SingaporePr() {
                 </h1>
                 <p>For working individuals</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+            </Link>
+            <Link
+              to="/sp-holder-pr-application"
+              reloadDocument
+              className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4"
+            >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
                   src="/Service5.png"
@@ -132,8 +152,12 @@ function SingaporePr() {
                 </h1>
                 <p>For working individuals</p>
               </div>
-            </div>
-            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+            </Link>
+            <Link
+              to="/student-pr-application"
+              reloadDocument
+              className="flex flex-col gap-4 border-t md:border-t-0 md:border-r-0 border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4"
+            >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
                   src="/Service6.png"
@@ -145,69 +169,99 @@ function SingaporePr() {
                 </h1>
                 <p>For studying individuals</p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
       {/* Eligibility */}
       <div className="flex justify-center w-full">
-        <div className="flex flex-col justify-center items-center gap-4 text-black w-full px-6 py-8">
+        <div className="flex flex-col justify-center items-center gap-4 text-red-600 w-full px-6 py-8">
           <div className="flex flex-col gap-4 w-full">
-            <h1 className="text-4xl xl:text-5xl text-red-600 text-center font-bold">
+            <h1 className="text-4xl xl:text-5xl text-center font-bold">
               Eligibility
             </h1>
           </div>
-          <div className="flex flex-wrap *:items-start *:bg-red-100 *:text-left *:h-[240px] md:*:h-[320px] lg:*:h-[400px]">
-            <div className="flex flex-col gap-4 border-2 md:border-0 md:border-t-2 md:border-l-2 xl:border-b-2 border-gray-400 w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">01</h1>
-                <p className="text-sm md:text-base">
+          <div className="flex flex-wrap *:text-center">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 md:pt-12 px-6">
+                <img
+                  src="/Service1.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">01</h1>
+                <p>
                   You are currently employed in Singapore on a valid Employment
                   Pass (EP), S Pass, or Personalised Employment Pass (PEP).​
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 border-2 border-t-0 md:border-0 md:border-t-2 md:border-l-2 xl:border-b-2 border-gray-400 text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">02</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service2.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">02</h1>
+                <p>
                   You are the spouse of a Singapore Citizen or Permanent
                   Resident.​
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 border-2 border-t-0 md:border-b-0 md:border-t-2 xl:border-b-2 xl:border-r-0 border-gray-400 text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">03</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r-0 xl:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service3.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">03</h1>
+                <p>
                   You are under 21 years old and the unmarried child of a
                   Singapore Citizen or Permanent Resident.​
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 border-2 border-t-0 md:border-t-2 md:border-r-0 border-gray-400 text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">04</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service4.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">04</h1>
+                <p>
                   You are 60 years old or older and the parent of a Singapore
                   Citizen.
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 border-2 border-t-0 md:border-t-2 md:border-r-0 border-gray-400 text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">05</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service5.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">05</h1>
+                <p>
                   You are studying in Singapore on a student pass and have
                   completed local national exams, such as the PSLE, GCE
                   ‘N’/’O’/’A’ Levels, or the Integrated Programme (IP).
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 border-2 border-t-0 md:border-t-2 border-gray-400 text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">06</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r-0 border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service6.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">06</h1>
+                <p>
                   You’re a foreign investor, entrepreneur or family office
                   principal in Singapore with $10 Million to invest locally.
                 </p>

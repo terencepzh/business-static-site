@@ -28,14 +28,6 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/#why-us"
-                reloadDocument
-              >
-                Why Us
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/singapore-pr"
                 reloadDocument
               >
@@ -95,7 +87,6 @@ function Navbar() {
             className="lg:hidden md:w-[40px]"
           />
           <ul className="hidden lg:flex items-center gap-8 text-lg font-bold">
-            <li>Why Us</li>
             <li>
               <Link
                 to="/singapore-pr"

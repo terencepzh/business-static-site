@@ -59,46 +59,66 @@ function Citizenship() {
       </div>
       {/* Eligibility */}
       <div className="flex justify-center w-full">
-        <div className="flex flex-col justify-center items-center gap-4 text-black w-full px-6 py-8">
+        <div className="flex flex-col justify-center items-center gap-4 text-red-600 w-full px-6 py-8">
           <div className="flex flex-col gap-4 w-full">
-            <h1 className="text-4xl xl:text-5xl text-red-600 text-center font-bold">
+            <h1 className="text-4xl xl:text-5xl text-center font-bold">
               Eligibility
             </h1>
           </div>
-          <div className="flex flex-wrap justify-center *:items-start *:bg-red-100 *:text-left">
-            <div className="flex flex-col gap-4 border-2 border-gray-400 w-full md:basis-1/3 xl:basis-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">01</h1>
-                <p className="text-sm md:text-base">
+          <div className="flex md:justify-center flex-wrap *:text-center">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 md:pt-12 px-6">
+                <img
+                  src="/Service1.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">01</h1>
+                <p>
                   You must be a Singapore Permanent Resident (PR) for at least
                   two years and are 21 years old and above
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 border-2 border-t-0 md:border-l-0 md:border-t-2 xl:border-b-2 border-gray-400 text-center w-full md:basis-1/3 xl:basis-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">02</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service2.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">02</h1>
+                <p>
                   You must be a Singapore Permanent Resident (PR) for at least
                   two years and have at least two years of marriage to a
                   Singapore Citizen.
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 border-2 border-t-0 md:border-l-0 md:border-t-2 xl:border-b-2 xl:border-r-0 border-gray-400 text-center w-full md:basis-1/3 xl:basis-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">03</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r-0 xl:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service3.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">03</h1>
+                <p>
                   You’re an unmarried child under the age of 21 born to a
                   Singapore Citizen or who was legally adopted by a Singapore
                   Citizen.
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 border-gray-400 border-2 border-t-0 md:border-t-0 md:border-r-0 xl:border-t-2  text-center w-full md:basis-1/3 xl:basis-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">04</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service4.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">04</h1>
+                <p>
                   You’re a Singapore Permanent Resident (PR) studying in
                   Singapore; and has lived in Singapore for more than 3 years
                   (at least one year as a PR); and has passed at least one
@@ -107,10 +127,15 @@ function Citizenship() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 border-gray-400 border-2 border-t-0 md:border-t-0 xl:border-t-2 text-center w-full md:basis-1/3 xl:basis-1/6 p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">05</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/5 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service5.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">05</h1>
+                <p>
                   You’re a Singapore Permanent Resident (PR) and an Aged Parent
                   of a Singapore Citizen.
                 </p>

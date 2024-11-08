@@ -60,27 +60,37 @@ function StudentPass() {
       </div>
       {/* Eligibility */}
       <div className="flex justify-center w-full">
-        <div className="flex flex-col justify-center items-center gap-4 text-black w-full px-6 py-8">
+        <div className="flex flex-col justify-center items-center gap-4 text-red-600 w-full px-6 py-8">
           <div className="flex flex-col gap-4 w-full">
-            <h1 className="text-4xl xl:text-5xl text-red-600 text-center font-bold">
+            <h1 className="text-4xl xl:text-5xl text-center font-bold">
               Eligibility
             </h1>
           </div>
-          <div className="flex flex-wrap justify-center *:items-start *:bg-red-100 *:text-left max-w-screen-lg">
-            <div className="flex flex-col gap-4 md:basis-1/2 border-2 border-gray-400 w-full p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">01</h1>
-                <p className="text-sm md:text-base">
+          <div className="flex justify-center flex-wrap *:text-center">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 md:pt-12 px-6">
+                <img
+                  src="/Service1.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">01</h1>
+                <p>
                   Offered/accepted a full-time course in Institutes of Higher
                   Learning (IHLs): Universities, polytechnics, and other
                   tertiary institutions
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-4 md:basis-1/2 border-2 border-t-0 md:border-l-0 md:border-t-2 xl:border-b-2 border-gray-400 text-center w-full p-10 px-4">
-              <div className="flex flex-col gap-4 h-full">
-                <h1 className="text-4xl lg:text-5xl font-bold">02</h1>
-                <p className="text-sm md:text-base">
+            <div className="flex flex-col gap-4 border-t md:border-t-0 border-grey text-center w-full sm:w-1/2 md:w-1/3 xl:w-1/6 p-10 px-4">
+              <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-6">
+                <img
+                  src="/Service2.png"
+                  alt=""
+                  className="w-16"
+                />
+                <h1 className="text-4xl font-bold">02</h1>
+                <p>
                   Offered/accepted a full-time course in Private Education
                   Institutions (PEIs): Only PEIs that are registered with the
                   Committee for Private Education (CPE) can apply for a Student
@@ -96,7 +106,6 @@ function StudentPass() {
         <h1 className="text-4xl xl:text-5xl text-red-600 text-center font-bold">
           How we can help you
         </h1>
-
         <Button className="bg-red-600 text-base border rounded-full md:w-full max-w-sm h-12">
           <Link
             to="/contact-us"
@@ -105,31 +114,81 @@ function StudentPass() {
             Let us help you!
           </Link>
         </Button>
-        <Card className="flex flex-col justify-between items-center max-w-[350px] bg-red-600 text-white">
-          <CardHeader>
-            <CardTitle className="text-lg">
-              <h1 className="text-3xl text-center">
-                Student Pass Application Guidance & Administration
-              </h1>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col items-center">
-                <p className="font-bold">processing fees from</p>
-                <p className="text-4xl font-bold">$180</p>
-              </div>
-              <Button className="bg-white text-red-600 text-base border rounded-full md:w-full max-w-sm h-12">
-                <Link
-                  to="/contact-us"
-                  reloadDocument
-                >
-                  Find out more!
-                </Link>
-              </Button>
+        <div className="flex gap-6">
+          <div className="flex flex-col gap-4 basis-2/3">
+            <div className="bg-red-600 rounded-xl text-white p-6">
+              <p>
+                <b>
+                  1. Secure Admission to an Institute of Higher Learning (IHL) -
+                </b>
+                We guide you in selecting and applying to recognized
+                institutions, ensuring your eligibility for the Student Pass.
+              </p>
             </div>
-          </CardContent>
-        </Card>
+            <div className="bg-gray-200 rounded-xl text-red-600 p-6">
+              <p>
+                <b>
+                  2. IHL Registers You with SOLAR (Student’s Pass Online
+                  Application & Registration) –{" "}
+                </b>
+                We assist in coordinating with your chosen institution to ensure
+                your details are correctly registered with SOLAR.
+              </p>
+            </div>
+            <div className="bg-red-600 rounded-xl text-white p-6">
+              <p>
+                <b>3. Receive Your SOLAR Reference Number – </b> We monitor the
+                registration process and provide timely updates, making sure you
+                receive your reference number without delays.
+              </p>
+            </div>
+            <div className="bg-gray-200 rounded-xl text-red-600 p-6">
+              <p>
+                <b>4. Log in to SOLAR and Complete the Application – </b>
+                We offer step-by-step guidance on completing your application
+                form, ensuring all necessary details are correctly filled out to
+                avoid processing delays.
+              </p>
+            </div>
+            <div className="bg-red-600 rounded-xl text-white p-6">
+              <p>
+                <b>5. Pay the Application Fee – </b>We assist with payment
+                guidance and ensure that your application moves forward smoothly
+                after the fee is submitted.
+              </p>
+            </div>
+            <div className="bg-gray-200 rounded-xl text-red-600 p-6">
+              <p>
+                <b>6. Await the Decision – </b>
+                We track the status of your application and keep you updated on
+                its progress, minimizing the need for you to monitor.
+              </p>
+            </div>
+            <div className="bg-red-600 rounded-xl text-white p-6">
+              <p>
+                <b>7. Receive the In-Principle Approval (IPA) Letter – </b>We
+                help you understand your IPA letter and prepare you for the next
+                steps, including travel arrangements and entry formalities.
+              </p>
+            </div>
+            <div className="bg-gray-200 rounded-xl text-red-600 p-6">
+              <p>
+                <b>8. Receive a Visit Pass Upon Arrival – </b>
+                We provide pre-arrival guidance and assist with any entry
+                requirements, ensuring a smooth transition upon landing in
+                Singapore.
+              </p>
+            </div>
+            <div className="bg-red-600 rounded-xl text-white p-6">
+              <p>
+                <b>9. Arrange an Appointment at ICA – </b> We assist in booking
+                your ICA appointment, advise on the documents needed, and guide
+                you through the collection process to avoid any issues.
+              </p>
+            </div>
+          </div>
+          <div className="hidden md:block basis-1/3 bg-[url('https://static.wixstatic.com/media/a8fdda25916241a9a05253a435f1ae08.jpg/v1/fill/w_843,h_1574,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/School%20LIbrary.jpg')] bg-cover w-full h-inherit"></div>
+        </div>
       </div>
       <div className="flex flex-col justify-center items-center gap-4 w-full px-6 py-8">
         <h1 className="text-4xl xl:text-5xl text-red-600 text-center font-bold">

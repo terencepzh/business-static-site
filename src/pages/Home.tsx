@@ -137,7 +137,24 @@ function App() {
         <div>Testimonials TBD</div>
       </div>
       <Overview />
-      <Services />
+      {/* Services */}
+      <div className="flex justify-center w-full">
+        <div className="flex flex-col justify-center items-center gap-12 text-red-600 w-full px-6 py-8">
+          <div className="flex flex-col gap-4 w-full">
+            <h1 className="text-4xl xl:text-5xl text-center font-bold">
+              Our Services
+            </h1>
+            <h3 className="text-sm text-justify">
+              At SG Immigrations, we specialize in helping foreigners navigate
+              the path to a successful future in Singapore. With expertise in
+              all immigration avenues, we work closely with you to identify the
+              most suitable option and guide you through the process for a
+              smooth and successful outcome.
+            </h3>
+          </div>
+          <Services />
+        </div>
+      </div>
     </>
   );
 }
