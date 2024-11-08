@@ -12,7 +12,7 @@ function Article4() {
         </h1>
         <img
           src="https://static.wixstatic.com/media/a80fdd_16d5e82f872045c8be168b55cd52e34b~mv2.jpg/v1/fill/w_581,h_327,fp_0.50_0.50,q_90,enc_auto/a80fdd_16d5e82f872045c8be168b55cd52e34b~mv2.jpg"
-          alt="Cover Image"
+          alt="Cover Picture"
         />
         <div className="flex flex-col gap-6 text-xs md:text-sm">
           <p>
