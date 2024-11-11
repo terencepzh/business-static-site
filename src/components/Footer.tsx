@@ -20,7 +20,7 @@ function Footer() {
               as possible!
             </p>
           </div>
-          <a href="http://wa.me/6589628052">
+          <a href="http://wa.me/6589628052?text=Hello!%20I%20recently%20came%20across%20your%20website%20offering%20Singapore%20PR%20and%20Citizenship%20consulting%20services.%20I%20would%20like%20to%20learn%20more%20about%20the%20services%20you%20offer.">
             <Button className="bg-green-600 text-white lg:text-base border rounded-full max-w-sm h-12">
               WhatsApp
             </Button>
