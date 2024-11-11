@@ -16,7 +16,6 @@ import BRS from "./pages/BRS.tsx";
 import GIP from "./pages/GIP.tsx";
 import WorkPass from "./pages/WorkPass.tsx";
 import StudentPass from "./pages/StudentPass.tsx";
-import Quiz from "./pages/Quiz.tsx";
 import Article2 from "./pages/resource-pages/Article2.tsx";
 import Article3 from "./pages/resource-pages/Article3.tsx";
 import Article4 from "./pages/resource-pages/Article4.tsx";
@@ -303,15 +302,6 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Contact />
-      </Layout>
-    ),
-  },
-  // Quiz
-  {
-    path: "/quiz",
-    element: (
-      <Layout>
-        <Quiz />
       </Layout>
     ),
   },

@@ -8,7 +8,7 @@ function Overview() {
         <p>Here's an overview of your journey with TIP</p>
       </div>
       <div className="flex flex-col lg:flex-row gap-4 text-red-600 p-4">
-        <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
+        <div className="flex flex-col justify-start items-center gap-2 border-t border-b lg:border-0 lg:border-r text-center w-full lg:w-1/5 p-6 px-8">
           <img
             src="/Overview1.png"
             alt=""
@@ -21,7 +21,7 @@ function Overview() {
             Schedule a consultation session physically or online. Find out more.
           </p>
         </div>
-        <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
+        <div className="flex flex-col justify-start items-center gap-2 border-b lg:border-0 lg:border-r text-center w-full lg:w-1/5 p-6 px-8">
           <img
             src="/Overview2.png"
             alt=""
@@ -30,7 +30,7 @@ function Overview() {
           <h2 className="text-xl font-bold">Profile-building</h2>
           <p>At least 3-4 months to properly prepare and build every case.</p>
         </div>
-        <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
+        <div className="flex flex-col justify-start items-center gap-2 border-b lg:border-0 lg:border-r text-center w-full lg:w-1/5 p-6 px-8">
           <img
             src="/Overview3.png"
             alt=""
@@ -41,7 +41,7 @@ function Overview() {
           </h2>
           <p>Consistent advisory and support at every milestone.</p>
         </div>
-        <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
+        <div className="flex flex-col justify-start items-center gap-2 border-b lg:border-0 lg:border-r text-center w-full lg:w-1/5 p-6 px-8">
           <img
             src="/Overview4.png"
             alt=""
@@ -53,7 +53,7 @@ function Overview() {
             application to the immigration authorities.
           </p>
         </div>
-        <div className="flex flex-col justify-start items-center gap-2 border-black border rounded-lg text-center w-full lg:w-1/5 p-6 px-8">
+        <div className="flex flex-col justify-start items-center gap-2 border-b lg:border-0 text-center w-full lg:w-1/5 p-6 px-8">
           <img
             src="/Overview5.png"
             alt=""

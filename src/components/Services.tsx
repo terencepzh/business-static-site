@@ -96,7 +96,7 @@ function Services() {
               <h1 className="text-lg lg:text-2xl">Global Investor Programme</h1>
             </Link>
           </div>
-          <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-r-0 border-grey text-center w-full md:w-1/2 lg:w-1/4 xl:w-[14.2%] p-10 px-4">
+          <div className="flex flex-col gap-4 border-t border-b md:border-t-0 md:border-r-0 lg:border-0 border-grey text-center w-full md:w-1/2 lg:w-1/4 xl:w-[14.2%] p-10 px-4">
             <Link
               to="/business-relocation-service"
               reloadDocument
