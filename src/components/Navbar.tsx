@@ -113,7 +113,7 @@ function Navbar() {
             <ul
               className={`${
                 service ? "flex" : "hidden"
-              } flex-col gap-4 items-center bg-gray-200 rounded-lg text-base p-4`}
+              } flex-col gap-4 items-center text-center bg-gray-200 rounded-lg text-base p-4`}
             >
               <li>
                 <Link
@@ -206,7 +206,7 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <nav className="flex justify-between max-w-4xl mx-auto p-4">
+        <nav className="flex justify-between max-w-4xl mx-auto py-4">
           <div>
             <Link
               to="/"
@@ -224,7 +224,7 @@ function Navbar() {
             onClick={() => setClick(!click)}
             className="lg:hidden md:w-[40px]"
           />
-          <ul className="hidden lg:flex items-center gap-8 text-lg font-bold">
+          <ul className="hidden lg:flex items-center gap-5 text-lg font-bold">
             <li>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -404,6 +404,16 @@ function Navbar() {
               >
                 Contact Us
               </Link>
+            </li>
+            <li>
+              <Button className="bg-red-600">
+                <Link
+                  to="http://wa.me/6589628052?text=Hello!%20I%20recently%20came%20across%20your%20website%20offering%20Singapore%20PR%20and%20Citizenship%20consulting%20services.%20I%20would%20like%20to%20learn%20more%20about%20the%20services%20you%20offer."
+                  reloadDocument
+                >
+                  Whatsapp Us
+                </Link>
+              </Button>
             </li>
           </ul>
         </nav>

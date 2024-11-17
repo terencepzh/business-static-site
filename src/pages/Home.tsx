@@ -1,173 +1,119 @@
 import Overview from "@/components/Overview";
+import Quiz from "@/components/Quiz";
 import Services from "@/components/Services";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
-  Form,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormControl,
-  FormMessage,
-} from "@/components/ui/form";
-import {
-  Select,
-  SelectTrigger,
-  SelectValue,
-  SelectContent,
-  SelectItem,
-} from "@/components/ui/select";
-import { Textarea } from "@/components/ui/textarea";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
-import { z } from "zod";
-import { Input } from "@/components/ui/input";
-
-const formSchema = z.object({
-  who: z.string().min(1, { message: "Please select an option" }),
-  pass: z.string().min(1, { message: "Please select an option" }),
-  age: z.string().min(1, { message: "Please select an option" }),
-  education: z.string().min(1, { message: "Please select an option" }),
-  salary: z.string().min(1, { message: "Please select an option" }),
-  duration: z.string().min(1, { message: "Please select an option" }),
-  participated: z.string().min(1, { message: "Please select an option" }),
-  activities: z.string().min(1, { message: "Please select an option" }),
-  property: z.string().min(1, { message: "Please select an option" }),
-  insurance: z.string().min(1, { message: "Please select an option" }),
-  name: z.string().min(1, { message: "Please select an option" }),
-  mobile: z.string().min(1, { message: "Please select an option" }),
-  email: z.string().min(1, { message: "Please select an option" }),
-});
 
 function App() {
-  const [currentStep, setCurrentStep] = useState(1);
-  const handleNext = () => setCurrentStep(currentStep + 1);
-  const handlePrevious = () => setCurrentStep(currentStep - 1);
-
-  // 1. Define your form.
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      who: "",
-      pass: "",
-      age: "",
-      education: "",
-      salary: "",
-      duration: "",
-    },
-  });
-
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
-
   return (
     <>
-      <div className="md:flex justify-evenly items-center">
-        <div className="bg-[url('/home.jpg')] bg-no-repeat bg-cover bg-[65%] w-full h-[320px] md:h-[700px]">
-          <div className="hidden md:flex flex-col justify-center items-center gap-4 bg-black/45 text-red-600 text-center w-full h-full px-6 py-8">
-            <div className="flex flex-col justify-between items-center gap-4 max-w-screen-md h-4/5">
-              <h1 className="flex flex-col gap-4 text-5xl lg:text-6xl xl:text-5xl font-bold">
-                <p>Singapore's Leading</p>
-                <p>Immigration Consultancy</p>
-              </h1>
-              <h3 className="text-white text-xl drop-shadow-lg">
-                Your leading consultancy for Singapore immigration advice. Over
-                20 years of providing unmatched service and excellence.
+      <div
+        className="md:flex justify-evenly items-center"
+        id="home-cover"
+      >
+        <div className="bg-[url('/home.jpg')] bg-no-repeat bg-cover bg-[65%] w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 bg-black/45 text-white px-6 py-8 lg:pb-40">
+            <div className="flex flex-col gap-4 md:gap-8 justify-between items-center md:items-start text-center md:text-left max-w-screen-md">
+              <p className="text-red-600 text-3xl font-bold">
+                Your Future, Our Mission
+              </p>
+              <div className="flex flex-col gap-4 text-4xl lg:text-6xl font-bold">
+                <p>YOUR LEADING PR APPLICATION AND IMMIGRATION CONSULTANCY</p>
+              </div>
+              <h3 className="text-white text-xl">
+                Turn your dream of living in Singapore into reality with our
+                customized PR and immigration consulting services.
               </h3>
-              <p className="text-4xl md:text-5xl text-white text-center font-bold drop-shadow-lg">
+              <p className="text-4xl md:text-5xl text-white font-bold drop-shadow-lg">
                 Unlimited Warranty Till Approval!
               </p>
-              <Button className="bg-red-600 text-white text-xl border rounded-full w-full max-w-sm h-16">
-                <Link to="/contact-us">
+              <Button className="bg-red-600 text-white text-lg md:text-xl text-wrap border rounded-full w-full max-w-sm h-16">
+                <Link
+                  to="/contact-us"
+                  reloadDocument
+                >
+                  Book your <span className="text-xl font-bold">FREE</span>{" "}
+                  consultation now
+                </Link>
+              </Button>
+            </div>
+            <Quiz />
+          </div>
+        </div>
+      </div>
+      {/* Statistics */}
+      <div className="flex justify-center">
+        <div className="lg:flex lg:p-10 max-w-screen-2xl">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 lg:basis-1/2 items-center lg:relative bg-red-600 lg:rounded-l-[2rem] text-white text-center lg:mt-[-150px]">
+            <div className="flex flex-col gap-4 items-center lg:items-start lg:text-left px-6 py-8">
+              <h1 className="text-4xl xl:text-5xl text-center font-bold">
+                Why SG Immigrations?
+              </h1>
+              <p className="text-sm xl:text-base">
+                At SG Immigration, we’re more than just consultants; we’re your
+                partners in making Singapore home. We simplify the PR
+                application process, guiding you every step of the way with
+                expertise and care. With us, each step brings you closer to a
+                new beginning, creating a smooth transition for you and your
+                family. Let’s turn your dream of life in Singapore into reality,
+                together!
+              </p>
+              <Button className="bg-white text-red-600 text-lg md:text-xl text-wrap border rounded-full w-full max-w-sm h-16">
+                <Link
+                  to="/contact-us"
+                  reloadDocument
+                >
                   Book your <span className="text-2xl font-bold">FREE</span>{" "}
                   consultation now
                 </Link>
               </Button>
             </div>
           </div>
-        </div>
-        <div className="flex md:hidden flex-col justify-between items-center gap-4 text-red-600 text-center w-full px-6 py-8">
-          <h1 className="text-4xl xl:text-5xl font-bold">
-            Singapore's Leading Immigration Consultancy
-          </h1>
-          <h3 className="xl:text-lg tracking-wide">
-            Your leading consultancy for Singapore immigration advice. Over 20
-            years of providing unmatched service and excellence.
-          </h3>
-          <Button className="bg-red-600 text-white border rounded-full w-full max-w-sm h-12">
-            <Link to="/contact-us">
-              Book your <span className="text-base font-bold">FREE</span>{" "}
-              consultation now
-            </Link>
-          </Button>
-        </div>
-      </div>
-      <div className="flex flex-col gap-4 bg-red-600 text-white text-center px-6 py-8">
-        <h1 className="text-4xl xl:text-5xl text-center font-bold">
-          Why SG Immigrations?
-        </h1>
-        <p className="text-sm xl:text-base">
-          There are countless of immigration consulting firms in Singapore.
-          <br />
-          Here's why you should choose us.
-        </p>
-        <div className="flex justify-center">
-          <div className="flex flex-col md:flex-row md:justify-between max-w-screen-lg gap-4">
-            <Card className="flex flex-col justify-between text-red-600">
-              <CardHeader>
-                <CardTitle>
-                  <h1 className="text-4xl lg:text-5xl">20+</h1>
-                  <h3 className="text-lg">
-                    Years of Immigration Advisory Expertise
-                  </h3>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sagittis mauris massa, id venenatis dolor congue ac.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="flex flex-col justify-between text-red-600">
-              <CardHeader>
-                <CardTitle className="text-lg">
-                  <h1 className="text-4xl lg:text-5xl">90%</h1>
-                  <h3>More Likely of Attaining Application Success</h3>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sagittis mauris massa, id venenatis dolor congue ac.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="flex flex-col justify-between text-red-600">
-              <CardHeader>
-                <CardTitle className="text-lg">
-                  <h1 className="text-4xl lg:text-5xl">24/7</h1>
-                  <h3>Dedicated Customer Service Support</h3>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                  sagittis mauris massa, id venenatis dolor congue ac.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="flex flex-col md:flex-row md:flex-wrap gap-4 md:gap-0 lg:basis-1/2 justify-center items-start lg:relative bg-white lg:border text-red-600 lg:mt-[-100px] lg:mb-[50px] w-full">
+            <div className="flex flex-col gap-2 md:basis-1/2 items-start border-b md:border-r lg:border-0 lg:border-r p-4 py-6 w-full">
+              <p className="text-3xl font-bold">Proven Expertise</p>
+              <p>
+                We specialize in helping expats achieve Singapore PR and
+                citizenship, backed by years of successful applications.
+              </p>
+            </div>
+            <div className="flex flex-col gap-2 md:basis-1/2 items-start border-b lg:border-0 p-4 py-6 w-full">
+              <p className="text-3xl font-bold">Personalized Service</p>
+              <p>
+                Every client’s profile is unique, and we tailor our approach to
+                match your specific needs and goals.
+              </p>
+            </div>
+            <div className="flex flex-col gap-2 md:basis-1/2 items-start border-b md:border-b-0 md:border-r lg:border-t p-4 py-6 w-full">
+              <p className="text-3xl font-bold">
+                Meticulous Attention to Detail
+              </p>
+              <p>
+                Citizenship applications are thorough, and we help ensure every
+                document is accurate, complete, and up-to-date.
+              </p>
+            </div>
+            <div className="flex flex-col gap-2 md:basis-1/2 items-start lg:border-t p-4 py-6 w-full">
+              <p className="text-3xl font-bold">Continuous Support</p>
+              <p>
+                From initial consultation to final approval, we’re here every
+                step of the way, ready to answer questions and provide guidance.
+              </p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col items-center gap-4 mt-6">
-          <h1 className="text-4xl xl:text-5xl text-center font-bold">
+      </div>
+      {/* Link to Quiz */}
+      <div className="flex flex-col lg:flex-row gap-4 items-center bg-red-600 text-white text-center">
+        <div className="flex flex-col items-center gap-4 px-6 py-8 w-full">
+          <h1 className="text-4xl lg:text-5xl text-center font-bold">
             Check your success rate now
           </h1>
           <p className="text-sm xl:text-base">
@@ -178,7 +124,7 @@ function App() {
             className="bg-white text-red-600 text-xl border rounded-full w-full max-w-sm h-12"
             onClick={() =>
               document
-                .getElementById("quiz")!
+                .getElementById("home-cover")!
                 .scrollIntoView({ behavior: "smooth", block: "center" })
             }
           >
@@ -186,20 +132,111 @@ function App() {
           </Button>
         </div>
       </div>
-      {/* Nationalities */}
+      {/* We Customise the Immigration Planning For You */}
       <div className="flex flex-col justify-center items-center gap-4 text-red-600 text-center px-6 py-8">
         <h1 className="text-4xl lg:text-5xl text-center font-bold">
-          We have helped multiple nationalities
+          We Customise the Immigration Planning For You
         </h1>
-        <h3 className="text-sm lg:text-base">
-          Regardless of your country of origin, we will ensure that your chances
-          to obtain PR & Citizenship is optimized.
-        </h3>
-        <div>Countries TBD</div>
+        <div className="flex flex-col md:flex-row gap-4 max-w-screen-lg">
+          <Card className="bg-red-600 text-white">
+            <CardHeader>
+              <img
+                src="https://immigrationlab.sg/wp-content/uploads/2024/04/2.png"
+                alt=""
+                className="rounded-xl"
+              />
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-4">
+                <p className="text-left text-xl font-bold">
+                  Are You a First Time PR Applicant?
+                </p>
+                <ul>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Keeping up with changing policies</p>
+                  </li>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Compiling extensive documentation</p>
+                  </li>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Overcoming language barriers</p>
+                  </li>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Understanding financial/legal implications</p>
+                  </li>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Handling approval process stress</p>
+                  </li>
+                </ul>
+                <Button className="bg-white text-red-600 text-lg md:text-xl text-wrap border rounded-full w-full max-w-sm h-12">
+                  <Link
+                    to="/contact-us"
+                    reloadDocument
+                  >
+                    Book a consultation
+                  </Link>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="bg-red-600 text-white">
+            <CardHeader>
+              <img
+                src="https://immigrationlab.sg/wp-content/uploads/2024/04/1.png"
+                alt=""
+                className="rounded-xl"
+              />
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-4">
+                <p className="text-left text-xl font-bold">
+                  PR Application Being Rejected?
+                </p>
+                <ul>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Dealing with repeated rejections</p>
+                  </li>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Managing an increased volume of paperwork</p>
+                  </li>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Struggling with online application systems</p>
+                  </li>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Navigating the complexities of reapplication</p>
+                  </li>
+                  <li className="flex gap-2 items-center text-left">
+                    <img src="/tick.svg"></img>
+                    <p>Identifying and correcting previous application flaws</p>
+                  </li>
+                </ul>
+                <Button className="bg-white text-red-600 text-lg md:text-xl text-wrap border rounded-full w-full max-w-sm h-12">
+                  <Link
+                    to="/contact-us"
+                    reloadDocument
+                  >
+                    Book a consultation
+                  </Link>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
       {/* Testimonials */}
       <div className="flex flex-col gap-4 bg-red-600 text-white text-center px-6 py-8">
-        <h1 className="text-4xl text-center font-bold">Our Testimonials</h1>
+        <h1 className="text-4xl lg:text-5xl text-center font-bold">
+          Our Testimonials
+        </h1>
         <h3 className="text-sm">
           Hear more from our past clients on their experience with us!
         </h3>
@@ -224,548 +261,128 @@ function App() {
           <Services />
         </div>
       </div>
-      {/* Quiz */}
-      <div
-        id="quiz"
-        className="flex flex-col justify-center items-center gap-12 text-red-600 w-full px-6 py-8"
-      >
-        <div className="flex flex-col gap-4">
-          <h1 className="text-4xl xl:text-5xl text-center font-bold">Quiz</h1>
-          <h3 className="text-center text-sm">
-            <p>
-              Want to know your probability of success? Try out our
-              PR/Citizenship eligibility quiz for free!
-            </p>
-            <p>Note: WORK PERMIT CANNOT APPLY.</p>
-          </h3>
+      {/* FAQ */}
+      <div className="flex flex-col gap-4 text-red-600 text-center px-6 py-8">
+        <h1 className="text-4xl lg:text-5xl text-center font-bold">
+          Frequently Asked Questions:
+        </h1>
+        <div className="flex justify-center">
+          <Accordion
+            type="single"
+            collapsible
+            className="flex flex-col gap-4 *:*:[&[data-state=open]]:bg-gray-200 w-full max-w-screen-lg"
+          >
+            <AccordionItem value="item-1">
+              <AccordionTrigger className="[&[data-state=open]]:bg-red-600 [&[data-state=open]]:text-white [&[data-state=open]>svg]:text-white text-left px-4">
+                Is it worth it geting an immigration consultant?
+              </AccordionTrigger>
+              <AccordionContent className="text-left p-4">
+                Hiring an immigration agency in Singapore can be extremely
+                beneficial, especially in navigating the complex and
+                ever-changing immigration landscape. An experienced consultant
+                offers personalised guidance, ensuring that your application not
+                only meets all legal requirements but also stands out. They can
+                prevent common pitfalls and streamline the process,
+                significantly enhancing your chances of success and making the
+                investment in professional services worthwhile.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-2">
+              <AccordionTrigger className="[&[data-state=open]]:bg-red-600 [&[data-state=open]]:text-white [&[data-state=open]>svg]:text-white text-left px-4">
+                What do immigration consultants charge?
+              </AccordionTrigger>
+              <AccordionContent className="text-left p-4">
+                The fees charged by immigration consultants can vary widely
+                depending on the specifics of your case, the services provided,
+                and the consultant’s expertise and reputation. Typically,
+                consultants might offer different service tiers, from basic
+                application review to full representation, which can range from
+                a few hundred to several thousand dollars. It's important to
+                discuss fees upfront to understand what services you will
+                receive and ensure they align with your needs and budget.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger className="[&[data-state=open]]:bg-red-600 [&[data-state=open]]:text-white [&[data-state=open]>svg]:text-white text-left px-4">
+                How do I choose an immigration consultant?
+              </AccordionTrigger>
+              <AccordionContent className="text-left p-4">
+                Choosing the right immigration agency in Singapore involves
+                researching their qualifications, experience, and client
+                reviews. Ensure they are legally accredited and have a thorough
+                understanding of the immigration laws pertinent to your
+                situation. A good consultant should communicate clearly, offer a
+                strategic approach tailored to your case, and have a track
+                record of successful applications. Compatibility and trust are
+                also crucial, as this professional will guide you through
+                personal and impactful decisions.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="[&[data-state=open]]:bg-red-600 [&[data-state=open]]:text-white [&[data-state=open]>svg]:text-white text-left px-4">
+                How long is the processing of PR applications in Singapore?
+              </AccordionTrigger>
+              <AccordionContent className="text-left p-4">
+                The processing time for a Singapore PR application generally
+                ranges from six to twelve months, but it can vary based on the
+                individual case and the ICA's current processing volume. It’s
+                important to ensure that your application is comprehensive and
+                accurately filled out to avoid delays. Processing times can also
+                fluctuate based on policy changes or application influx, so
+                staying informed through your consultant or official channels is
+                advisable.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="[&[data-state=open]]:bg-red-600 [&[data-state=open]]:text-white [&[data-state=open]>svg]:text-white text-left px-4">
+                Is it difficult to get PR in Singapore?
+              </AccordionTrigger>
+              <AccordionContent className="text-left p-4">
+                Obtaining PR status in Singapore is considered challenging due
+                to the high competition and strict selection criteria aimed at
+                identifying applicants who can contribute significantly to the
+                country’s society and economy. Factors like age, skill set,
+                income level, family ties, and integration into the community
+                are critically assessed. A well-prepared application that aligns
+                with Singapore’s strategic interests has a better chance of
+                success.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="[&[data-state=open]]:bg-red-600 [&[data-state=open]]:text-white [&[data-state=open]>svg]:text-white text-left px-4">
+                What are the common challenges first-time PR applicants face?
+              </AccordionTrigger>
+              <AccordionContent className="text-left p-4">
+                First-time PR applicants often encounter difficulties such as
+                understanding the complex eligibility criteria, gathering and
+                compiling the necessary detailed documentation, navigating the
+                online application system, and effectively presenting their
+                qualifications and personal strengths. Many also find it
+                challenging to interpret the legal and procedural nuances of the
+                immigration process, which can lead to errors or omissions in
+                their application.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7">
+              <AccordionTrigger className="[&[data-state=open]]:bg-red-600 [&[data-state=open]]:text-white [&[data-state=open]>svg]:text-white text-left px-4">
+                How can I improve my chances of success in a PR reapplication
+                after a rejection?
+              </AccordionTrigger>
+              <AccordionContent className="text-left p-4">
+                Improving your chances after a PR application rejection involves
+                careful analysis of the reasons for denial, updating and
+                strengthening your profile, and ensuring that all information is
+                presented accurately and compellingly. Seek feedback, if
+                available, and use it to address any deficiencies or gaps in
+                your initial application. Consulting with an immigration expert
+                can provide crucial insights and guidance on best practices and
+                strategies to enhance your reapplication, tailoring it more
+                effectively to meet the stringent criteria of the Singapore PR
+                process.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
-        {/* Step icons */}
-        <div className="flex items-center space-x-2">
-          <div
-            className={`w-8 h-8 rounded-full flex items-center justify-center ${
-              currentStep === 1
-                ? "bg-red-600 text-primary-foreground"
-                : "bg-muted text-muted-foreground"
-            }`}
-          >
-            1
-          </div>
-          <div
-            className={`w-8 h-8 rounded-full flex items-center justify-center ${
-              currentStep === 2
-                ? "bg-red-600 text-primary-foreground"
-                : "bg-muted text-muted-foreground"
-            }`}
-          >
-            2
-          </div>
-          <div
-            className={`w-8 h-8 rounded-full flex items-center justify-center ${
-              currentStep === 3
-                ? "bg-red-600 text-primary-foreground"
-                : "bg-muted text-muted-foreground"
-            }`}
-          >
-            3
-          </div>
-          <div
-            className={`w-8 h-8 rounded-full flex items-center justify-center ${
-              currentStep === 4
-                ? "bg-red-600 text-primary-foreground"
-                : "bg-muted text-muted-foreground"
-            }`}
-          >
-            4
-          </div>
-        </div>
-        <Form {...form}>
-          <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="flex flex-col space-y-4 w-full max-w-screen-md"
-          >
-            {/* Page 1 */}
-            {currentStep === 1 && (
-              <div>
-                <FormField
-                  control={form.control}
-                  name="who"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>I am enquiring for *</FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
-                        <FormControl>
-                          <SelectTrigger className="w-full">
-                            <SelectValue />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="Myself">Myself</SelectItem>
-                          <SelectItem value="My Spouse">My Spouse</SelectItem>
-                          <SelectItem value="My Child">My Child</SelectItem>
-                          <SelectItem value="My parent">My parent</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="pass"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>
-                        What is the applicant's current pass/residential status?
-                        *
-                      </FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
-                        <FormControl>
-                          <SelectTrigger className="w-full">
-                            <SelectValue />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="Employment Pass">
-                            Employment Pass
-                          </SelectItem>
-                          <SelectItem value="S Pass">S Pass</SelectItem>
-                          <SelectItem value="Dependent Pass/LTVP">
-                            Dependent Pass/LTVP
-                          </SelectItem>
-                          <SelectItem value="Student Pass">
-                            Student Pass
-                          </SelectItem>
-                          <SelectItem value="Entre Pass">Entre Pass</SelectItem>
-                          <SelectItem value="Work Permit">
-                            Work Permit
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="age"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>
-                        What is the applicant's age group? *
-                      </FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
-                        <FormControl>
-                          <SelectTrigger className="w-full">
-                            <SelectValue />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="Under 21">Under 21</SelectItem>
-                          <SelectItem value="21-40">21-40</SelectItem>
-                          <SelectItem value="Over 40">Over 40</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="education"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>
-                        What is the applicant's highest level of education? *
-                      </FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
-                        <FormControl>
-                          <SelectTrigger className="w-full">
-                            <SelectValue />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="Primary or Elementary School">
-                            Primary or Elementary School
-                          </SelectItem>
-                          <SelectItem value="Secondary or High School">
-                            Secondary or High School
-                          </SelectItem>
-                          <SelectItem value="Diploma or Equivalent">
-                            Diploma or Equivalent
-                          </SelectItem>
-                          <SelectItem value="Bachelor's Degree">
-                            Bachelor's Degree
-                          </SelectItem>
-                          <SelectItem value="Master's">Master's</SelectItem>
-                          <SelectItem value="PhD">PhD</SelectItem>
-                          <SelectItem value="MD">MD</SelectItem>
-                          <SelectItem value="Others">Others</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="salary"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>
-                        What is the applicant's monthly salary range? *
-                      </FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
-                        <FormControl>
-                          <SelectTrigger className="w-full">
-                            <SelectValue />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent className="">
-                          <SelectItem value="Not Applicable">
-                            Not Applicable
-                          </SelectItem>
-                          <SelectItem value="Under S$2000">
-                            Under S$2000
-                          </SelectItem>
-                          <SelectItem value="S$2000 - 4000">
-                            S$2000 - 4000
-                          </SelectItem>
-                          <SelectItem value="S$4001 - 6000">
-                            S$4001 - 6000
-                          </SelectItem>
-                          <SelectItem value="S$6001 - 8000">
-                            S$6001 - 8000
-                          </SelectItem>
-                          <SelectItem value="S$8001 - 10000">
-                            S$8001 - 10000
-                          </SelectItem>
-                          <SelectItem value="Over S$10000">
-                            Over S$10000
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="duration"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>
-                        What is the applicant's monthly salary range? *
-                      </FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
-                        <FormControl>
-                          <SelectTrigger className="w-full">
-                            <SelectValue />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent className="">
-                          <SelectItem value="Not Applicable">
-                            Not Applicable
-                          </SelectItem>
-                          <SelectItem value="Under S$2000">
-                            Under S$2000
-                          </SelectItem>
-                          <SelectItem value="S$2000 - 4000">
-                            S$2000 - 4000
-                          </SelectItem>
-                          <SelectItem value="S$4001 - 6000">
-                            S$4001 - 6000
-                          </SelectItem>
-                          <SelectItem value="S$6001 - 8000">
-                            S$6001 - 8000
-                          </SelectItem>
-                          <SelectItem value="S$8001 - 10000">
-                            S$8001 - 10000
-                          </SelectItem>
-                          <SelectItem value="Over S$10000">
-                            Over S$10000
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <div className="flex justify-end mt-8">
-                  <Button
-                    className="bg-red-600"
-                    onClick={handleNext}
-                  >
-                    Next
-                  </Button>
-                </div>
-              </div>
-            )}
-            {/* Page 2 */}
-            {currentStep === 2 && (
-              <div className="flex flex-col gap-4">
-                <FormField
-                  control={form.control}
-                  name="duration"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>
-                        How long has the applicant been staying in Singapore? *
-                      </FormLabel>
-                      <Select
-                        onValueChange={field.onChange}
-                        defaultValue={field.value}
-                      >
-                        <FormControl>
-                          <SelectTrigger className="w-full">
-                            <SelectValue />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent className="">
-                          <SelectItem value="Less than a year">
-                            Less than a year
-                          </SelectItem>
-                          <SelectItem value="1-2 years">1-2 years</SelectItem>
-                          <SelectItem value="3-5 years">3-5 years</SelectItem>
-                          <SelectItem value="Over 5 years">
-                            Over 5 years
-                          </SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="participated"
-                  render={({ field }) => (
-                    <FormItem className="space-y-3">
-                      <FormLabel>
-                        Has the applicant participated in an Social Integration
-                        Activities in Singapore?*
-                      </FormLabel>
-                      <FormControl>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          defaultValue={field.value}
-                          className="flex flex-col space-y-1"
-                        >
-                          <FormItem className="flex items-center space-x-3 space-y-0">
-                            <FormControl>
-                              <RadioGroupItem value="Yes" />
-                            </FormControl>
-                            <FormLabel className="font-normal">Yes</FormLabel>
-                          </FormItem>
-                          <FormItem className="flex items-center space-x-3 space-y-0">
-                            <FormControl>
-                              <RadioGroupItem value="No" />
-                            </FormControl>
-                            <FormLabel className="font-normal">No</FormLabel>
-                          </FormItem>
-                        </RadioGroup>
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="activities"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>
-                        If yes, kindly indicate the activities or programmes.
-                      </FormLabel>
-                      <FormControl>
-                        <Textarea
-                          placeholder="Message"
-                          {...field}
-                          className="text-black h-20"
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <div className="flex justify-between mt-8">
-                  <Button
-                    variant="outline"
-                    onClick={handlePrevious}
-                  >
-                    Previous
-                  </Button>
-                  <Button
-                    className="bg-red-600"
-                    onClick={handleNext}
-                  >
-                    Next
-                  </Button>
-                </div>
-              </div>
-            )}
-            {/* Page 3 */}
-            {currentStep === 3 && (
-              <div className="flex flex-col gap-4">
-                <FormField
-                  control={form.control}
-                  name="property"
-                  render={({ field }) => (
-                    <FormItem className="space-y-3">
-                      <FormLabel>
-                        Does the applicant own or is intending to own any
-                        property in Singapore?*
-                      </FormLabel>
-                      <FormControl>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          defaultValue={field.value}
-                          className="flex flex-col space-y-1"
-                        >
-                          <FormItem className="flex items-center space-x-3 space-y-0">
-                            <FormControl>
-                              <RadioGroupItem value="Yes" />
-                            </FormControl>
-                            <FormLabel className="font-normal">Yes</FormLabel>
-                          </FormItem>
-                          <FormItem className="flex items-center space-x-3 space-y-0">
-                            <FormControl>
-                              <RadioGroupItem value="No" />
-                            </FormControl>
-                            <FormLabel className="font-normal">No</FormLabel>
-                          </FormItem>
-                        </RadioGroup>
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="insurance"
-                  render={({ field }) => (
-                    <FormItem className="space-y-3">
-                      <FormLabel>
-                        Does the applicant own or is intending to own any
-                        insurance policy or investment products in Singapore?*
-                      </FormLabel>
-                      <FormControl>
-                        <RadioGroup
-                          onValueChange={field.onChange}
-                          defaultValue={field.value}
-                          className="flex flex-col space-y-1"
-                        >
-                          <FormItem className="flex items-center space-x-3 space-y-0">
-                            <FormControl>
-                              <RadioGroupItem value="Yes" />
-                            </FormControl>
-                            <FormLabel className="font-normal">Yes</FormLabel>
-                          </FormItem>
-                          <FormItem className="flex items-center space-x-3 space-y-0">
-                            <FormControl>
-                              <RadioGroupItem value="No" />
-                            </FormControl>
-                            <FormLabel className="font-normal">No</FormLabel>
-                          </FormItem>
-                        </RadioGroup>
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <div className="flex justify-between mt-8">
-                  <Button
-                    variant="outline"
-                    onClick={handlePrevious}
-                  >
-                    Previous
-                  </Button>
-                  <Button
-                    className="bg-red-600"
-                    onClick={handleNext}
-                  >
-                    Next
-                  </Button>
-                </div>
-              </div>
-            )}
-            {/* Personal Particulars */}
-            {currentStep === 4 && (
-              <div className="flex flex-col gap-4">
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Name</FormLabel>
-                      <FormControl>
-                        <Input {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="mobile"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Mobile Number</FormLabel>
-                      <FormControl>
-                        <Input {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Email</FormLabel>
-                      <FormControl>
-                        <Input {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <div className="flex justify-between mt-8">
-                  <Button
-                    variant="outline"
-                    onClick={handlePrevious}
-                  >
-                    Previous
-                  </Button>
-                  <Button
-                    className="bg-red-600"
-                    type="submit"
-                  >
-                    Submit
-                  </Button>
-                </div>
-              </div>
-            )}
-          </form>
-        </Form>
       </div>
     </>
   );
