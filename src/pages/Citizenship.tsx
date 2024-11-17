@@ -1,4 +1,3 @@
-import PackageCarousel from "@/components/PackageCarousel";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
