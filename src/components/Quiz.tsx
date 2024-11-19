@@ -63,7 +63,7 @@ function Quiz() {
   }
 
   return (
-    <div className="flex flex-col gap-8 items-center bg-white text-black rounded-xl w-full max-w-screen-sm px-6 py-8">
+    <div className="flex flex-col gap-8 items-center bg-white/80 text-black rounded-xl w-full max-w-screen-sm px-6 py-8">
       <div className="flex flex-col gap-4">
         <h3 className="text-red-600 text-center md:text-left text-lg font-bold">
           <p>Try out our PR/Citizenship eligibility quiz for free!</p>

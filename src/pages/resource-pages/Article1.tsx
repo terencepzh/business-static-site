@@ -11,7 +11,7 @@ function Article1() {
           7 Insider Tips to Boost Your Chances of PR Approval in Singapore!
         </h1>
         <img
-          src="https://static.wixstatic.com/media/a80fdd_b87d3b925e5545fdb362fe1af5eb6e20~mv2.jpg/v1/fill/w_581,h_327,fp_0.50_0.50,q_90,enc_auto/a80fdd_b87d3b925e5545fdb362fe1af5eb6e20~mv2.jpg"
+          src="/Article1.png"
           alt="Cover Image"
         />
         <p className="text-red-600 md:text-lg font-bold">

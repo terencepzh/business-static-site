@@ -13,7 +13,7 @@ function Article7() {
           can streamline and boost your PR application success.
         </h1>
         <img
-          src="https://static.wixstatic.com/media/a80fdd_d520aa9177974286ba41ee663230917c~mv2.jpg/v1/fill/w_581,h_327,fp_0.50_0.50,q_90,enc_auto/a80fdd_d520aa9177974286ba41ee663230917c~mv2.jpg"
+          src="/Article7.png"
           alt="Cover Image"
         />
         <div className="flex flex-col gap-6 text-xs md:text-sm">

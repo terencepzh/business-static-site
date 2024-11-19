@@ -13,7 +13,7 @@ function Article8() {
           prep, make your PR journey smoother and more successful!
         </h1>
         <img
-          src="https://static.wixstatic.com/media/a80fdd_d520aa9177974286ba41ee663230917c~mv2.jpg/v1/fill/w_581,h_327,fp_0.50_0.50,q_90,enc_auto/a80fdd_d520aa9177974286ba41ee663230917c~mv2.jpg"
+          src="/Article8.png"
           alt="Cover Image"
         />
         <p className="text-red-600 md:text-lg font-bold">

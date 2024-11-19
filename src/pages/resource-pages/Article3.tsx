@@ -11,7 +11,7 @@ function Article3() {
           The Cost of PR Application in Singapore: Is It Worth the Investment?
         </h1>
         <img
-          src="https://static.wixstatic.com/media/a80fdd_9464b9ffb5414aa183c81b4f14090714~mv2.jpg/v1/fill/w_581,h_327,fp_0.50_0.50,q_90,enc_auto/a80fdd_9464b9ffb5414aa183c81b4f14090714~mv2.jpg"
+          src="/Article3.png"
           alt="Cover Image"
         />
         <div className="flex flex-col gap-6 text-xs md:text-sm">

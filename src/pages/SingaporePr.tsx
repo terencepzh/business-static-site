@@ -230,7 +230,7 @@ function SingaporePr() {
               of the eligibility requirements under the main schemes.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 flex-wrap justify-center ">
+          <div className="flex flex-col md:flex-row gap-4 flex-wrap justify-center max-w-screen-xl">
             <div className="flex flex-col md:basis-[48%] gap-6 border-gray-400 border-2 rounded-xl p-4">
               <p className="bg-red-600 rounded-xl text-white text-xl font-bold p-2">
                 Professional, Technical Personnel and Skilled Workers (PTS)
@@ -427,7 +427,7 @@ function SingaporePr() {
         <p className="text-4xl xl:text-5xl text-center font-bold">
           Singapore PR Application Requirements
         </p>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 max-w-screen-xl">
           <p className="font-bold">
             At SG Immigrations, we are here to assist you with the required
             documents for your Singapore PR application. Please follow these
@@ -469,7 +469,7 @@ function SingaporePr() {
         <p className="text-4xl xl:text-5xl text-center font-bold">
           Step-by-Step Guide for PR Application in Singapore
         </p>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4  max-w-screen-xl">
           <p>
             At SG Immigrations, we simplify the Singapore PR application
             process, providing comprehensive guidance to help you navigate each

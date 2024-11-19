@@ -44,6 +44,45 @@ function Citizenship() {
           </p>
           <div className="flex flex-col gap-4 mt-4">
             <h1 className="text-4xl lg:text-5xl text-left font-bold w-full">
+              Why Pursue Singapore Citizenship
+            </h1>
+            <p className="text-base">
+              Singapore citizenship offers a range of benefits for both
+              individuals and families:
+            </p>
+            <ul className="flex flex-col gap-2 list-decimal px-8 ml-4">
+              <li>
+                <b>Privileged Passport: </b>Enjoy one of the world’s STRONGEST
+                passports, with access to over 190 countries, so you can travel
+                effortlessly.
+              </li>
+              <li>
+                <b>Access to Government Support: </b>Citizens gain access to a
+                wide array of benefits, including healthcare subsidies,
+                education grants, and other social services.
+              </li>
+              <li>
+                <b>Long-Term Stability: </b>Solidify your roots in Singapore and
+                secure your future with full residency rights for you and your
+                loved ones.
+              </li>
+            </ul>
+            <p>
+              If you’re interested in learning more about the perks and process,{" "}
+              <Link
+                to="/contact-us"
+                reloadDocument
+              >
+                <u>
+                  <b>book your FREE consultation</b>
+                </u>{" "}
+              </Link>
+              to discuss your options with our dedicated consultants.
+            </p>
+          </div>
+          {/* Eligibility */}
+          <div className="flex flex-col gap-4 mt-4">
+            <h1 className="text-4xl lg:text-5xl text-left font-bold w-full">
               Eligibility Criteria for Singapore Citizenship
             </h1>
             <p className="text-base">
