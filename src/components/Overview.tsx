@@ -5,7 +5,6 @@ function Overview() {
         <h1 className="text-4xl lg:text-5xl font-bold">
           A Smooth & Stress-free Immigration Journey
         </h1>
-        <p>Here's an overview of your journey with TIP</p>
       </div>
       <div className="flex flex-col lg:flex-row gap-4 text-red-600 p-4">
         <div className="flex flex-col justify-start items-center gap-2 border-t border-b lg:border-0 text-center w-full lg:w-1/5 p-6 px-8">
