@@ -16,6 +16,7 @@ function Navbar() {
   return (
     <>
       <header className="sticky top-0 bg-white text-red-600 z-90">
+        {/* Mobile */}
         <div
           className={`flex lg:hidden flex-col gap-4 fixed right-0 bg-white/95 text-red-600 transition duration-300 ease-in-out ${
             click ? "translate-x-0" : "translate-x-full"
@@ -206,7 +207,8 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <nav className="flex justify-between max-w-4xl mx-auto py-4">
+        {/* Normal */}
+        <nav className="flex justify-between max-w-5xl mx-auto p-4">
           <div>
             <Link
               to="/"
@@ -224,7 +226,7 @@ function Navbar() {
             onClick={() => setClick(!click)}
             className="lg:hidden md:w-[40px]"
           />
-          <ul className="hidden lg:flex items-center gap-5 text-lg font-bold">
+          <ul className="hidden lg:flex items-center gap-8 text-lg font-bold">
             <li>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
