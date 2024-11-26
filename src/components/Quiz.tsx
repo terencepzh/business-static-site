@@ -129,11 +129,11 @@ function Quiz() {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="w-full">
+                        <SelectTrigger className="border-gray-500 w-full">
                           <SelectValue />
                         </SelectTrigger>
                       </FormControl>
-                      <SelectContent>
+                      <SelectContent className="">
                         <SelectItem value="Myself">Myself</SelectItem>
                         <SelectItem value="My Spouse">My Spouse</SelectItem>
                         <SelectItem value="My Child">My Child</SelectItem>
@@ -157,7 +157,7 @@ function Quiz() {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="w-full">
+                        <SelectTrigger className="border-gray-500 w-full">
                           <SelectValue />
                         </SelectTrigger>
                       </FormControl>
@@ -191,7 +191,7 @@ function Quiz() {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="w-full">
+                        <SelectTrigger className="border-gray-500 w-full">
                           <SelectValue />
                         </SelectTrigger>
                       </FormControl>
@@ -218,7 +218,7 @@ function Quiz() {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="w-full">
+                        <SelectTrigger className="border-gray-500 w-full">
                           <SelectValue />
                         </SelectTrigger>
                       </FormControl>
@@ -258,7 +258,7 @@ function Quiz() {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="w-full">
+                        <SelectTrigger className="border-gray-500 w-full">
                           <SelectValue />
                         </SelectTrigger>
                       </FormControl>
@@ -303,7 +303,7 @@ function Quiz() {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="w-full">
+                        <SelectTrigger className="border-gray-500 w-full">
                           <SelectValue />
                         </SelectTrigger>
                       </FormControl>
@@ -361,7 +361,7 @@ function Quiz() {
                       defaultValue={field.value}
                     >
                       <FormControl>
-                        <SelectTrigger className="w-full">
+                        <SelectTrigger className="border-gray-500 w-full">
                           <SelectValue />
                         </SelectTrigger>
                       </FormControl>
@@ -425,7 +425,7 @@ function Quiz() {
                       <Textarea
                         placeholder="Message"
                         {...field}
-                        className="text-black h-20"
+                        className="border-gray-500 text-black h-20"
                       />
                     </FormControl>
                     <FormMessage />
@@ -543,7 +543,10 @@ function Quiz() {
                   <FormItem>
                     <FormLabel>Name</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input
+                        {...field}
+                        className="border-gray-500"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -556,7 +559,10 @@ function Quiz() {
                   <FormItem>
                     <FormLabel>Mobile Number</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input
+                        {...field}
+                        className="border-gray-500"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -569,7 +575,10 @@ function Quiz() {
                   <FormItem>
                     <FormLabel>Email</FormLabel>
                     <FormControl>
-                      <Input {...field} />
+                      <Input
+                        {...field}
+                        className="border-gray-500"
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
