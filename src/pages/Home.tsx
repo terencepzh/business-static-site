@@ -24,17 +24,17 @@ function App() {
               <p className="text-red-600 text-3xl font-bold">
                 Your Future, Our Mission
               </p>
-              <div className="flex flex-col gap-4 text-4xl lg:text-6xl font-bold">
+              <div className="flex flex-col gap-4 text-2xl md:text-4xl lg:text-6xl font-bold">
                 <p>YOUR LEADING PR APPLICATION AND IMMIGRATION CONSULTANCY</p>
               </div>
-              <h3 className="text-white text-xl">
+              <h3 className="text-white text-base md:text-xl">
                 Turn your dream of living in Singapore into reality with our
                 customized PR and immigration consulting services.
               </h3>
               <p className="text-4xl md:text-5xl text-white font-bold drop-shadow-lg">
                 Unlimited Warranty Till Approval!
               </p>
-              <Button className="bg-red-600 text-white text-lg md:text-xl text-wrap border rounded-full w-full max-w-sm h-16">
+              <Button className="bg-red-600 text-white text-lg md:text-xl text-wrap border rounded-full w-full max-w-sm h-16 mt-16">
                 <Link
                   to="/contact-us"
                   reloadDocument

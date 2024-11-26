@@ -12,7 +12,7 @@ function Services() {
               className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-4"
             >
               <img
-                src="/Service1.png"
+                src="/Service1.svg"
                 alt=""
                 className="w-16"
               />
@@ -28,7 +28,7 @@ function Services() {
               className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-4"
             >
               <img
-                src="/Service2.png"
+                src="/Service2.svg"
                 alt=""
                 className="w-16"
               />
@@ -42,7 +42,7 @@ function Services() {
               className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-4"
             >
               <img
-                src="/Service3.png"
+                src="/Service3.svg"
                 alt=""
                 className="w-16"
               />
@@ -59,7 +59,7 @@ function Services() {
               className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-4"
             >
               <img
-                src="/Service4.png"
+                src="/Service4.svg"
                 alt=""
                 className="w-16"
               />
@@ -75,7 +75,7 @@ function Services() {
               className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-4"
             >
               <img
-                src="/Service5.png"
+                src="/Service5.svg"
                 alt=""
                 className="w-16"
               />
@@ -89,7 +89,7 @@ function Services() {
               className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-4"
             >
               <img
-                src="/Service5.png"
+                src="/Service6.svg"
                 alt=""
                 className="w-16"
               />
@@ -103,7 +103,7 @@ function Services() {
               className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-4"
             >
               <img
-                src="/Service6.png"
+                src="/Service7.svg"
                 alt=""
                 className="w-16"
               />

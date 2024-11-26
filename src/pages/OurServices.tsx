@@ -22,7 +22,6 @@ function OurServices() {
         </div>
       </div>
       <Schemes />
-
       <div className="flex justify-center px-6 py-8">
         <div className="bg-[url(https://media-cdn.tripadvisor.com/media/photo-s/18/33/5c/4c/1807-merlion-marinabay.jpg)] bg-[75%] bg-cover bg-no-repeat border rounded-2xl max-w-screen-lg">
           <div className="flex flex-col justify-evenly items-center gap-4 bg-black/45 text-white text-center border rounded-2xl h-[480px] p-8 md:py-16">
