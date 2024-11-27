@@ -57,7 +57,7 @@ function App() {
                 Why SG Immigrations?
               </h1>
               <p className="text-sm xl:text-base">
-                At SG Immigration, we’re more than just consultants; we’re your
+                At SG Immigrations, we’re more than just consultants; we’re your
                 partners in making Singapore home. We simplify the PR
                 application process, guiding you every step of the way with
                 expertise and care. With us, each step brings you closer to a
