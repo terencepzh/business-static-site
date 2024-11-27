@@ -15,7 +15,7 @@ function OurServices() {
           <p className="text-lg">
             Looking to make Singapore your permanent home? Becoming a Singapore
             citizen is a major step forward in solidifying your connection to
-            this vibrant country. At SG Immigration, we’re here to streamline
+            this vibrant country. At SG Immigrations, we’re here to streamline
             the citizenship application process, so you can focus on building
             your life here with peace of mind.
           </p>
@@ -30,11 +30,11 @@ function OurServices() {
             </h1>
             <p className="text-xs md:text-base lg:text-base">
               Whether you're a working professional, investor, student, or
-              artist, Assurance Immigration offers expert assistance in
-              navigating the administrative processes required for each scheme.
-              We specialize in optimizing your applications to maximize your
-              chances of success, ensuring you meet all necessary criteria and
-              present your case effectively.
+              artist, SG Immigrations offers expert assistance in navigating the
+              administrative processes required for each scheme. We specialize
+              in optimizing your applications to maximize your chances of
+              success, ensuring you meet all necessary criteria and present your
+              case effectively.
             </p>
             <Button className="bg-white text-red-600 lg:text-base border rounded-full md:w-full max-w-sm h-12">
               <Link

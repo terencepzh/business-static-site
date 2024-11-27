@@ -12,13 +12,13 @@ function SpPr() {
               <p>- PR Application for SP Holders -</p>
             </h1>
             <p className="text-xs md:text-base">
-              Assurance Immigration draws on its extensive expertise in
-              Singapore’s immigration framework to support S Pass (SP) holders
-              in their journey toward Permanent Residency. Our approach is to
-              tailor each application to highlight your contributions and
-              long-term commitment to Singapore’s growth. Trust us to present a
-              compelling case for residency, helping you build a secure and
-              lasting future within Singapore’s vibrant and diverse community.
+              SG Immigrations draws on its extensive expertise in Singapore’s
+              immigration framework to support S Pass (SP) holders in their
+              journey toward Permanent Residency. Our approach is to tailor each
+              application to highlight your contributions and long-term
+              commitment to Singapore’s growth. Trust us to present a compelling
+              case for residency, helping you build a secure and lasting future
+              within Singapore’s vibrant and diverse community.
             </p>
           </div>
           <Button className="bg-white text-red-600 lg:text-base border rounded-full max-w-sm h-10">
@@ -273,7 +273,7 @@ function SpPr() {
                 <b>1. Document Preparation Simplified for EP Holders - </b>For
                 SP holders, compiling necessary documents for PR applications
                 can be intricate, as incomplete or incorrect paperwork may stall
-                the process. Assurance Immigration guides you through each
+                the process. SG Immigrations guides you through each
                 documentation step, helping you avoid potential oversights,
                 streamline submission, and deliver an organized application with
                 assurance.
@@ -282,8 +282,8 @@ function SpPr() {
             <div className="bg-gray-200 rounded-xl text-red-600 p-6">
               <p>
                 <b>2. Customized Strategies for SP Holder PR Applications – </b>
-                Securing PR in Singapore is highly sought-after, so Assurance
-                Immigration develops strategies tailored to highlight the
+                Securing PR in Singapore is highly sought-after, so SG
+                Immigrations develops strategies tailored to highlight the
                 strengths of SP holders. We emphasize the most relevant aspects
                 of your profile, help you stand out among other applicants,
                 increasing the likelihood of approval and helping you lay the
@@ -296,13 +296,12 @@ function SpPr() {
                   3. Expert Guidance Based on Industry Experience for SP Holders
                   –
                 </b>{" "}
-                With nearly 15 years of immigration expertise, Assurance
-                Immigration provides SP holders with well-rounded support
-                throughout the PR application process. We stay updated on
-                regulatory changes, giving you reliable insights and helping
-                each stage progress smoothly. Our clear and knowledgeable
-                guidance makes navigating requirements straightforward and
-                stress-free.
+                With nearly 15 years of immigration expertise, SG Immigrations
+                provides SP holders with well-rounded support throughout the PR
+                application process. We stay updated on regulatory changes,
+                giving you reliable insights and helping each stage progress
+                smoothly. Our clear and knowledgeable guidance makes navigating
+                requirements straightforward and stress-free.
               </p>
             </div>
             <div className="bg-gray-200 rounded-xl text-red-600 p-6">
@@ -311,18 +310,18 @@ function SpPr() {
                   4. Personalized Approach Highlighting SP Holders’ Unique
                   Contributions –
                 </b>{" "}
-                At Assurance Immigration, we recognize the distinct qualities
-                each SP holder brings. Beyond meeting application criteria, we
-                help illustrate your contributions and dedication to building a
-                life in Singapore. Our personalized approach strengthens your
+                At SG Immigrations, we recognize the distinct qualities each SP
+                holder brings. Beyond meeting application criteria, we help
+                illustrate your contributions and dedication to building a life
+                in Singapore. Our personalized approach strengthens your
                 application by demonstrating your intention to integrate into
                 the community and contribute to its development.
               </p>
             </div>
             <div className="bg-red-600 rounded-xl text-white p-6">
               <p>
-                <b>5. Dedication to Client Success – </b>Assurance Immigration
-                is dedicated to supporting SP holders throughout the journey to
+                <b>5. Dedication to Client Success – </b>SG Immigrations is
+                dedicated to supporting SP holders throughout the journey to
                 permanent residency in Singapore. We build trust with our
                 clients by providing transparent communication and reliable
                 support. Our goal is to present a strong PR application that not

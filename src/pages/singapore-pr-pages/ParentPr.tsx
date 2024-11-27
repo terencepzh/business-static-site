@@ -12,13 +12,13 @@ function ParentPr() {
               <p>- Parent PR Application -</p>
             </h1>
             <p className="text-xs md:text-base">
-              With extensive knowledge of Singapore’s immigration policies,
-              Assurance Immigration is dedicated to guiding PR applications for
-              aged parents. We build a compelling case that highlights your
-              family’s commitment to Singapore and the support network in place
-              to help your parents integrate and thrive. Let us help make
-              Singapore a secure, welcoming home for your parents in a vibrant,
-              inclusive society.
+              With extensive knowledge of Singapore’s immigration policies, SG
+              Immigrations is dedicated to guiding PR applications for aged
+              parents. We build a compelling case that highlights your family’s
+              commitment to Singapore and the support network in place to help
+              your parents integrate and thrive. Let us help make Singapore a
+              secure, welcoming home for your parents in a vibrant, inclusive
+              society.
             </p>
           </div>
           <Button className="bg-white text-red-600 lg:text-base border rounded-full max-w-sm h-10">
@@ -215,8 +215,8 @@ function ParentPr() {
               <p>
                 <b>1. Comprehensive Document Support - </b>Preparing the
                 required documents for a parents’ PR application can be complex,
-                and errors or missing paperwork can cause delays. At Assurance
-                Immigration, we simplify this process by guiding you through
+                and errors or missing paperwork can cause delays. At SG
+                Immigrations, we simplify this process by guiding you through
                 each necessary document to ensure a complete and strong
                 application. With our help, you can avoid setbacks and submit
                 your application with confidence.
@@ -228,7 +228,7 @@ function ParentPr() {
                   2. Targetted Strategies to make your Parent's Application
                   Stand Out –{" "}
                 </b>
-                In Singapore’s selective PR landscape, Assurance Immigration
+                In Singapore’s selective PR landscape, SG Immigrations
                 customizes strategies to make your application stand out. By
                 understanding the specific needs and criteria for parent
                 applications, we craft an approach that highlights your parents’
@@ -239,8 +239,8 @@ function ParentPr() {
             <div className="bg-red-600 rounded-xl text-white p-6">
               <p>
                 <b>3. Expert Guidance Based on In-Depth Knowledge​ – </b>With
-                nearly 20 years of experience in immigration services, Assurance
-                Immigration provides knowledgeable, up-to-date guidance on
+                nearly 20 years of experience in immigration services, SG
+                Immigrations provides knowledgeable, up-to-date guidance on
                 policy changes and requirements for parent PR applications. We
                 prioritize transparency and accuracy, ensuring you receive the
                 most current advice and are well-prepared for every stage of the
@@ -249,8 +249,8 @@ function ParentPr() {
             </div>
             <div className="bg-gray-200 rounded-xl text-red-600 p-6">
               <p>
-                <b>4. Personalized and Holistic Approach – </b>At Assurance
-                Immigration, we recognize that every family’s circumstances are
+                <b>4. Personalized and Holistic Approach – </b>At SG
+                Immigrations, we recognize that every family’s circumstances are
                 unique. Our holistic approach goes beyond documentation to
                 emphasize the meaningful aspects of your application, such as
                 family ties and your commitment to supporting your parents in
@@ -260,11 +260,11 @@ function ParentPr() {
             </div>
             <div className="bg-red-600 rounded-xl text-white p-6">
               <p>
-                <b>5. Dedication to Client Success – </b>Assurance Immigration
-                is driven by a commitment to achieving your goals. We believe
-                that a strong application is built on trust, clear
-                communication, and dedicated service. Our team strives to foster
-                lasting relationships with clients, providing reliable support
+                <b>5. Dedication to Client Success – </b>SG Immigrations is
+                driven by a commitment to achieving your goals. We believe that
+                a strong application is built on trust, clear communication, and
+                dedicated service. Our team strives to foster lasting
+                relationships with clients, providing reliable support
                 throughout the PR application process for your parents.
               </p>
             </div>

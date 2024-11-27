@@ -250,7 +250,7 @@ function App() {
             <h1 className="text-4xl xl:text-5xl text-center font-bold">
               Our Services
             </h1>
-            <h3 className="text-sm text-justify">
+            <h3 className="text-justify">
               At SG Immigrations, we specialize in helping foreigners navigate
               the path to a successful future in Singapore. With expertise in
               all immigration avenues, we work closely with you to identify the

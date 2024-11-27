@@ -59,8 +59,8 @@ function PrRejection() {
           </p>
           <p className="text-base">
             Seeking expert assistance can be crucial to improving your chances.
-            Assurance Immigration offers personalized services tailored to your
-            unique situation, providing strategies to navigate the complex PR
+            SG Immigrations offers personalized services tailored to your unique
+            situation, providing strategies to navigate the complex PR
             application process with greater confidence.
           </p>
           <Button className="bg-red-600 text-base border rounded-full md:w-full max-w-sm h-12">
@@ -206,9 +206,9 @@ function PrRejection() {
                 <b>2. Showcasing Your Unique Contributions –</b> We will work
                 with you to highlight your professional achievements,
                 involvement in the community, and personal growth that
-                demonstrate your dedication and potential value to Singapore.
-                Assurance Immigration helps you identify and present the
-                qualities that make you a strong candidate for PR status.
+                demonstrate your dedication and potential value to Singapore. SG
+                Immigrations helps you identify and present the qualities that
+                make you a strong candidate for PR status.
               </p>
             </div>
             <div className="bg-red-600 rounded-xl text-white p-6">
@@ -226,7 +226,7 @@ function PrRejection() {
                 <b>4. Ensuring a Polished Re-Application –</b> Before
                 submitting, we conduct a thorough review of your re-application
                 materials to guarantee that everything is clear, professional,
-                and free from errors. Assurance Immigration ensures that your
+                and free from errors. SG Immigrations ensures that your
                 re-application leaves a stronger, positive impression that will
                 increase your chances of success this time.
               </p>

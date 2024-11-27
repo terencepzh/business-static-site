@@ -34,7 +34,7 @@ function BRS() {
             Business Relocation Programme
           </h1>
           <p className="text-base">
-            At Assurance Immigration, we specialize in assisting businesses with
+            At SG Immigrations, we specialize in assisting businesses with
             seamless relocation to Singapore through our comprehensive Business
             Relocation Programme. We understand that moving your business to a
             new country can be a complex process, and our team of experts is
@@ -50,10 +50,10 @@ function BRS() {
           </p>
           <p className="text-base">
             With years of experience and in-depth knowledge of Singapore’s
-            business environment, Assurance Immigration simplifies the
-            transition for companies looking to establish or expand in
-            Singapore, allowing you to focus on growing your business while we
-            handle the relocation process.
+            business environment, SG Immigrations simplifies the transition for
+            companies looking to establish or expand in Singapore, allowing you
+            to focus on growing your business while we handle the relocation
+            process.
           </p>
           <Button className="bg-red-600 text-base border rounded-full md:w-full max-w-sm h-12">
             <Link

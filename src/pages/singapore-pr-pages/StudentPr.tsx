@@ -43,9 +43,9 @@ function StudentPr() {
             Recognizing the contributions that international students bring to
             its educational institutions and broader community, Singapore
             provides PR opportunities for those who wish to establish roots in
-            the country. Assurance Immigration understands the unique challenges
-            that students face when pursuing PR and offers expert guidance
-            tailored to meet their specific needs.
+            the country. SG Immigrations understands the unique challenges that
+            students face when pursuing PR and offers expert guidance tailored
+            to meet their specific needs.
           </p>
           <p className="text-base">
             Our team supports students in navigating eligibility requirements,
@@ -189,8 +189,8 @@ function StudentPr() {
               <p>
                 <b>1. Making the PR Process Simple for Students -</b> Applying
                 for PR as a student in Singapore can be complex, with numerous
-                forms, requirements, and documentation involved. Assurance
-                Immigration’s experienced consultants simplify this journey by
+                forms, requirements, and documentation involved. SG
+                Immigrations' experienced consultants simplify this journey by
                 offering a clear, step-by-step approach. We make sure you
                 understand each stage of the application and help you assemble
                 the required paperwork, presenting your information accurately
@@ -200,8 +200,8 @@ function StudentPr() {
             </div>
             <div className="bg-gray-200 rounded-xl text-red-600 p-6">
               <p>
-                <b>2. Optimizing Your PR Approval Chances –</b> At Assurance
-                Immigration, we’re dedicated to helping students improve their
+                <b>2. Optimizing Your PR Approval Chances –</b> At SG
+                Immigrations, we’re dedicated to helping students improve their
                 approval chances for PR. We know the nuances of the application
                 process and what factors influence decisions. Using this
                 insight, we carefully tailor your application to meet official
@@ -213,8 +213,8 @@ function StudentPr() {
             </div>
             <div className="bg-red-600 rounded-xl text-white p-6">
               <p>
-                <b>3. Strengthening Your PR Application Profile –</b> Assurance
-                Immigration understands the unique journey students face when
+                <b>3. Strengthening Your PR Application Profile –</b> SG
+                Immigrations understands the unique journey students face when
                 seeking PR status in Singapore. We offer personalized guidance
                 to build a robust application that highlights your academic
                 achievements, extracurricular involvement, and intention to grow

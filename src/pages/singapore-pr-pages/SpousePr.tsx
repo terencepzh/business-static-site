@@ -12,13 +12,13 @@ function SpousePr() {
               <p>- Spouse PR Application -</p>
             </h1>
             <p className="text-xs md:text-base">
-              With our expertise in Singapore’s immigration regulations,
-              Assurance Immigration is dedicated to supporting Spouse PR
-              applications. We focus on presenting a strong, well-rounded case
-              by highlighting the stability of your relationship, addressing
-              potential challenges, and emphasizing your commitment to
-              contributing to Singapore. Let us support you in making Singapore
-              a permanent home for you and your loved one.
+              With our expertise in Singapore’s immigration regulations, SG
+              Immigrations is dedicated to supporting Spouse PR applications. We
+              focus on presenting a strong, well-rounded case by highlighting
+              the stability of your relationship, addressing potential
+              challenges, and emphasizing your commitment to contributing to
+              Singapore. Let us support you in making Singapore a permanent home
+              for you and your loved one.
             </p>
           </div>
           <Button className="bg-white text-red-600 lg:text-base border rounded-full max-w-sm h-10">
@@ -48,14 +48,14 @@ function SpousePr() {
           </p>
           <p className="text-base">
             Although meeting these eligibility criteria is necessary, it does
-            not ensure an approval. Assurance Immigration has extensive
-            experience navigating the evaluation process and can help strengthen
-            your spouse’s application by emphasizing key factors such as
+            not ensure an approval. SG Immigrations has extensive experience
+            navigating the evaluation process and can help strengthen your
+            spouse’s application by emphasizing key factors such as
             qualifications, skills, contributions, and commitment to Singapore.
             Our team offers personalized guidance through each stage of the PR
             application journey, making the process smooth and increasing your
-            chances of success. Let Assurance Immigration support your goal of
-            making Singapore a long-term home together.
+            chances of success. Let SG Immigrations support your goal of making
+            Singapore a long-term home together.
           </p>
           <Button className="bg-red-600 text-base border rounded-full md:w-full max-w-sm h-12">
             <Link
@@ -291,19 +291,18 @@ function SpousePr() {
                 <b>1. Comprehensive Document Support - </b> Navigating the
                 documentation requirements for a PR application can be
                 challenging, especially as missing or incorrect documents can
-                lead to rejection. Our team at Assurance Immigration takes the
-                stress out of document preparation, guiding you through each
-                required item to ensure your application is complete and
-                compelling. With our assistance, you save time and avoid errors,
-                giving you confidence that your application is properly
-                supported.
+                lead to rejection. Our team at SG Immigrations takes the stress
+                out of document preparation, guiding you through each required
+                item to ensure your application is complete and compelling. With
+                our assistance, you save time and avoid errors, giving you
+                confidence that your application is properly supported.
               </p>
             </div>
             <div className="bg-gray-200 rounded-xl text-red-600 p-6">
               <p>
                 <b>2. Insight-Driven Strategies to Stand Out – </b>In a
                 competitive landscape where limited PR approvals are issued each
-                year, Assurance Immigration customizes strategies to help your
+                year, SG Immigrations customizes strategies to help your
                 application stand out. By thoroughly understanding the PR
                 process and tailoring our approach to your unique circumstances,
                 we increase the chances of success for your spouse’s PR
@@ -314,8 +313,8 @@ function SpousePr() {
             <div className="bg-red-600 rounded-xl text-white p-6">
               <p>
                 <b>3. Expert Guidance Based on In-Depth Knowledge​ – </b> With
-                nearly 20 years in the immigration field, Assurance Immigration
-                offers experienced, informed guidance. We are updated on current
+                nearly 20 years in the immigration field, SG Immigrations offers
+                experienced, informed guidance. We are updated on current
                 regulations and policy shifts, allowing us to provide accurate,
                 timely advice throughout the process. Our team values
                 transparency, keeping you informed and prepared as we support
@@ -324,13 +323,13 @@ function SpousePr() {
             </div>
             <div className="bg-gray-200 rounded-xl text-red-600 p-6">
               <p>
-                <b>4. Holistic Approach with Personal Attention – </b>At
-                Assurance Immigration, we believe that each client’s case is
-                unique and deserves a personalized approach. We focus not just
-                on meeting requirements but also on highlighting your spouse’s
-                strengths and the genuine commitment you share to building a
-                life in Singapore. This thoughtful, holistic approach ensures
-                that your application reflects both eligibility and a meaningful
+                <b>4. Holistic Approach with Personal Attention – </b>At SG
+                Immigrations, we believe that each client’s case is unique and
+                deserves a personalized approach. We focus not just on meeting
+                requirements but also on highlighting your spouse’s strengths
+                and the genuine commitment you share to building a life in
+                Singapore. This thoughtful, holistic approach ensures that your
+                application reflects both eligibility and a meaningful
                 connection to the country.
               </p>
             </div>
@@ -339,7 +338,7 @@ function SpousePr() {
                 <b>5. Commitment to Client Success – </b> Our dedication to our
                 clients’ goals sets us apart. We believe that a successful
                 application starts with mutual trust, clarity, and a commitment
-                to excellence in service. Assurance Immigration strives to build
+                to excellence in service. SG Immigrations strives to build
                 lasting client relationships based on these principles, ensuring
                 that each client feels supported throughout their PR application
                 journey.

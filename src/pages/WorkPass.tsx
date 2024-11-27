@@ -12,8 +12,8 @@ function WorkPass() {
               Work Pass Application
             </h1>
             <p className="text-xs md:text-base">
-              This page outlines the types of work passes Assurance Immigration
-              is able to provide, as well as a brief overview of the application
+              This page outlines the types of work passes SG Immigrations is
+              able to provide, as well as a brief overview of the application
               process.
             </p>
           </div>

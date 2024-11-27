@@ -12,10 +12,10 @@ function EpPr() {
               <p>- PR Application for EP Holders -</p>
             </h1>
             <p className="text-xs md:text-base">
-              Assurance Immigration leverages its deep understanding of
-              Singapore’s immigration landscape to assist Employment Pass (EP)
-              holders in their journey toward Permanent Residency. We tailor
-              each application to showcase your professional contributions and
+              SG Immigrations leverages its deep understanding of Singapore’s
+              immigration landscape to assist Employment Pass (EP) holders in
+              their journey toward Permanent Residency. We tailor each
+              application to showcase your professional contributions and
               long-term commitment to Singapore. Allow us to help you build a
               strong case for residency, opening the door to a stable future in
               Singapore’s vibrant and diverse community.
@@ -41,7 +41,7 @@ function EpPr() {
             As an Employment Pass (EP) holder, securing Singapore Permanent
             Residency (PR) can provide numerous advantages, including increased
             career flexibility, access to healthcare and educational resources,
-            and the stability of long-term residence. Assurance Immigration is
+            and the stability of long-term residence. SG Immigrations is
             dedicated to supporting you through each step of this process. Our
             team offers tailored strategies and expert advice to enhance your
             chances of success, helping you build a fulfilling future in
@@ -57,9 +57,9 @@ function EpPr() {
           <p className="text-base">
             The path to PR involves gathering essential documentation and
             emphasizing your potential contributions to Singapore’s society and
-            economy. With Assurance Immigration’s guidance, we help you navigate
-            each requirement, providing the professional support you need to
-            present a solid case and achieve your goal of making Singapore your
+            economy. With SG Immigrations' guidance, we help you navigate each
+            requirement, providing the professional support you need to present
+            a solid case and achieve your goal of making Singapore your
             permanent home.
           </p>
           <Button className="bg-red-600 text-base border rounded-full md:w-full max-w-sm h-12">
@@ -268,9 +268,9 @@ function EpPr() {
                 <li>Income tax statement (if employed)​</li>
                 <li>Document showing proof of residential address​</li>
                 <li>
-                  PR Cover Letter* (Assurance Immigration’s skilled copywriters
-                  are able to craft a compelling cover letter tailored
-                  specifically to your PR application needs!)​
+                  PR Cover Letter* (SG Immigrations' skilled copywriters are
+                  able to craft a compelling cover letter tailored specifically
+                  to your PR application needs!)​
                 </li>
               </ul>
             </div>
@@ -299,9 +299,9 @@ function EpPr() {
                 <b>1. Document Preparation Simplified for EP Holders - </b>For
                 EP holders, assembling the necessary documents for a PR
                 application can be complex, as missing or incomplete paperwork
-                could delay or compromise your application. At Assurance
-                Immigration, we streamline this process, guiding you through
-                each documentation step so that your application is thorough and
+                could delay or compromise your application. At SG Immigrations,
+                we streamline this process, guiding you through each
+                documentation step so that your application is thorough and
                 impactful. By partnering with us, you’ll avoid common mistakes,
                 saving time and presenting a well-prepared application with
                 confidence.
@@ -312,12 +312,12 @@ function EpPr() {
                 <b>
                   2. Strategic Approaches Customized for EP Holder PR Success –
                 </b>
-                In Singapore’s competitive PR landscape, Assurance Immigration
-                tailors strategies specifically for EP holders to increase the
-                impact of your application. By understanding the unique position
-                and requirements of EP applicants, we customize a plan to help
-                your application stand out, improving your chances of approval
-                and bringing you closer to securing permanent residency.
+                In Singapore’s competitive PR landscape, SG Immigrations tailors
+                strategies specifically for EP holders to increase the impact of
+                your application. By understanding the unique position and
+                requirements of EP applicants, we customize a plan to help your
+                application stand out, improving your chances of approval and
+                bringing you closer to securing permanent residency.
               </p>
             </div>
             <div className="bg-red-600 rounded-xl text-white p-6">
@@ -327,12 +327,12 @@ function EpPr() {
                   –{" "}
                 </b>
                 With nearly 20 years of experience in the immigration field, our
-                Assurance Immigration team provides EP holders with
-                knowledgeable, up-to-date advice throughout the PR application
-                process. We stay informed of any policy updates or regulatory
-                changes, providing accurate insights so that you are
-                well-prepared at each stage. Our clear and dependable guidance
-                helps ensure your application progresses smoothly.
+                SG Immigrations team provides EP holders with knowledgeable,
+                up-to-date advice throughout the PR application process. We stay
+                informed of any policy updates or regulatory changes, providing
+                accurate insights so that you are well-prepared at each stage.
+                Our clear and dependable guidance helps ensure your application
+                progresses smoothly.
               </p>
             </div>
             <div className="bg-gray-200 rounded-xl text-red-600 p-6">
@@ -341,7 +341,7 @@ function EpPr() {
                   4. Personalized Approach Focused on EP Holders’ Unique
                   Profiles –{" "}
                 </b>
-                At Assurance Immigration, we understand that each EP holder’s
+                At SG Immigrations, we understand that each EP holder’s
                 background and goals are unique, which is why we take a tailored
                 approach to every application. Beyond meeting the basic
                 criteria, we help showcase your professional qualifications,
@@ -354,12 +354,12 @@ function EpPr() {
               <p>
                 <b>5. Dedication to Client Success – </b>We believe in
                 supporting EP holders throughout their journey toward
-                establishing long-term residency in Singapore. Assurance
-                Immigration is committed to building trust with each client,
-                providing transparent communication and consistent support. Our
-                goal is to ensure that your PR application not only meets the
-                requirements but also reflects a strong and lasting commitment
-                to life in Singapore.
+                establishing long-term residency in Singapore. SG Immigrations
+                is committed to building trust with each client, providing
+                transparent communication and consistent support. Our goal is to
+                ensure that your PR application not only meets the requirements
+                but also reflects a strong and lasting commitment to life in
+                Singapore.
               </p>
             </div>
           </div>

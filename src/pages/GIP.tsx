@@ -12,8 +12,8 @@ function GIP() {
             </h1>
             <p className="text-xs md:text-base">
               This page covers the Global Investor Programme (GIP), its
-              eligibility criteria, and how Assurance Immigration can help with
-              the entire application process from eligibility assessment to
+              eligibility criteria, and how SG Immigrations can help with the
+              entire application process from eligibility assessment to
               application support.
             </p>
           </div>
