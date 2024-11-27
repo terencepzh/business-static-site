@@ -233,7 +233,7 @@ function App() {
         </div>
       </div>
       {/* Testimonials */}
-      <div className="flex flex-col gap-4 bg-red-600 text-white text-center px-6 py-8">
+      {/* <div className="flex flex-col gap-4 bg-red-600 text-white text-center px-6 py-8">
         <h1 className="text-4xl lg:text-5xl text-center font-bold">
           Our Testimonials
         </h1>
@@ -241,7 +241,7 @@ function App() {
           Hear more from our past clients on their experience with us!
         </h3>
         <div>Testimonials TBD</div>
-      </div>
+      </div> */}
       <Overview />
       {/* Services */}
       <div className="flex justify-center w-full">

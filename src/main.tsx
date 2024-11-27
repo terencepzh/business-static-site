@@ -33,6 +33,16 @@ import Article6 from "./pages/resource-pages/Article6.tsx";
 import Article7 from "./pages/resource-pages/Article7.tsx";
 import Article8 from "./pages/resource-pages/Article8.tsx";
 import Article9 from "./pages/resource-pages/Article9.tsx";
+import Article13 from "./pages/resource-pages/Article13.tsx";
+import Article14 from "./pages/resource-pages/Article14.tsx";
+import Article15 from "./pages/resource-pages/Article15.tsx";
+import Article16 from "./pages/resource-pages/Article16.tsx";
+import Article17 from "./pages/resource-pages/Article17.tsx";
+import Article18 from "./pages/resource-pages/Article18.tsx";
+import Article19 from "./pages/resource-pages/Article19.tsx";
+import Article20 from "./pages/resource-pages/Article20.tsx";
+import Article21 from "./pages/resource-pages/Article21.tsx";
+import Article22 from "./pages/resource-pages/Article22.tsx";
 
 const router = createBrowserRouter([
   // Root
@@ -293,6 +303,96 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Article12 />
+      </Layout>
+    ),
+  },
+  // Article 13
+  {
+    path: "/resources/article13",
+    element: (
+      <Layout>
+        <Article13 />
+      </Layout>
+    ),
+  },
+  // Article 14
+  {
+    path: "/resources/article14",
+    element: (
+      <Layout>
+        <Article14 />
+      </Layout>
+    ),
+  },
+  // Article 15
+  {
+    path: "/resources/article15",
+    element: (
+      <Layout>
+        <Article15 />
+      </Layout>
+    ),
+  },
+  // Article 16
+  {
+    path: "/resources/article16",
+    element: (
+      <Layout>
+        <Article16 />
+      </Layout>
+    ),
+  },
+  // Article 17
+  {
+    path: "/resources/article17",
+    element: (
+      <Layout>
+        <Article17 />
+      </Layout>
+    ),
+  },
+  // Article 18
+  {
+    path: "/resources/article18",
+    element: (
+      <Layout>
+        <Article18 />
+      </Layout>
+    ),
+  },
+  // Article 19
+  {
+    path: "/resources/article19",
+    element: (
+      <Layout>
+        <Article19 />
+      </Layout>
+    ),
+  },
+  // Article 20
+  {
+    path: "/resources/article20",
+    element: (
+      <Layout>
+        <Article20 />
+      </Layout>
+    ),
+  },
+  // Article 21
+  {
+    path: "/resources/article21",
+    element: (
+      <Layout>
+        <Article21 />
+      </Layout>
+    ),
+  },
+  // Article 22
+  {
+    path: "/resources/article22",
+    element: (
+      <Layout>
+        <Article22 />
       </Layout>
     ),
   },

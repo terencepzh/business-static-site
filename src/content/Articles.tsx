@@ -104,4 +104,93 @@ export const articles = [
       "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
     url: "/resources/article12",
   },
+  // Article 13
+  {
+    image: "bg-[url('/Article13.png')]",
+    title: "10 Transformative Benefits of Hiring a PR Application Agency",
+    caption:
+      "Applying for Permanent Residency (PR) in Singapore can feel overwhelming. The paperwork, the eligibility criteria, and the waiting—it’s a lot to handle on your own. But here’s the good news: hiring a PR application agency can make your life so much easier. Beyond just assisting with the application, a professional agency adds value by streamlining the process, reducing errors, and increasing your chances of approval.",
+    url: "/resources/article13",
+  },
+  // Article 14
+  {
+    image: "bg-[url('/Article14.png')]",
+    title:
+      "Avoid These 7 Costly PR Application Mistakes with Help from a PR Application Agency",
+    caption:
+      "Applying for Permanent Residency (PR) in Singapore is a big milestone, but the process can be daunting. One misstep can lead to delays, or worse, rejection. That’s why many applicants turn to a PR application agency for guidance—they’re experts at helping you avoid common pitfalls and present a strong case.",
+    url: "/resources/article14",
+  },
+  // Article 15
+  {
+    image: "bg-[url('/Article15.png')]",
+    title:
+      "Fast-Track Your PR Approval with the Help of a PR Application Agency",
+    caption:
+      "If you’re applying for Permanent Residency (PR) in Singapore, you’re probably wondering if there’s a way to speed up the process. While there’s no official “express lane,” working with a PR application agency can help you fast-track your application by avoiding delays, ensuring accuracy, and presenting a strong case to ICA.",
+    url: "/resources/article15",
+  },
+  // Article 16
+  // {
+  //   image: "bg-[url('/Article16.png')]",
+  //   title:
+  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
+  //   caption:
+  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
+  //   url: "/resources/article16",
+  // },
+  // // Article 17
+  // {
+  //   image: "bg-[url('/Article17.png')]",
+  //   title:
+  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
+  //   caption:
+  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
+  //   url: "/resources/article17",
+  // },
+  // // Article 16
+  // {
+  //   image: "bg-[url('/Article12.png')]",
+  //   title:
+  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
+  //   caption:
+  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
+  //   url: "/resources/article12",
+  // },
+  // // Article 16
+  // {
+  //   image: "bg-[url('/Article12.png')]",
+  //   title:
+  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
+  //   caption:
+  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
+  //   url: "/resources/article12",
+  // },
+  // // Article 16
+  // {
+  //   image: "bg-[url('/Article12.png')]",
+  //   title:
+  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
+  //   caption:
+  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
+  //   url: "/resources/article12",
+  // },
+  // // Article 16
+  // {
+  //   image: "bg-[url('/Article12.png')]",
+  //   title:
+  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
+  //   caption:
+  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
+  //   url: "/resources/article12",
+  // },
+  // // Article 16
+  // {
+  //   image: "bg-[url('/Article12.png')]",
+  //   title:
+  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
+  //   caption:
+  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
+  //   url: "/resources/article12",
+  // },
 ];

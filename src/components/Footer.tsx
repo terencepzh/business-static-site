@@ -66,7 +66,9 @@ function Footer() {
           <p>60 Paya Lebar Road (Paya Lebar Square) #07-54,</p>
           <p>Singapore 409051</p>
         </div>
-        <p className="text-center">© 2024 Lennon - All Rights Reserved.</p>
+        <p className="text-center">
+          © 2024 SG Immigrations - All Rights Reserved.
+        </p>
       </div>
     </div>
   );
