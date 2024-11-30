@@ -191,7 +191,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/resources"
+                to="/resources/1"
                 reloadDocument
               >
                 Resources
@@ -393,7 +393,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="/resources"
+                to="/resources/1"
                 reloadDocument
               >
                 Resources

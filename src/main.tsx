@@ -8,7 +8,7 @@ import Layout from "./layouts/Layout.tsx";
 import OurServices from "./pages/OurServices.tsx";
 import SingaporePr from "./pages/SingaporePr.tsx";
 import Faq from "./pages/Faq.tsx";
-import Resources from "./pages/Resources.tsx";
+import ResourcesOne from "./pages/ResourcesOne.tsx";
 import Article1 from "./pages/resource-pages/Article1.tsx";
 import Citizenship from "./pages/Citizenship.tsx";
 import LTVPass from "./pages/LTVPass.tsx";
@@ -43,6 +43,7 @@ import Article19 from "./pages/resource-pages/Article19.tsx";
 import Article20 from "./pages/resource-pages/Article20.tsx";
 import Article21 from "./pages/resource-pages/Article21.tsx";
 import Article22 from "./pages/resource-pages/Article22.tsx";
+import ResourcesTwo from "./pages/ResourcesTwo.tsx";
 
 const router = createBrowserRouter([
   // Root
@@ -191,10 +192,19 @@ const router = createBrowserRouter([
   },
   // Resources
   {
-    path: "/resources",
+    path: "/resources/1",
     element: (
       <Layout>
-        <Resources />
+        <ResourcesOne />
+      </Layout>
+    ),
+  },
+  // Resources
+  {
+    path: "/resources/2",
+    element: (
+      <Layout>
+        <ResourcesTwo />
       </Layout>
     ),
   },

@@ -1,4 +1,4 @@
-export const articles = [
+export const articles_1 = [
   // Article 1
   {
     image: "bg-[url('/Article1.png')]",
@@ -130,67 +130,68 @@ export const articles = [
       "If you’re applying for Permanent Residency (PR) in Singapore, you’re probably wondering if there’s a way to speed up the process. While there’s no official “express lane,” working with a PR application agency can help you fast-track your application by avoiding delays, ensuring accuracy, and presenting a strong case to ICA.",
     url: "/resources/article15",
   },
+];
+
+export const articles_2 = [
   // Article 16
-  // {
-  //   image: "bg-[url('/Article16.png')]",
-  //   title:
-  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
-  //   caption:
-  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
-  //   url: "/resources/article16",
-  // },
-  // // Article 17
-  // {
-  //   image: "bg-[url('/Article17.png')]",
-  //   title:
-  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
-  //   caption:
-  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
-  //   url: "/resources/article17",
-  // },
-  // // Article 16
-  // {
-  //   image: "bg-[url('/Article12.png')]",
-  //   title:
-  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
-  //   caption:
-  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
-  //   url: "/resources/article12",
-  // },
-  // // Article 16
-  // {
-  //   image: "bg-[url('/Article12.png')]",
-  //   title:
-  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
-  //   caption:
-  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
-  //   url: "/resources/article12",
-  // },
-  // // Article 16
-  // {
-  //   image: "bg-[url('/Article12.png')]",
-  //   title:
-  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
-  //   caption:
-  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
-  //   url: "/resources/article12",
-  // },
-  // // Article 16
-  // {
-  //   image: "bg-[url('/Article12.png')]",
-  //   title:
-  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
-  //   caption:
-  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
-  //   url: "/resources/article12",
-  // },
-  // // Article 16
-  // {
-  //   image: "bg-[url('/Article12.png')]",
-  //   title:
-  //     "Family PR Applications: How to Secure PR for Your Whole Family in Singapore",
-  //   caption:
-  //     "If you’re an expat living in Singapore and dreaming of settling down here with your loved ones, you’re probably thinking about securing PR (Permanent Residency) for your entire family. Applying for PR as a family is a bit more complex than an individual application, but with some preparation, it’s entirely manageable—and worth it!",
-  //   url: "/resources/article12",
-  // },
+  {
+    image: "bg-[url('/Article16.png')]",
+    title:
+      "Insider Secrets: How Expats Are Fast-Tracking Their Singapore PR with a PR Application Agency",
+    caption:
+      "Securing Permanent Residency (PR) in Singapore isn’t easy, but it’s possible—especially with the right strategies. Many expats are successfully getting their PR by following a clear, well-organized approach, and working with a PR application agency can significantly improve your chances.",
+    url: "/resources/article16",
+  },
+  // Article 17
+  {
+    image: "bg-[url('/Article17.png')]",
+    title:
+      "How Much Does a Singapore PR Application Really Cost? Breakdown of Fees and Hidden Charges",
+    caption:
+      'When considering Permanent Residency (PR) in Singapore, one of the first questions that come to mind is, "How much does it cost to apply for PR?" While the official fees may seem straightforward, the reality is there are additional hidden costs and time investments to consider.',
+    url: "/resources/article17",
+  },
+  // Article 18
+  {
+    image: "bg-[url('/Article18.png')]",
+    title:
+      "2024 Guide: Is Your Singapore PR Application Likely to Be Approved?",
+    caption:
+      'Applying for Permanent Residency (PR) in Singapore can feel like stepping into the unknown. With approval rates varying widely, many wonder, "Is my Singapore PR application likely to be approved?" The good news? Understanding what ICA (Immigration and Checkpoints Authority) looks for can help you build a strong case and improve your chances.',
+    url: "/resources/article18",
+  },
+  // Article 19
+  {
+    image: "bg-[url('/Article19.png')]",
+    title:
+      "Get Ahead of the Competition: When Is the Best Time to Apply for Singapore PR?",
+    caption:
+      'When it comes to applying for Permanent Residency (PR) in Singapore, timing can significantly impact your approval chances. You might wonder, "When is the best time to apply for PR?" While eligibility is crucial, choosing the right time to submit your application can give you an edge over others.',
+    url: "/resources/article19",
+  },
+  // Article 20
+  {
+    image: "bg-[url('/Article20.png')]",
+    title: "Shocking Truth: How Long Does It Really Take to Get Singapore PR? ",
+    caption:
+      'Applying for Permanent Residency (PR) in Singapore is an exciting step toward a more stable future. But the big question on everyone’s mind is, "How long does it take to get Singapore PR?" The answer depends on various factors, from the strength of your application to ICA’s workload.',
+    url: "/resources/article20",
+  },
+  // Article 21
+  {
+    image: "bg-[url('/Article21.png')]",
+    title: "Top 5 Agencies to Help You Get Singapore PR Without the Hassle",
+    caption:
+      "Applying for Permanent Residency (PR) in Singapore can be a daunting process, especially with the paperwork, eligibility criteria, and preparation involved. While some may choose to navigate this alone, partnering with a reliable PR application agency can save time, reduce stress, and significantly improve your chances of success.",
+    url: "/resources/article21",
+  },
+  // Article 22
+  {
+    image: "bg-[url('/Article22.png')]",
+    title:
+      "Is Your Job Eligible? Check If You Qualify for Singapore PR Before Applying",
+    caption:
+      'If you’re considering applying for Permanent Residency (PR) in Singapore, one of the first questions to ask is, "Is my job eligible for Singapore PR?" While PR eligibility depends on several factors, your profession and industry play a significant role in determining your chances of approval.',
+    url: "/resources/article22",
+  },
 ];

@@ -4,274 +4,291 @@ function Article22() {
   return (
     <div className="flex flex-col items-center gap-4 px-6 py-8">
       <div className="flex items-start hover:text-red-600 w-full max-w-screen-md">
-        <Link to="/resources">All Posts</Link>
+        <Link to="/resources/2">All Posts</Link>
       </div>
       <div className="flex flex-col gap-4 border max-w-screen-md p-2 py-6 md:p-6">
         <h1 className="text-red-600 text-xl md:text-3xl font-bold">
-          Family PR Applications: How to Secure PR for Your Whole Family in
-          Singapore
+          Is Your Job Eligible? Check If You Qualify for Singapore PR Before
+          Applying
         </h1>
         <img
-          src="/Article12.png"
+          src="/Article22.png"
           alt="Cover Image"
         />
-        <div className="flex flex-col gap-6 text-xs md:text-sm">
-          <p>
-            If you’re an expat living in Singapore and dreaming of settling down
-            here with your loved ones, you’re probably thinking about securing
-            PR (Permanent Residency) for your entire family. Applying for PR as
-            a family is a bit more complex than an individual application, but
-            with some preparation, it’s entirely manageable—and worth it!
-          </p>
-          <p>
-            In this guide, we’ll walk through everything you need to know about{" "}
-            <b>applying for PR in Singapore</b> for your family. We’ll look at
-            eligibility, common hurdles, and strategies to make the process as
-            smooth as possible. Using <b>PR application services</b> can also be
-            a game-changer for family applications, which we’ll discuss in more
-            detail below.
-          </p>
-        </div>
         <p className="text-red-600 md:text-lg font-bold">
-          Understanding Family PR Applications: Who’s Eligible?
+          Introduction: Does Your Job Make You Eligible for Singapore PR?
         </p>
         <div className="flex flex-col gap-6 text-xs md:text-sm">
           <p>
-            The S-Pass is a work pass designed for mid-skilled foreign workers
-            in Singapore, typically employed in sectors like manufacturing,
-            construction, and healthcare. Unlike Employment Pass (EP) holders,
-            S-Pass holders often have more limited privileges, including lower
-            salary thresholds. This difference can make the{" "}
-            <b>PR application in Singapore</b> a bit more challenging. However,
-            many S-Pass holders have successfully transitioned to PR, proving
-            it’s a viable path for those looking to make Singapore their
-            permanent home.
+            If you’re considering applying for Permanent Residency (PR) in
+            Singapore, one of the first questions to ask is, "Is my job eligible
+            for Singapore PR?" While PR eligibility depends on several factors,
+            your profession and industry play a significant role in determining
+            your chances of approval.
           </p>
-          <div className="flex flex-col gap-2">
-            <ul className="list-disc ml-4">
-              <li>
-                <b>Spouses</b>: If you’re applying for PR and you’re married,
-                you can include your spouse in the application. This is
-                essential if you’re committed to staying together in Singapore
-                long-term.
-              </li>
-              <li>
-                <b>Children</b>: You can apply for PR for your unmarried
-                children under the age of 21. This option provides stability and
-                access to Singapore’s world-renowned education system, which is
-                particularly attractive for families aiming to settle long-term.
-              </li>
-              <li>
-                <b>Parents</b>: Though it’s a bit more complex, some applicants
-                can also apply for PR for their parents. This option is usually
-                available for PR holders who want their parents to join them as
-                long-term residents, often requiring additional financial and
-                caregiving commitments.
-              </li>
-            </ul>
-          </div>
           <p>
-            Applying for PR as a family can help strengthen your profile by
-            demonstrating to the Immigration and Checkpoints Authority (ICA)
-            that you are committed to making Singapore a permanent home for you
-            and your family.
+            In this guide, we’ll explore how ICA evaluates jobs and industries,
+            which sectors are most in demand, and how a PR application agency
+            can help you determine if your job aligns with Singapore’s
+            immigration priorities.
           </p>
         </div>
         <p className="text-red-600 md:text-lg font-bold">
-          Why Family Applications Can Be Complex (But Totally Doable!)
+          Understanding Singapore PR Eligibility
         </p>
         <div className="flex flex-col gap-6 text-xs md:text-sm">
           <p>
-            One common misconception is that <b>applying for PR in Singapore</b>{" "}
-            as a family is just a matter of adding a few extra documents. In
-            reality, the process is more involved, and each family member's
-            profile can impact your overall application.
+            PR eligibility isn’t just about meeting basic criteria like having a
+            valid work pass. ICA assesses applicants holistically, and your job
+            is one of the most critical components of your profile.
           </p>
           <div className="flex flex-col gap-2">
-            <p className="font-bold">
-              {" "}
-              Each Member Needs Strong Supporting Documents
-            </p>
+            <p className="font-bold">Basic Eligibility Requirements</p>
             <p>
-              Every member of your family included in the application will need
-              specific supporting documents. If you have a spouse or children,
-              you’ll need birth certificates, marriage certificates, and
-              academic transcripts. I once helped a family that almost missed
-              their application deadline because they overlooked a certified
-              copy of their marriage certificate! Having a checklist of
-              documents can save you from these last-minute surprises.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="font-bold">
-              Financial Stability and Its Role in Family Applications
-            </p>
-            <p>
-              Family PR applications mean ICA will want to see that you’re
-              financially stable enough to support your family in Singapore.
-              Documentation of your income, tax contributions, and employment
-              status are crucial. Highlighting job stability, promotions, or a
-              high-demand field like technology or healthcare can work in your
-              favor. Financial proof is not just about salary; you can also
-              include assets or savings to demonstrate your long-term financial
-              security.
-            </p>
-          </div>
-        </div>
-        <p className="text-red-600 md:text-lg font-bold">
-          Key Strategies to Strengthen Your Family PR Application
-        </p>
-        <div className="flex flex-col gap-6 text-xs md:text-sm">
-          <p>
-            When applying for PR as a family, strategic steps can improve your
-            chances of success. Here’s how you can make your family application
-            stand out.
-          </p>
-          <div className="flex flex-col gap-2">
-            <p className="font-bold">Emphasize Community Involvement</p>
-            <p>
-              Singapore values applicants who contribute positively to the
-              community. If you or your spouse have been involved in volunteer
-              work, local events, or even corporate social responsibility (CSR)
-              activities, this can add value to your{" "}
-              <b>PR application in Singapore</b>. For instance, if your family
-              has participated in neighborhood events or volunteered for local
-              charities, it signals a strong commitment to integrating into the
-              community.
-            </p>
-            <p>
-              One client I knew had a successful application because their whole
-              family was engaged in local activities. The kids took part in
-              school charity drives, while the parents joined community cleanup
-              events. This painted a picture of a family invested in Singapore
-              beyond just work or studies.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="font-bold">
-              Seek Guidance from a PR Application Agency
-            </p>
-            <p>
-              Family PR applications can be overwhelming, especially with
-              multiple documents and profiles to coordinate. Using a{" "}
-              <b>PR application agency</b> can save time and reduce stress by
-              ensuring that your application is meticulously organized and
-              aligned with ICA’s preferences. Agencies specializing in{" "}
-              <b>PR application services</b> help families prepare comprehensive
-              applications, from document checks to strategy advice, all aimed
-              at improving the application’s competitiveness.
-            </p>
-            <p>
-              An agency can also assist with details like the best timing for
-              submission or additional documents to make your application stand
-              out. By having a professional guide, you’ll have peace of mind
-              that nothing is missed and that each family member’s profile is
-              optimized.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="font-bold">
-              Present a Thorough and Accurate Application
-            </p>
-            <p>
-              One key to success in <b>applying for PR in Singapore </b>is
-              presenting a complete, detailed, and accurate application.
-              Highlight your stability, job security, community involvement, and
-              financial strength. Double-check that all necessary documents are
-              ready and that each family member’s documents are included.
+              To apply for PR, you must meet at least one of these criteria:
             </p>
             <div className="flex flex-col gap-2">
-              <p>Documents to prioritize include:</p>
               <ul className="list-disc ml-4">
+                <li>Hold an Employment Pass or S Pass.</li>
                 <li>
-                  Employment and income verification to show financial
-                  stability.
+                  Be a spouse or unmarried child of a Singapore Citizen or PR.
                 </li>
-                <li>Tax documents covering your stay in Singapore.</li>
                 <li>
-                  Certificates or proof of community engagement or volunteer
-                  work, if applicable.
+                  Be an investor or entrepreneur under the Global Investor
+                  Program.
                 </li>
               </ul>
-              <p>
-                Providing comprehensive documentation upfront reduces delays and
-                shows the ICA that you’re organized and serious about making
-                Singapore home.
-              </p>
             </div>
           </div>
+          <p>
+            If you’re applying under the PTS Scheme (Professionals, Technical
+            Personnel, and Skilled Workers), your job type and industry will
+            heavily influence your application.
+          </p>
         </div>
         <p className="text-red-600 md:text-lg font-bold">
-          Potential Roadblocks and How to Overcome Them
+          High-Demand Industries for Singapore PR in 2024
         </p>
         <div className="flex flex-col gap-6 text-xs md:text-sm">
           <p>
-            Family PR applications can face unique challenges, so here’s how to
-            handle common issues that may arise.
+            Singapore’s government strategically prioritizes industries that
+            align with its long-term economic and social goals. Here are some of
+            the most sought-after sectors:
           </p>
           <div className="flex flex-col gap-2">
-            <p className="font-bold">Processing Delays</p>
+            <p className="font-bold">1. Technology and Innovation</p>
             <p>
-              Family PR applications may take longer due to the additional
-              profiles ICA must review. One family I worked with saw their
-              application take nearly a year for approval. Be prepared for a
-              potentially longer processing time, and use this period to
-              continue strengthening your family’s ties to Singapore.
+              Roles in cybersecurity, AI, data science, and software development
+              are in high demand. These jobs align with Singapore’s vision of
+              becoming a global tech hub.
+            </p>
+            <p>
+              Pro Tip: Highlight any projects that showcase your expertise in
+              emerging technologies.
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-bold">Document Completeness</p>
+            <p className="font-bold">2. Healthcare and Life Sciences</p>
             <p>
-              Applying for multiple family members means there’s a higher chance
-              of missing a required document. A checklist can help ensure
-              everything is included, but working with a{" "}
-              <b>PR application agency</b>
-              can provide an extra level of assurance. Agencies typically have a
-              structured document checklist and a process for cross-verifying
-              all necessary paperwork.
+              Doctors, nurses, medical researchers, and allied healthcare
+              professionals are essential to supporting Singapore’s aging
+              population and healthcare system.
+            </p>
+            <p>
+              Pro Tip: Include any certifications or advanced training to
+              strengthen your application.
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-bold"> Financial Stability Requirements</p>
+            <p className="font-bold">3. Financial Services and Fintech</p>
             <p>
-              Since ICA will evaluate your ability to support your family,
-              having up-to-date financial records is essential. If you have
-              investments, property, or savings, these can bolster your case by
-              showcasing a financial buffer. ICA may request more detailed
-              financial information for family applications, so make sure you’re
-              prepared to present this.
+              Singapore is a global financial hub, and professionals in
+              investment banking, fintech, and wealth management are highly
+              valued.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold"> 4. Engineering and Sustainability</p>
+            <p>
+              Civil engineers, environmental specialists, and renewable energy
+              experts contribute to Singapore’s infrastructure and green
+              initiatives.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">5. Education and Skills Development</p>
+            <p>
+              Educators, trainers, and professionals in skill-based sectors are
+              crucial for workforce development and education reform.
             </p>
           </div>
         </div>
         <p className="text-red-600 md:text-lg font-bold">
-          Final Thoughts on Making Singapore Your Family’s Permanent Home
+          How ICA Evaluates Your Job for PR Applications
         </p>
         <div className="flex flex-col gap-6 text-xs md:text-sm">
           <p>
-            Applying for PR for your entire family is a significant decision,
-            and while the process can be complex, the rewards are worth it.
-            Having PR status can provide long-term stability, access to
-            high-quality education, and the ability to truly call Singapore
-            home. By following a well-prepared approach—highlighting financial
-            stability, community involvement, and commitment to Singapore—you
-            can put together a compelling application.
+            Knowing what ICA looks for can help you tailor your application to
+            highlight the right aspects of your professional background.
+          </p>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">1. Job Stability</p>
+            <p>
+              Consistent employment, preferably with the same company for at
+              least two years, demonstrates stability. Job-hopping or frequent
+              changes can weaken your profile.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">2. Income Level</p>
+            <p>
+              Higher income often correlates with greater contributions to
+              Singapore’s tax system. ICA views this positively, especially for
+              roles that come with upward salary growth.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">3. Relevance to Singapore’s Economy</p>
+            <p>
+              Your job should align with Singapore’s economic goals.
+              Professionals in high-demand industries are often prioritized over
+              those in oversaturated sectors.
+            </p>
+            <p>
+              Example: A software developer working on AI projects is more
+              likely to gain approval than someone in a declining industry.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">4. Skills and Certifications</p>
+            <p>
+              Specialized skills or advanced certifications that set you apart
+              in your field can enhance your profile.
+            </p>
+            <p>
+              Pro Tip: Consider obtaining certifications relevant to your
+              industry before applying for PR.
+            </p>
+          </div>
+        </div>
+        <p className="text-red-600 md:text-lg font-bold">
+          Can a PR Application Agency Help Assess Job Eligibility?
+        </p>
+        <div className="flex flex-col gap-6 text-xs md:text-sm">
+          <p>
+            Determining whether your job qualifies for PR can be tricky,
+            especially with changing policies and economic priorities. This is
+            where a PR application agency comes in.
+          </p>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">1. Personalized Profile Evaluation</p>
+            <p>
+              Agencies assess your job, industry, and overall profile to
+              determine your eligibility. They can advise you on areas to
+              improve, such as gaining certifications or highlighting specific
+              achievements.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">2. Tailored Application Strategy</p>
+            <p>
+              A good PR application agency will tailor your application to
+              showcase how your role aligns with Singapore’s economic goals,
+              increasing your chances of approval.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">3. Up-to-Date Policy Knowledge</p>
+            <p>
+              Immigration policies can change, and agencies stay informed about
+              the latest updates, ensuring your application reflects current
+              priorities.
+            </p>
+          </div>
+        </div>
+        <p className="text-red-600 md:text-lg font-bold">
+          How to Strengthen Your PR Application Based on Your Job
+        </p>
+        <div className="flex flex-col gap-6 text-xs md:text-sm">
+          <p>
+            Even if your job isn’t in a high-demand sector, there are ways to
+            enhance your profile and improve your chances.
+          </p>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">1. Highlight Achievements</p>
+            <p>
+              Showcase significant contributions to your company or industry,
+              such as leading projects, achieving milestones, or receiving
+              awards.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">2. Build Community Involvement</p>
+            <p>
+              Active participation in volunteer work or local organizations
+              demonstrates integration into Singaporean society.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">3. Pursue Professional Development</p>
+            <p>
+              Obtaining additional certifications or skills relevant to your
+              field shows commitment to growth and adaptability.
+            </p>
+          </div>
+        </div>
+        <p className="text-red-600 md:text-lg font-bold">
+          Common Myths About Job Eligibility for PR
+        </p>
+        <div className="flex flex-col gap-6 text-xs md:text-sm">
+          <p>
+            There are several misconceptions about how your job affects PR
+            eligibility. Let’s clear up some of the most common myths.
+          </p>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">
+              Myth 1: Only High-Income Earners Qualify
+            </p>
+            <p>
+              While income is important, ICA also considers other factors, such
+              as community involvement and professional growth.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">
+              Myth 2: Changing Jobs Before Applying Hurts Your Chances
+            </p>
+            <p>
+              Frequent job changes can weaken your profile, but moving to a
+              higher-paying or more relevant role can enhance it if timed
+              strategically.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">
+              Myth 3: You Can’t Apply Without a High-Demand Job
+            </p>
+            <p>
+              Even if your job isn’t in a high-demand sector, presenting a
+              strong, well-rounded application can improve your chances.
+            </p>
+          </div>
+        </div>
+        <p className="text-red-600 md:text-lg font-bold">
+          Conclusion: Know Your Job’s Role in PR Eligibility
+        </p>
+        <div className="flex flex-col gap-6 text-xs md:text-sm">
+          <p>
+            Your job is a critical factor in your PR application, but it’s not
+            the only one. Understanding how ICA evaluates your profession and
+            taking steps to align your profile with Singapore’s priorities can
+            significantly boost your chances of approval.
           </p>
           <p>
-            Working with a <b>PR application agency</b> can be invaluable,
-            especially when juggling the demands of work, family, and the
-            intricate details of an immigration process. Take the time to
-            present each family member’s profile thoughtfully, ensuring you
-            align with ICA’s expectations. With the right preparation,
-            dedication, and support, your family’s future in Singapore could be
-            closer than you think.
-          </p>
-          <p>
-            <b>
-              Remember, Singapore isn’t just looking for individuals to work
-              here—it wants families who want to build lives here. So put in the
-              effort, seek help when needed, and each step will bring you closer
-              to making Singapore your family’s permanent home.
-            </b>
+            If you’re unsure about your job’s eligibility, consulting with a
+            trusted PR application agency can provide clarity and confidence.
+            With their expertise, you’ll know exactly how to present your role
+            and contributions to maximize your chances of success.
           </p>
         </div>
       </div>

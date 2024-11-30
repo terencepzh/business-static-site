@@ -4,235 +4,224 @@ function Article17() {
   return (
     <div className="flex flex-col items-center gap-4 px-6 py-8">
       <div className="flex items-start hover:text-red-600 w-full max-w-screen-md">
-        <Link to="/resources">All Posts</Link>
+        <Link to="/resources/2">All Posts</Link>
       </div>
       <div className="flex flex-col gap-4 border max-w-screen-md p-2 py-6 md:p-6">
         <h1 className="text-red-600 text-xl md:text-3xl font-bold">
-          Family PR Applications: How to Secure PR for Your Whole Family in
-          Singapore
+          How Much Does a Singapore PR Application Really Cost? Breakdown of
+          Fees and Hidden Charges
         </h1>
         <img
-          src="/Article12.png"
+          src="/Article17.png"
           alt="Cover Image"
         />
-        <div className="flex flex-col gap-6 text-xs md:text-sm">
-          <p>
-            If you’re an expat living in Singapore and dreaming of settling down
-            here with your loved ones, you’re probably thinking about securing
-            PR (Permanent Residency) for your entire family. Applying for PR as
-            a family is a bit more complex than an individual application, but
-            with some preparation, it’s entirely manageable—and worth it!
-          </p>
-          <p>
-            In this guide, we’ll walk through everything you need to know about{" "}
-            <b>applying for PR in Singapore</b> for your family. We’ll look at
-            eligibility, common hurdles, and strategies to make the process as
-            smooth as possible. Using <b>PR application services</b> can also be
-            a game-changer for family applications, which we’ll discuss in more
-            detail below.
-          </p>
-        </div>
         <p className="text-red-600 md:text-lg font-bold">
-          Understanding Family PR Applications: Who’s Eligible?
+          Introduction: Is Applying for PR Worth the Cost?
         </p>
         <div className="flex flex-col gap-6 text-xs md:text-sm">
           <p>
-            The S-Pass is a work pass designed for mid-skilled foreign workers
-            in Singapore, typically employed in sectors like manufacturing,
-            construction, and healthcare. Unlike Employment Pass (EP) holders,
-            S-Pass holders often have more limited privileges, including lower
-            salary thresholds. This difference can make the{" "}
-            <b>PR application in Singapore</b> a bit more challenging. However,
-            many S-Pass holders have successfully transitioned to PR, proving
-            it’s a viable path for those looking to make Singapore their
-            permanent home.
+            When considering Permanent Residency (PR) in Singapore, one of the
+            first questions that come to mind is, "How much does it cost to
+            apply for PR?" While the official fees may seem straightforward, the
+            reality is there are additional hidden costs and time investments to
+            consider.
+          </p>
+          <p>
+            More importantly, working with a PR application agency can make a
+            significant difference, especially if you want to avoid costly
+            mistakes or delays. Let’s break down the costs of applying for PR,
+            the hidden expenses, and why hiring a PR agency is often worth the
+            investment.
+          </p>
+        </div>
+        <p className="text-red-600 md:text-lg font-bold">
+          The Official PR Application Fees
+        </p>
+        <div className="flex flex-col gap-6 text-xs md:text-sm">
+          <p>
+            For every PR application submitted through the Immigration and
+            Checkpoints Authority (ICA), the official fees include:
           </p>
           <div className="flex flex-col gap-2">
             <ul className="list-disc ml-4">
+              <li>Application Fee: SGD $100 per applicant</li>
               <li>
-                <b>Spouses</b>: If you’re applying for PR and you’re married,
-                you can include your spouse in the application. This is
-                essential if you’re committed to staying together in Singapore
-                long-term.
-              </li>
-              <li>
-                <b>Children</b>: You can apply for PR for your unmarried
-                children under the age of 21. This option provides stability and
-                access to Singapore’s world-renowned education system, which is
-                particularly attractive for families aiming to settle long-term.
-              </li>
-              <li>
-                <b>Parents</b>: Though it’s a bit more complex, some applicants
-                can also apply for PR for their parents. This option is usually
-                available for PR holders who want their parents to join them as
-                long-term residents, often requiring additional financial and
-                caregiving commitments.
+                Final Approval Fee: SGD $20 per applicant for the Entry Permit
+                issuance
               </li>
             </ul>
           </div>
           <p>
-            Applying for PR as a family can help strengthen your profile by
-            demonstrating to the Immigration and Checkpoints Authority (ICA)
-            that you are committed to making Singapore a permanent home for you
-            and your family.
+            In total, the government’s official costs start at SGD $120 per
+            applicant. However, these fees don’t include the preparation costs,
+            document requirements, or time investments needed to ensure your
+            application is complete and compelling.
           </p>
         </div>
         <p className="text-red-600 md:text-lg font-bold">
-          Why Family Applications Can Be Complex (But Totally Doable!)
+          The Real Costs of Applying for PR in Singapore
         </p>
         <div className="flex flex-col gap-6 text-xs md:text-sm">
           <p>
-            One common misconception is that <b>applying for PR in Singapore</b>{" "}
-            as a family is just a matter of adding a few extra documents. In
-            reality, the process is more involved, and each family member's
-            profile can impact your overall application.
+            The actual cost of applying for PR extends far beyond the official
+            fees. Let’s explore the hidden expenses many applicants don’t
+            anticipate.
           </p>
           <div className="flex flex-col gap-2">
-            <p className="font-bold">
-              {" "}
-              Each Member Needs Strong Supporting Documents
-            </p>
+            <p className="font-bold">1. Document Preparation Costs</p>
             <p>
-              Every member of your family included in the application will need
-              specific supporting documents. If you have a spouse or children,
-              you’ll need birth certificates, marriage certificates, and
-              academic transcripts. I once helped a family that almost missed
-              their application deadline because they overlooked a certified
-              copy of their marriage certificate! Having a checklist of
-              documents can save you from these last-minute surprises.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="font-bold">
-              Financial Stability and Its Role in Family Applications
-            </p>
-            <p>
-              Family PR applications mean ICA will want to see that you’re
-              financially stable enough to support your family in Singapore.
-              Documentation of your income, tax contributions, and employment
-              status are crucial. Highlighting job stability, promotions, or a
-              high-demand field like technology or healthcare can work in your
-              favor. Financial proof is not just about salary; you can also
-              include assets or savings to demonstrate your long-term financial
-              security.
-            </p>
-          </div>
-        </div>
-        <p className="text-red-600 md:text-lg font-bold">
-          Key Strategies to Strengthen Your Family PR Application
-        </p>
-        <div className="flex flex-col gap-6 text-xs md:text-sm">
-          <p>
-            When applying for PR as a family, strategic steps can improve your
-            chances of success. Here’s how you can make your family application
-            stand out.
-          </p>
-          <div className="flex flex-col gap-2">
-            <p className="font-bold">Emphasize Community Involvement</p>
-            <p>
-              Singapore values applicants who contribute positively to the
-              community. If you or your spouse have been involved in volunteer
-              work, local events, or even corporate social responsibility (CSR)
-              activities, this can add value to your{" "}
-              <b>PR application in Singapore</b>. For instance, if your family
-              has participated in neighborhood events or volunteered for local
-              charities, it signals a strong commitment to integrating into the
-              community.
-            </p>
-            <p>
-              One client I knew had a successful application because their whole
-              family was engaged in local activities. The kids took part in
-              school charity drives, while the parents joined community cleanup
-              events. This painted a picture of a family invested in Singapore
-              beyond just work or studies.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="font-bold">
-              Seek Guidance from a PR Application Agency
-            </p>
-            <p>
-              Family PR applications can be overwhelming, especially with
-              multiple documents and profiles to coordinate. Using a{" "}
-              <b>PR application agency</b> can save time and reduce stress by
-              ensuring that your application is meticulously organized and
-              aligned with ICA’s preferences. Agencies specializing in{" "}
-              <b>PR application services</b> help families prepare comprehensive
-              applications, from document checks to strategy advice, all aimed
-              at improving the application’s competitiveness.
-            </p>
-            <p>
-              An agency can also assist with details like the best timing for
-              submission or additional documents to make your application stand
-              out. By having a professional guide, you’ll have peace of mind
-              that nothing is missed and that each family member’s profile is
-              optimized.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="font-bold">
-              Present a Thorough and Accurate Application
-            </p>
-            <p>
-              One key to success in <b>applying for PR in Singapore </b>is
-              presenting a complete, detailed, and accurate application.
-              Highlight your stability, job security, community involvement, and
-              financial strength. Double-check that all necessary documents are
-              ready and that each family member’s documents are included.
+              Gathering the required documents is a time-consuming and often
+              expensive process. Some of the typical costs include:
             </p>
             <div className="flex flex-col gap-2">
-              <p>Documents to prioritize include:</p>
               <ul className="list-disc ml-4">
                 <li>
-                  Employment and income verification to show financial
-                  stability.
+                  Translation Services: If your documents are not in English,
+                  certified translations may cost SGD $50–$200 per document,
+                  depending on complexity.
                 </li>
-                <li>Tax documents covering your stay in Singapore.</li>
                 <li>
-                  Certificates or proof of community engagement or volunteer
-                  work, if applicable.
+                  Notarization: Official notarization of key documents may also
+                  be required, costing SGD $10–$50 per document.
                 </li>
               </ul>
-              <p>
-                Providing comprehensive documentation upfront reduces delays and
-                shows the ICA that you’re organized and serious about making
-                Singapore home.
-              </p>
             </div>
+            <p>
+              Pro Tip: A PR application agency can guide you through the
+              documentation process, ensuring every piece is accurate and
+              complete, saving you the stress of managing these details on your
+              own.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">2. Time Costs</p>
+            <p>
+              Applying for PR can be incredibly time-intensive. From organizing
+              documents to filling out forms, applicants often spend weeks
+              preparing their application. For professionals balancing a busy
+              schedule, this represents a significant opportunity cost.
+            </p>
+            <p>
+              Why a PR Agency Helps: Agencies save you valuable time by handling
+              all the heavy lifting, from paperwork to submission. This allows
+              you to focus on your job and personal commitments.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">3. Costs of Mistakes and Reapplications</p>
+            <p>
+              One of the most significant hidden costs comes from making
+              mistakes. If your application is incomplete or contains errors, it
+              could be rejected, forcing you to reapply. Each reapplication not
+              only costs more money but also delays your PR approval, leading to
+              potential missed benefits like job flexibility and housing
+              opportunities.
+            </p>
+            <p>
+              Pro Tip: Hiring a professional PR agency minimizes the risk of
+              rejection, ensuring that your first application is as strong as
+              possible.
+            </p>
           </div>
         </div>
         <p className="text-red-600 md:text-lg font-bold">
-          Potential Roadblocks and How to Overcome Them
+          Why Working with a PR Application Agency is Worth It
         </p>
         <div className="flex flex-col gap-6 text-xs md:text-sm">
           <p>
-            Family PR applications can face unique challenges, so here’s how to
-            handle common issues that may arise.
+            Now that we’ve covered the costs of a DIY approach, let’s talk about
+            why partnering with a PR application agency is often a smarter
+            financial and emotional investment.
           </p>
           <div className="flex flex-col gap-2">
-            <p className="font-bold">Processing Delays</p>
+            <p className="font-bold">
+              1. Expert Guidance Saves Money in the Long Run
+            </p>
             <p>
-              Family PR applications may take longer due to the additional
-              profiles ICA must review. One family I worked with saw their
-              application take nearly a year for approval. Be prepared for a
-              potentially longer processing time, and use this period to
-              continue strengthening your family’s ties to Singapore.
+              While agencies charge a fee for their services (typically ranging
+              from SGD $1,500 to $5,000 depending on complexity), this
+              investment often pays for itself. By ensuring a strong
+              application, you reduce the chances of rejection and the need for
+              costly reapplications.
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-bold">Document Completeness</p>
+            <p className="font-bold">
+              2. Faster Approvals Mean Faster Benefits
+            </p>
             <p>
-              Applying for multiple family members means there’s a higher chance
-              of missing a required document. A checklist can help ensure
-              everything is included, but working with a{" "}
-              <b>PR application agency</b>
-              can provide an extra level of assurance. Agencies typically have a
-              structured document checklist and a process for cross-verifying
-              all necessary paperwork.
+              The longer your PR application takes, the longer you wait to enjoy
+              the benefits of PR status, like access to public housing,
+              healthcare subsidies, and job flexibility. A PR agency can help
+              fast-track your application by submitting a flawless,
+              well-organized file that aligns with ICA’s requirements.
+            </p>
+            <p>
+              Example: One client, a finance professional, worked with an agency
+              to fine-tune his profile. His PR was approved in just four months,
+              while a colleague who applied independently faced a year-long wait
+              due to missing documents.
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <p className="font-bold"> Financial Stability Requirements</p>
+            <p className="font-bold">
+              3. Financial and Emotional Peace of Mind
+            </p>
+            <p>
+              Handling a PR application alone can be overwhelming. Between
+              juggling your job, family, and the complex requirements, the
+              stress can add up. A PR agency provides emotional reassurance by
+              managing the entire process, ensuring everything is handled
+              professionally.
+            </p>
+          </div>
+        </div>
+        <p className="text-red-600 md:text-lg font-bold">
+          Comparing DIY and Agency Costs: What’s the Real Value?
+        </p>
+        <div className="flex flex-col gap-6 text-xs md:text-sm">
+          <p>
+            To understand the value of a PR application agency, let’s compare
+            the potential costs of doing it yourself versus hiring an agency.
+          </p>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">DIY Approach</p>
+            <div className="flex flex-col gap-2">
+              <ul className="list-disc ml-4">
+                <li>Official Fees: SGD $120</li>
+                <li>
+                  Document Preparation: SGD $200–$500 (translations,
+                  notarizations, etc.)
+                </li>
+                <li>
+                  Time Costs: Unquantifiable, but significant for busy
+                  professionals
+                </li>
+                <li>Mistake Costs: Reapplication fees, delayed benefits</li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">PR Application Agency Approach</p>
+            <div className="flex flex-col gap-2">
+              <ul className="list-disc ml-4">
+                <li>Agency Fees: SGD $1,500–$5,000 (depending on services)</li>
+                <li>
+                  Peace of Mind: Priceless; everything is handled professionally
+                </li>
+                <li>
+                  Time Costs: Unquantifiable, but significant for busy
+                  professionals
+                </li>
+                <li>
+                  Faster Approval: Access PR benefits sooner, saving money in
+                  the long term
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">Financial Stability Requirements</p>
             <p>
               Since ICA will evaluate your ability to support your family,
               having up-to-date financial records is essential. If you have
@@ -244,34 +233,83 @@ function Article17() {
           </div>
         </div>
         <p className="text-red-600 md:text-lg font-bold">
-          Final Thoughts on Making Singapore Your Family’s Permanent Home
+          Real-Life Benefits of Faster PR Approval
         </p>
         <div className="flex flex-col gap-6 text-xs md:text-sm">
           <p>
-            Applying for PR for your entire family is a significant decision,
-            and while the process can be complex, the rewards are worth it.
-            Having PR status can provide long-term stability, access to
-            high-quality education, and the ability to truly call Singapore
-            home. By following a well-prepared approach—highlighting financial
-            stability, community involvement, and commitment to Singapore—you
-            can put together a compelling application.
+            Securing PR sooner means you can start enjoying its benefits
+            earlier. Here’s how faster approval saves you money and improves
+            your quality of life:
+          </p>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">1. Reduced Housing Costs</p>
+            <p>
+              As a PR, you gain access to resale HDB flats, which are
+              significantly cheaper than private properties. Waiting for PR
+              approval means paying higher rental costs or private housing
+              prices.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">2. Healthcare Subsidies</p>
+            <p>
+              PRs are entitled to Medishield Life and other healthcare
+              subsidies, reducing medical expenses by up to 60%. Delaying PR
+              means missing out on these savings.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="font-bold">3. Job Flexibility</p>
+            <p>
+              PR status frees you from being tied to a specific employer. This
+              job flexibility can lead to better career opportunities and higher
+              income over time.
+            </p>
+          </div>
+        </div>
+        <p className="text-red-600 md:text-lg font-bold">
+          Comparing DIY and Agency Costs: What’s the Real Value?
+        </p>
+        <div className="flex flex-col gap-6 text-xs md:text-sm">
+          <p>
+            If you’re serious about securing PR status and want to minimize
+            risks, working with a PR agency is worth considering. Here are some
+            signs it’s the right choice for you:
+          </p>
+          <div className="flex flex-col gap-2">
+            <ul className="list-disc ml-4">
+              <li>
+                You Have a Busy Schedule: Let professionals handle the details
+                while you focus on your priorities.
+              </li>
+              <li>
+                You Value Accuracy: Avoid the risk of costly mistakes with
+                expert guidance.
+              </li>
+              <li>
+                You Want Faster Results: Maximize your chances of faster
+                approval and access to PR benefits.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p className="text-red-600 md:text-lg font-bold">
+          Conclusion: Invest in Your Future with Confidence
+        </p>
+        <div className="flex flex-col gap-6 text-xs md:text-sm">
+          <p>
+            Applying for PR in Singapore is a major step, and understanding the
+            real costs—both financial and emotional—can help you make an
+            informed decision. While a DIY approach may seem cheaper upfront,
+            the risk of delays and mistakes often makes it more expensive in the
+            long run.
           </p>
           <p>
-            Working with a <b>PR application agency</b> can be invaluable,
-            especially when juggling the demands of work, family, and the
-            intricate details of an immigration process. Take the time to
-            present each family member’s profile thoughtfully, ensuring you
-            align with ICA’s expectations. With the right preparation,
-            dedication, and support, your family’s future in Singapore could be
-            closer than you think.
-          </p>
-          <p>
-            <b>
-              Remember, Singapore isn’t just looking for individuals to work
-              here—it wants families who want to build lives here. So put in the
-              effort, seek help when needed, and each step will bring you closer
-              to making Singapore your family’s permanent home.
-            </b>
+            By working with a trusted PR application agency, you gain expert
+            guidance, faster approvals, and peace of mind, making it a
+            worthwhile investment. If you’re ready to apply for PR, take the
+            smarter route and partner with professionals who can help you secure
+            your future in Singapore efficiently and confidently.
           </p>
         </div>
       </div>
