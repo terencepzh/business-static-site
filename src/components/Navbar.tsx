@@ -21,7 +21,7 @@ function Navbar() {
           className={`flex lg:hidden flex-col gap-4 fixed right-0 bg-white/95 text-red-600 transition duration-300 ease-in-out ${
             click ? "translate-x-0" : "translate-x-full"
           }
-            z-90 w-full h-lvh p-4`}
+            z-100 w-full h-lvh p-4`}
         >
           <img
             className="ml-auto md:w-10"
@@ -221,11 +221,13 @@ function Navbar() {
               />
             </Link>
           </div>
-          <img
-            src="/menu.svg"
-            onClick={() => setClick(!click)}
-            className="lg:hidden md:w-[40px]"
-          />
+          <div className="flex lg:hidden justify-center items-center w-[50px] md:w-[60px]">
+            <img
+              src="/menu.svg"
+              onClick={() => setClick(!click)}
+              className="lg:hidden md:w-[40px]"
+            />
+          </div>
           <ul className="hidden lg:flex items-center gap-8 text-lg font-bold">
             <li>
               <DropdownMenu>
