@@ -21,15 +21,17 @@ function App() {
         <div className="bg-[url('/home.jpg')] bg-no-repeat bg-cover bg-[65%] w-full">
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 bg-black/45 text-white px-6 py-8 lg:pb-40">
             <div className="flex flex-col gap-4 md:gap-8 justify-between items-center md:items-start text-center md:text-left max-w-screen-md">
-              <p className="text-red-600 text-3xl font-bold">
+              <p className="text-red-600 text-2xl font-bold">
                 Your Future, Our Mission
               </p>
-              <div className="flex flex-col gap-4 text-2xl md:text-4xl lg:text-6xl font-bold">
+              <div className="flex flex-col gap-4 text-3xl md:text-4xl lg:text-6xl font-rubik font-bold">
                 <p>YOUR LEADING PR APPLICATION AND IMMIGRATION CONSULTANCY</p>
               </div>
-              <h3 className="text-white text-base md:text-xl">
-                Turn your dream of living in Singapore into reality with our
-                customized PR and immigration consulting services.
+              <h3 className="text-white text-base md:text-xl font-karla font-bold">
+                <i>
+                  Turn your dream of living in Singapore into reality with our
+                  customized PR and immigration consulting services.
+                </i>
               </h3>
               <p className="text-4xl md:text-5xl text-white font-bold drop-shadow-lg">
                 Unlimited Warranty Till Approval!

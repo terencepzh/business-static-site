@@ -3,7 +3,22 @@ export default {
   darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      sans: [
+        '"HelveticaNeue-Light"',
+        '"Helvetica Neue Light"',
+        '"Helvetica Neue"',
+        "Helvetica",
+        "Arial",
+        '"Lucida Grande"',
+        "sans-serif",
+      ],
+    },
     extend: {
+      fontFamily: {
+        rubik: ['"Rubik"', "sans-serif"],
+        karla: ['"Karla"', "sans-serif"],
+      },
       zIndex: {
         60: "60",
         70: "70",

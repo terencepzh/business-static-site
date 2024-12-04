@@ -109,7 +109,7 @@ function SingaporePr() {
             >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 px-8">
                 <img
-                  src="/Service1.png"
+                  src="/Service1.svg"
                   alt=""
                   className="w-16"
                 />
@@ -126,7 +126,7 @@ function SingaporePr() {
             >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
-                  src="/Service2.png"
+                  src="/spouse.svg"
                   alt=""
                   className="w-16"
                 />
@@ -143,7 +143,7 @@ function SingaporePr() {
             >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
-                  src="/Service3.png"
+                  src="/parents.svg"
                   alt=""
                   className="w-16"
                 />
@@ -160,7 +160,7 @@ function SingaporePr() {
             >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
-                  src="/Service4.png"
+                  src="/Service3.svg"
                   alt=""
                   className="w-16"
                 />
@@ -177,7 +177,7 @@ function SingaporePr() {
             >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
-                  src="/Service5.png"
+                  src="/Service3.svg"
                   alt=""
                   className="w-16"
                 />
@@ -194,7 +194,7 @@ function SingaporePr() {
             >
               <div className="flex flex-col items-center gap-4 h-full md:pt-12 md:px-8">
                 <img
-                  src="/Service6.png"
+                  src="/Service5.svg"
                   alt=""
                   className="w-16"
                 />

@@ -57,11 +57,11 @@
   }
 }
 @layer base {
-  * {
+  /* * {
     @apply border-border;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
       Helvetica, Arial, "Lucida Grande", sans-serif;
-  }
+  } */
   body {
     @apply bg-background text-foreground;
   }
