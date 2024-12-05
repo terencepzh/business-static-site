@@ -1,5 +1,3 @@
-/// <reference types="vite/client" />
-
 import path from "path";
 import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
@@ -15,6 +13,6 @@ export default defineConfig({
     },
   },
   define: {
-    "import.meta.env": import.meta.env,
+    __APP_ENV__: process.env.VITE_VERCEL_ENV,
   },
 });
