@@ -27,3 +27,4 @@ font-structure.txt
 *.sw?
 
 .env
+.env.production
