@@ -61,7 +61,6 @@ function ConsultForm() {
           ],
         ]),
       });
-      await response.json();
       if (response.ok) {
         setSuccess(true);
         form.reset();
