@@ -19,16 +19,19 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Textarea } from "./ui/textarea";
-
-const formSchema = z.object({
-  fullName: z.string().min(1, { message: "Name is required" }).max(50),
-  pass: z.string().min(1, { message: "Please select an option" }),
-  mobile: z.string().min(1, { message: "Mobile Number is required" }),
-  interest: z.string().min(1, { message: "Please select an option" }),
-  message: z.string(),
-});
+import { useState } from "react";
 
 function ConsultForm() {
+  const [success, setSuccess] = useState(false);
+
+  const formSchema = z.object({
+    fullName: z.string().min(1, { message: "Name is required" }).max(50),
+    pass: z.string().min(1, { message: "Please select an option" }),
+    mobile: z.string().min(1, { message: "Mobile Number is required" }),
+    interest: z.string().min(1, { message: "Please select an option" }),
+    message: z.string(),
+  });
+
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -42,10 +45,30 @@ function ConsultForm() {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch(import.meta.env.VITE_CONSULTAPI, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify([
+          [
+            values.fullName,
+            values.pass,
+            values.mobile,
+            values.interest,
+            values.message,
+            new Date().toLocaleString(),
+          ],
+        ]),
+      });
+      await response.json();
+      if (response.ok) {
+        setSuccess(true);
+        form.reset();
+      }
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   return (
@@ -170,6 +193,9 @@ function ConsultForm() {
           </Button>
         </form>
       </Form>
+      {success && (
+        <p>Successfully submitted! Refresh this page to submit again.</p>
+      )}
       <h3 className="text-center text-sm font-light">
         By submitting this form, you agree to our site's <u>privacy policy</u>.
       </h3>

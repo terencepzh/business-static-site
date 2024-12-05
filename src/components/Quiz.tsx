@@ -25,7 +25,11 @@ import { Textarea } from "./ui/textarea";
 function Quiz() {
   const [currentStep, setCurrentStep] = useState(1);
   const handleNext = () => setCurrentStep(currentStep + 1);
-  const handlePrevious = () => setCurrentStep(currentStep - 1);
+  const handlePrevious = () => {
+    setSuccess(false);
+    setCurrentStep(currentStep - 1);
+  };
+  const [success, setSuccess] = useState(false);
 
   const formSchema = z.object({
     who: z.string().min(1, { message: "Please select an option" }),
@@ -35,7 +39,7 @@ function Quiz() {
     salary: z.string().min(1, { message: "Please select an option" }),
     duration: z.string().min(1, { message: "Please select an option" }),
     participated: z.string().min(1, { message: "Please select an option" }),
-    activities: z.string().min(1, { message: "Please select an option" }),
+    activities: z.string().optional(),
     property: z.string().min(1, { message: "Please select an option" }),
     insurance: z.string().min(1, { message: "Please select an option" }),
     name: z.string().min(1, { message: "Please select an option" }),
@@ -52,14 +56,49 @@ function Quiz() {
       education: "",
       salary: "",
       duration: "",
+      participated: "",
+      activities: "",
+      property: "",
+      insurance: "",
+      name: "",
+      mobile: "",
+      email: "",
     },
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch(import.meta.env.VITE_QUIZAPI, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify([
+          [
+            values.name,
+            values.mobile,
+            values.email,
+            values.who,
+            values.pass,
+            values.age,
+            values.education,
+            values.salary,
+            values.duration,
+            values.participated,
+            values.activities,
+            values.property,
+            values.insurance,
+            new Date().toLocaleString(),
+          ],
+        ]),
+      });
+      await response.json();
+      if (response.ok) {
+        setSuccess(true);
+        form.reset();
+      }
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   return (
@@ -248,51 +287,6 @@ function Quiz() {
               <FormField
                 control={form.control}
                 name="salary"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>
-                      What is the applicant's monthly salary range? *
-                    </FormLabel>
-                    <Select
-                      onValueChange={field.onChange}
-                      defaultValue={field.value}
-                    >
-                      <FormControl>
-                        <SelectTrigger className="border-gray-500 w-full">
-                          <SelectValue />
-                        </SelectTrigger>
-                      </FormControl>
-                      <SelectContent className="">
-                        <SelectItem value="Not Applicable">
-                          Not Applicable
-                        </SelectItem>
-                        <SelectItem value="Under S$2000">
-                          Under S$2000
-                        </SelectItem>
-                        <SelectItem value="S$2000 - 4000">
-                          S$2000 - 4000
-                        </SelectItem>
-                        <SelectItem value="S$4001 - 6000">
-                          S$4001 - 6000
-                        </SelectItem>
-                        <SelectItem value="S$6001 - 8000">
-                          S$6001 - 8000
-                        </SelectItem>
-                        <SelectItem value="S$8001 - 10000">
-                          S$8001 - 10000
-                        </SelectItem>
-                        <SelectItem value="Over S$10000">
-                          Over S$10000
-                        </SelectItem>
-                      </SelectContent>
-                    </Select>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="duration"
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>
@@ -584,6 +578,9 @@ function Quiz() {
                   </FormItem>
                 )}
               />
+              {success && (
+                <p className="text-sm mx-auto">Successfully submitted!</p>
+              )}
               <div className="flex justify-between mt-2">
                 <Button
                   variant="outline"
