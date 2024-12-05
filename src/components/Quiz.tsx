@@ -69,31 +69,28 @@ function Quiz() {
   // 2. Define a submit handler.
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      const response = await fetch(
-        "https://v1.nocodeapi.com/lemontest/google_sheets/isDZZWmFpFHklwgy?tabId=Sheet1",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify([
-            [
-              values.name,
-              values.mobile,
-              values.email,
-              values.who,
-              values.pass,
-              values.age,
-              values.education,
-              values.salary,
-              values.duration,
-              values.participated,
-              values.activities,
-              values.property,
-              values.insurance,
-              new Date().toLocaleString(),
-            ],
-          ]),
-        }
-      );
+      const response = await fetch(import.meta.env.VITE_QUIZAPI, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify([
+          [
+            values.name,
+            values.mobile,
+            values.email,
+            values.who,
+            values.pass,
+            values.age,
+            values.education,
+            values.salary,
+            values.duration,
+            values.participated,
+            values.activities,
+            values.property,
+            values.insurance,
+            new Date().toLocaleString(),
+          ],
+        ]),
+      });
       if (response.ok) {
         setSuccess(true);
         form.reset();
