@@ -2,6 +2,13 @@ import Overview from "@/components/Overview";
 import Quiz from "@/components/Quiz";
 import Services from "@/components/Services";
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import {
   Accordion,
@@ -10,8 +17,23 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
+import { reviews } from "@/content/Reviews";
+import { testimonials } from "@/content/Testimonials";
+import RatingCard from "@/components/RatingCard";
 
 function App() {
+  const isTouchDevice =
+    "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+  if (!isTouchDevice) {
+    document.querySelectorAll("video").forEach((vid) => {
+      const container = vid.parentElement;
+      container?.addEventListener("mouseenter", () => vid.play());
+      container?.addEventListener("mouseleave", () => {
+        vid.pause();
+      });
+    });
+  }
   return (
     <>
       <div
@@ -112,6 +134,48 @@ function App() {
           </div>
         </div>
       </div>
+      {/* Carousel reviews */}
+      <div className="flex justify-center py-6 w-full">
+        <div className="relative w-full max-w-6xl">
+          <Carousel
+            className="w-full"
+            opts={{ align: "start", loop: true }}
+          >
+            <CarouselContent className="-ml-1">
+              {reviews.map((file, index) => {
+                const isVideo = file.src.match(/\.(mp4|mov|webm)$/i);
+                return (
+                  <CarouselItem
+                    key={index}
+                    className="pl-1 md:basis-1/2 lg:basis-1/3"
+                  >
+                    <div className="relative w-full h-full overflow-hidden rounded-xl group p-4">
+                      {isVideo ? (
+                        <video
+                          src={file.src}
+                          muted
+                          loop
+                          playsInline
+                          controls
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                      ) : (
+                        <img
+                          src={file.src}
+                          alt=""
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+                      )}
+                    </div>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+            <CarouselPrevious className="z-10 left-10" />
+            <CarouselNext className="z-10 right-10" />
+          </Carousel>
+        </div>
+      </div>
       {/* Link to Quiz */}
       <div className="flex flex-col lg:flex-row gap-4 items-center bg-red-600 text-white text-center">
         <div className="flex flex-col items-center gap-4 px-6 py-8 w-full">
@@ -134,6 +198,7 @@ function App() {
           </Button>
         </div>
       </div>
+      <div></div>
       {/* We Customise the Immigration Planning For You */}
       <div className="flex flex-col justify-center items-center gap-4 text-red-600 text-center px-6 py-8">
         <h1 className="text-4xl lg:text-5xl text-center font-bold">
@@ -235,15 +300,22 @@ function App() {
         </div>
       </div>
       {/* Testimonials */}
-      {/* <div className="flex flex-col gap-4 bg-red-600 text-white text-center px-6 py-8">
+      <div className="flex flex-col gap-4 bg-red-600 text-white text-center px-6 py-8">
         <h1 className="text-4xl lg:text-5xl text-center font-bold">
           Our Testimonials
         </h1>
         <h3 className="text-sm">
           Hear more from our past clients on their experience with us!
         </h3>
-        <div>Testimonials TBD</div>
-      </div> */}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 2xl:grid-cols-3 gap-4">
+          {testimonials.map((testimonial, index) => (
+            <RatingCard
+              key={index}
+              {...testimonial}
+            />
+          ))}
+        </div>
+      </div>
       <Overview />
       {/* Services */}
       <div className="flex justify-center w-full">
