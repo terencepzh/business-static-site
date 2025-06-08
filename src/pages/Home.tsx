@@ -62,6 +62,7 @@ function App() {
                 <Link
                   to="/contact-us"
                   reloadDocument
+                  className="w-full"
                 >
                   Book your <span className="text-xl font-bold">FREE</span>{" "}
                   consultation now
@@ -93,6 +94,7 @@ function App() {
                 <Link
                   to="/contact-us"
                   reloadDocument
+                  className="w-full"
                 >
                   Book your <span className="text-2xl font-bold">FREE</span>{" "}
                   consultation now
@@ -198,7 +200,6 @@ function App() {
           </Button>
         </div>
       </div>
-      <div></div>
       {/* We Customise the Immigration Planning For You */}
       <div className="flex flex-col justify-center items-center gap-4 text-red-600 text-center px-6 py-8">
         <h1 className="text-4xl lg:text-5xl text-center font-bold">
