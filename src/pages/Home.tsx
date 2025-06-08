@@ -244,6 +244,7 @@ function App() {
                   <Link
                     to="/contact-us"
                     reloadDocument
+                    className="w-full"
                   >
                     Book a consultation
                   </Link>
@@ -290,6 +291,7 @@ function App() {
                   <Link
                     to="/contact-us"
                     reloadDocument
+                    className="w-full"
                   >
                     Book a consultation
                   </Link>
