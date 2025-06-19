@@ -29,19 +29,24 @@ function Footer() {
       </div>
       <div className="flex flex-col justify-center items-center gap-4 p-8">
         <div className="flex justify-evenly w-[80%] max-w-sm">
-          <img
-            src="/instagram.svg"
-            alt="Instagram"
-          />
-          <img
-            src="/twitter.svg"
-            alt="X"
-          />
-          <img
-            src="/facebook.svg"
-            alt="Facebook"
-          />
-
+          <a
+            href="https://www.instagram.com/sgimmigrations?igsh=MXI4MmNxM3B6a2JwMg%3D%3D&utm_source=qr"
+            target="_blank"
+          >
+            <img
+              src="/instagram.svg"
+              alt="Instagram"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/sg.immigrationsc"
+            target="_blank"
+          >
+            <img
+              src="/facebook.svg"
+              alt="Facebook"
+            />
+          </a>
           <img
             src="/linkedin.svg"
             alt="LinkedIn"
